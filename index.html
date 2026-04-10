@@ -17,8 +17,6 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html,body{height:100%;overflow:hidden;background:var(--bg);}
 body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
-
-/* ── HEADER ── */
 #hdr{position:fixed;top:0;left:0;right:0;z-index:300;
   display:flex;align-items:center;justify-content:space-between;
   padding:12px 28px;
@@ -50,8 +48,6 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
   font-family:'Space Mono',monospace;font-size:10px;color:var(--dim);}
 .live-dot{width:6px;height:6px;border-radius:50%;background:var(--a3);
   box-shadow:0 0 6px var(--a3);animation:pulse 2s infinite;}
-
-/* ── MAP ── */
 #map-wrap{position:absolute;inset:0;}
 #world-map{width:100%;height:100%;cursor:grab;}
 #world-map:active{cursor:grabbing;}
@@ -62,16 +58,12 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
 .country:hover{fill:var(--hover);}
 .country.active{fill:var(--a1);filter:drop-shadow(0 0 8px rgba(200,169,110,.5));}
 .country.dimmed{fill:#0a1422;opacity:.5;}
-
-/* ── ZOOM ── */
 #zoom-btns{position:fixed;bottom:28px;right:28px;z-index:200;
   display:flex;flex-direction:column;gap:4px;}
 .zbtn{width:36px;height:36px;background:rgba(8,13,26,.9);border:1px solid var(--border);
   color:var(--dim);border-radius:8px;font-size:18px;cursor:pointer;
   display:flex;align-items:center;justify-content:center;transition:all .2s;font-family:monospace;}
 .zbtn:hover{border-color:var(--a1);color:var(--a1);}
-
-/* ── SEARCH ── */
 #search-wrap{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);
   z-index:200;width:320px;}
 #search-box{display:flex;align-items:center;gap:10px;
@@ -92,17 +84,12 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
 .s-item-flag{width:20px;height:14px;border-radius:2px;border:1px solid rgba(255,255,255,.1);}
 .s-item-name{flex:1;}
 .s-item-code{font-family:'Space Mono',monospace;font-size:10px;color:var(--dim);}
-
-/* ── PANEL ── */
 #panel{position:fixed;top:0;right:-520px;width:500px;height:100%;
   background:rgba(8,13,26,.97);border-left:1px solid var(--border);
   backdrop-filter:blur(20px);
   transition:right .45s cubic-bezier(.16,1,.3,1);
-  z-index:250;display:flex;flex-direction:column;
-  overflow:hidden;}
+  z-index:250;display:flex;flex-direction:column;overflow:hidden;}
 #panel.open{right:0;}
-
-/* panel header */
 .p-hdr{flex-shrink:0;padding:24px 24px 0;position:relative;}
 #p-close{position:absolute;top:20px;right:20px;
   width:30px;height:30px;border-radius:50%;
@@ -127,23 +114,16 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
 .b-blue{background:rgba(79,195,247,.08);border-color:rgba(79,195,247,.3);color:var(--a2);}
 .b-gold{background:rgba(200,169,110,.08);border-color:rgba(200,169,110,.3);color:var(--a1);}
 .b-purple{background:rgba(180,100,255,.08);border-color:rgba(180,100,255,.3);color:#b464ff;}
-
-/* panel scroll */
 #p-scroll{flex:1;overflow-y:auto;min-height:0;}
 #p-scroll::-webkit-scrollbar{width:2px;}
 #p-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:1px;}
 .p-body{padding:16px 24px 8px;}
-
-/* section */
 .sec{margin-bottom:20px;}
 .sec-ttl{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;
   letter-spacing:.25em;color:var(--a1);margin-bottom:10px;
   display:flex;align-items:center;gap:8px;}
 .sec-ttl::after{content:'';flex:1;height:1px;background:var(--border);}
-
-/* weather card */
-.wx-card{background:var(--s2);border:1px solid var(--border);border-radius:10px;
-  padding:14px 16px;}
+.wx-card{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;}
 .wx-main{display:flex;align-items:center;gap:14px;margin-bottom:12px;}
 .wx-icon{font-size:2.4rem;}
 .wx-temp{font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:#fff;line-height:1;}
@@ -152,16 +132,12 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
 .wx-stat{background:var(--s1);border:1px solid var(--border);border-radius:7px;padding:8px 10px;}
 .wx-stat-lbl{font-family:'Space Mono',monospace;font-size:9px;color:var(--dim);margin-bottom:3px;}
 .wx-stat-val{font-size:13px;font-weight:500;color:var(--text);}
-
-/* info grid */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
 .info-card{background:var(--s2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;}
 .info-card.full{grid-column:1/-1;}
 .ic-lbl{font-family:'Space Mono',monospace;font-size:9px;color:var(--dim);
   text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px;}
 .ic-val{font-size:13px;color:var(--text);font-weight:500;line-height:1.4;}
-
-/* AI block */
 .ai-block{background:rgba(200,169,110,.04);border:1px solid rgba(200,169,110,.15);
   border-radius:10px;padding:14px 16px;}
 .ai-ttl{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;
@@ -172,14 +148,6 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
   border-radius:10px;padding:14px 16px;}
 .news-ttl{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;
   letter-spacing:.15em;color:var(--a2);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
-.news-item{padding:8px 0;border-bottom:1px solid rgba(79,195,247,.08);
-  text-decoration:none;color:inherit;display:block;transition:opacity .2s;}
-.news-item:last-child{border-bottom:none;padding-bottom:0;}
-.news-item:hover{opacity:.7;}
-.ni-title{font-size:12px;font-weight:500;color:var(--text);line-height:1.4;margin-bottom:2px;}
-.ni-date{font-family:'Space Mono',monospace;font-size:10px;color:var(--dim);}
-
-/* loading */
 .spinner-wrap{display:flex;flex-direction:column;align-items:center;
   justify-content:center;gap:12px;padding:24px;}
 .spinner{width:28px;height:28px;border:2px solid var(--border);
@@ -192,8 +160,6 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
   border:1px solid rgba(200,169,110,.25);color:var(--a1);cursor:pointer;
   border-radius:6px;font-family:'Space Mono',monospace;font-size:10px;transition:all .2s;}
 .retry-btn:hover{background:rgba(200,169,110,.15);}
-
-/* AI Q bar */
 #q-bar{flex-shrink:0;border-top:1px solid var(--border);padding:12px 16px;background:var(--s1);}
 .q-lbl{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;
   letter-spacing:.2em;color:var(--a1);margin-bottom:8px;
@@ -220,20 +186,14 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
   display:flex;align-items:center;gap:8px;}
 .q-spin{width:10px;height:10px;border:1.5px solid var(--border);
   border-top-color:var(--a1);border-radius:50%;animation:spin .6s linear infinite;}
-
-/* tooltip */
 #tip{position:fixed;background:rgba(8,13,26,.96);border:1px solid var(--border);
   padding:7px 14px;border-radius:8px;font-size:12px;color:var(--text);
   pointer-events:none;opacity:0;transition:opacity .15s;z-index:400;
   white-space:nowrap;display:flex;align-items:center;gap:8px;
   box-shadow:0 4px 24px rgba(0,0,0,.5);}
 #tip canvas{border-radius:2px;border:1px solid rgba(255,255,255,.1);}
-
-/* animate in */
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fadeUp .35s ease both;}
-
-/* hint */
 #hint{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);
   background:rgba(8,13,26,.9);border:1px solid var(--border);border-radius:20px;
   padding:7px 20px;font-family:'Space Mono',monospace;font-size:11px;color:var(--dim);
@@ -241,7 +201,6 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
 </style>
 </head>
 <body>
-
 <div id="hdr">
   <div class="logo">
     <div class="logo-icon">
@@ -261,10 +220,8 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
     <div class="live-tag"><div class="live-dot"></div>Live</div>
   </div>
 </div>
-
 <div id="map-wrap"><svg id="world-map"></svg></div>
 <div id="hint">Cliquez sur un pays pour explorer</div>
-
 <div id="panel">
   <div class="p-hdr">
     <button id="p-close">✕</button>
@@ -292,9 +249,7 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
     <div id="q-ans"></div>
   </div>
 </div>
-
 <div id="tip"><canvas id="tt-flag" width="36" height="24"></canvas><span id="tt-name"></span></div>
-
 <div id="search-wrap">
   <div id="search-box">
     <span class="s-icon">⊕</span>
@@ -302,17 +257,15 @@ body{font-family:'Space Grotesk',sans-serif;color:var(--text);}
   </div>
   <div id="s-results"></div>
 </div>
-
 <div id="zoom-btns">
   <button class="zbtn" id="zi">+</button>
   <button class="zbtn" id="zo">−</button>
   <button class="zbtn" id="zr" style="font-size:11px">⊙</button>
 </div>
-
 <script>
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 // COUNTRY DATA
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 const NAMES = {
   "004":"Afghanistan","008":"Albanie","012":"Algérie","024":"Angola","032":"Argentine",
   "036":"Australie","040":"Autriche","050":"Bangladesh","056":"Belgique","064":"Bhoutan",
@@ -343,11 +296,9 @@ const NAMES = {
   "854":"Burkina Faso","104":"Myanmar","140":"Centrafrique","148":"Tchad",
   "262":"Djibouti","268":"Géorgie","807":"Macédoine du Nord","275":"Palestine",
   "688":"Serbie","740":"Suriname","384":"Côte d'Ivoire","834":"Tanzanie",
-  "630":"Porto Rico","270":"Gambie","288":"Ghana","324":"Guinée","480":"Maurice",
-  "174":"Comores","686":"Sénégal","694":"Sierra Leone","706":"Somalie",
-  "764":"Thaïlande","762":"Tadjikistan","795":"Turkménistan","417":"Kirghizstan"
+  "270":"Gambie","480":"Maurice","174":"Comores","694":"Sierra Leone",
+  "762":"Tadjikistan","795":"Turkménistan","417":"Kirghizstan"
 };
-
 const ALPHA2 = {
   "Afghanistan":"af","Albanie":"al","Algérie":"dz","Angola":"ao","Argentine":"ar",
   "Australie":"au","Autriche":"at","Bangladesh":"bd","Belgique":"be","Bhoutan":"bt",
@@ -381,8 +332,6 @@ const ALPHA2 = {
   "Gambie":"gm","Sierra Leone":"sl","Comores":"km","Maurice":"mu",
   "Tadjikistan":"tj","Turkménistan":"tm","Kirghizstan":"kg"
 };
-
-// Capital coordinates for weather
 const CAPITALS = {
   "France":{lat:48.86,lon:2.35},"Allemagne":{lat:52.52,lon:13.41},
   "Royaume-Uni":{lat:51.51,lon:-.13},"Italie":{lat:41.90,lon:12.50},
@@ -409,21 +358,19 @@ const CAPITALS = {
   "Pakistan":{lat:33.72,lon:73.04},"Bangladesh":{lat:23.72,lon:90.41},
   "Indonésie":{lat:-6.21,lon:106.85},"Philippines":{lat:14.60,lon:120.98},
   "Viêt Nam":{lat:21.03,lon:105.83},"Thaïlande":{lat:13.75,lon:100.52},
-  "Malaisie":{lat:3.15,lon:101.70},"Singapour":{lat:1.29,lon:103.85},
-  "Nouvelle-Zélande":{lat:-41.29,lon:174.78},"Chili":{lat:-33.46,lon:-70.65},
-  "Colombie":{lat:4.71,lon:-74.07},"Pérou":{lat:-12.05,lon:-77.05},
-  "Venezuela":{lat:10.49,lon:-66.88},"Équateur":{lat:-.23,lon:-78.52},
-  "Bolivie":{lat:-16.50,lon:-68.15},"Uruguay":{lat:-34.86,lon:-56.17},
-  "Paraguay":{lat:-25.29,lon:-57.65},"Kazakhstan":{lat:51.18,lon:71.45},
-  "Ouzbékistan":{lat:41.30,lon:69.24},"Ukraine":{lat:50.45,lon:30.52},
+  "Malaisie":{lat:3.15,lon:101.70},"Nouvelle-Zélande":{lat:-41.29,lon:174.78},
+  "Chili":{lat:-33.46,lon:-70.65},"Colombie":{lat:4.71,lon:-74.07},
+  "Pérou":{lat:-12.05,lon:-77.05},"Venezuela":{lat:10.49,lon:-66.88},
+  "Équateur":{lat:-.23,lon:-78.52},"Bolivie":{lat:-16.50,lon:-68.15},
+  "Uruguay":{lat:-34.86,lon:-56.17},"Paraguay":{lat:-25.29,lon:-57.65},
+  "Kazakhstan":{lat:51.18,lon:71.45},"Ouzbékistan":{lat:41.30,lon:69.24},
   "Israël":{lat:31.77,lon:35.23},"Jordanie":{lat:31.95,lon:35.93},
   "Liban":{lat:33.89,lon:35.50},"Syrie":{lat:33.51,lon:36.29},
   "Émirats Arabes Unis":{lat:24.47,lon:54.37},"Qatar":{lat:25.29,lon:51.53},
   "Koweït":{lat:29.37,lon:47.98},"Yémen":{lat:15.35,lon:44.21},
-  "Mexique":{lat:19.43,lon:-99.13},"Cuba":{lat:23.12,lon:-82.38},
-  "Jamaïque":{lat:17.99,lon:-76.79},"Haïti":{lat:18.54,lon:-72.34},
-  "Panama":{lat:8.99,lon:-79.52},"Guatemala":{lat:14.64,lon:-90.51},
-  "Honduras":{lat:14.10,lon:-87.22},"Nicaragua":{lat:12.15,lon:-86.28},
+  "Cuba":{lat:23.12,lon:-82.38},"Jamaïque":{lat:17.99,lon:-76.79},
+  "Haïti":{lat:18.54,lon:-72.34},"Panama":{lat:8.99,lon:-79.52},
+  "Guatemala":{lat:14.64,lon:-90.51},"Honduras":{lat:14.10,lon:-87.22},
   "Costa Rica":{lat:9.93,lon:-84.08},"El Salvador":{lat:13.70,lon:-89.20},
   "Serbie":{lat:44.80,lon:20.46},"Croatie":{lat:45.81,lon:15.97},
   "Bosnie-Herzégovine":{lat:43.85,lon:18.36},"Slovaquie":{lat:48.15,lon:17.11},
@@ -452,7 +399,6 @@ const CAPITALS = {
   "Gabon":{lat:.39,lon:9.45},"Palestine":{lat:31.90,lon:35.20},
   "Corée du Nord":{lat:39.02,lon:125.75}
 };
-
 const WMO={
   0:["Ciel dégagé","☀️"],1:["Principalement clair","🌤️"],2:["Partiellement nuageux","⛅"],
   3:["Couvert","☁️"],45:["Brouillard","🌫️"],48:["Brouillard givrant","🌫️"],
@@ -463,9 +409,9 @@ const WMO={
   95:["Orage","⛈️"],99:["Orage+grêle","⛈️"]
 };
 
-// ════════════════════════════════════════════════════
-// FLAG DRAWING
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
+// FLAG DRAWING (canvas)
+// ══════════════════════════════════════════
 function drawFlag(canvas, code) {
   if(!canvas||!code) return;
   const ctx=canvas.getContext('2d');
@@ -481,21 +427,19 @@ function drawFlag(canvas, code) {
     "ar":["h3","#74ACDF","#fff","#74ACDF"],"za":["za"],
     "ng":["v3","#008751","#fff","#008751"],"eg":["h3","#CE1126","#fff","#000"],
     "pk":["pk"],"id":["h2","#CE1126","#fff"],"tr":["tr"],
-    "sa":["green_text"],"th":["h3","#A51931","#F4F5F8","#2D2A4A"],
-    "pl":["h2","#fff","#DC143C"],"nl":["h3","#AE1C28","#fff","#21468B"],
-    "be":["v3","#000","#FFD90C","#F31830"],"se":["cross","#006AA7","#FECC02"],
-    "no":["cross3","#EF2B2D","#003680","#fff"],"dk":["cross","#C60C30","#fff"],
-    "fi":["cross","#003580","#fff"],"ch":["swiss"],
-    "at":["h3","#ED2939","#fff","#ED2939"],"pt":["pt"],
-    "gr":["gr"],"hu":["h3","#CE2939","#fff","#477050"],
-    "ro":["v3","#002B7F","#FCD116","#CE1126"],
-    "cz":["cz"],"sk":["h3","#fff","#0B4EA2","#EE1C25"],
-    "ua":["h2","#005BBB","#FFD500"],"by":["h3","#CF101A","#fff","#009000"],
-    "rs":["h3","#C6363C","#0C4076","#fff"],"hr":["h3","#FF0000","#fff","#171796"],
-    "ee":["h3","#0072CE","#000","#fff"],"lv":["h3","#9E3039","#fff","#9E3039","thin"],
-    "lt":["h3","#FDB913","#006A44","#C1272D"],"ie":["v3","#169B62","#fff","#FF883E"],
-    "is":["cross","#003897","#fff"],"lu":["h3","#EF3340","#fff","#00A3E0"],
-    "mt":["v2","#fff","#CF142B"],"am":["h3","#D90012","#0033A0","#F2A800"],
+    "sa":["green_text"],"pl":["h2","#fff","#DC143C"],
+    "nl":["h3","#AE1C28","#fff","#21468B"],"be":["v3","#000","#FFD90C","#F31830"],
+    "se":["cross","#006AA7","#FECC02"],"no":["cross3","#EF2B2D","#003680","#fff"],
+    "dk":["cross","#C60C30","#fff"],"fi":["cross","#003580","#fff"],
+    "ch":["swiss"],"at":["h3","#ED2939","#fff","#ED2939"],
+    "pt":["pt"],"gr":["gr"],"hu":["h3","#CE2939","#fff","#477050"],
+    "ro":["v3","#002B7F","#FCD116","#CE1126"],"cz":["cz"],
+    "sk":["h3","#fff","#0B4EA2","#EE1C25"],"ua":["h2","#005BBB","#FFD500"],
+    "by":["h3","#CF101A","#fff","#009000"],"rs":["h3","#C6363C","#0C4076","#fff"],
+    "hr":["h3","#FF0000","#fff","#171796"],"ee":["h3","#0072CE","#000","#fff"],
+    "lv":["h3","#9E3039","#fff","#9E3039","thin"],"lt":["h3","#FDB913","#006A44","#C1272D"],
+    "ie":["v3","#169B62","#fff","#FF883E"],"is":["cross","#003897","#fff"],
+    "lu":["h3","#EF3340","#fff","#00A3E0"],"am":["h3","#D90012","#0033A0","#F2A800"],
     "az":["az"],"ge":["ge"],"kz":["h2","#00AFCA","#FFD700"],
     "uz":["h3","#1EB53A","#fff","#CE1126"],"mn":["v3","#C4272F","#0067B3","#C4272F"],
     "af":["h3","#000","#D32011","#009A44"],"ir":["h3","#239F40","#fff","#DA0000"],
@@ -503,64 +447,57 @@ function drawFlag(canvas, code) {
     "lb":["h3","#FE0000","#fff","#FE0000","thin"],"jo":["jo"],
     "il":["il"],"ps":["h3","#000","#fff","#007A3D"],
     "ye":["h3","#CE1126","#fff","#000"],"kw":["h3","#007A3D","#fff","#CE1126"],
-    "qa":["qa"],"ae":["ae"],"bd":["bd"],"lk":["h3","#8D153A","#8D153A","#8D153A"],
-    "np":["np"],"mm":["h3","#FECB00","#34B233","#EA2839"],
-    "th":["th_flag"],"la":["h3","#CE1126","#002868","#CE1126"],
+    "qa":["qa"],"ae":["ae"],"bd":["bd"],"np":["np_flag"],
+    "mm":["h3","#FECB00","#34B233","#EA2839"],"la":["h3","#CE1126","#002868","#CE1126"],
     "kh":["h3","#032EA1","#E00025","#032EA1"],"vn":["vn"],
     "my":["my"],"ph":["ph"],"kr":["kr"],"kp":["h3","#024FA2","#fff","#024FA2"],
     "ma":["star_red","#C1272D","#006233"],"dz":["h2","#006233","#fff"],
-    "tn":["tn"],"ly":["h3","#000","#009A44","#000"],
-    "sd":["h3","#D21034","#fff","#000"],"et":["h3","#078930","#FCDD09","#DA121A"],
-    "ke":["h3","#006600","#fff","#BB0000"],"tz":["h3","#1EB53A","#FCD116","#000"],
-    "ug":["h3","#000","#FCDC04","#D90000"],"rw":["h3","#20603D","#FAD201","#E5BE01"],
-    "gh":["h3","#006B3F","#FCD116","#CE1126"],"sn":["v3","#00853F","#FDEF42","#E31B23"],
-    "ml":["v3","#14B53A","#FCD116","#CE1126"],"gn":["v3","#CE1126","#FCD116","#009460"],
-    "ci":["v3","#F77F00","#fff","#009A44"],"cm":["v3","#007A5E","#CE1126","#FCD116"],
-    "bf":["h2","#EF2B2D","#009A00"],"ne":["h3","#E05206","#fff","#0DB02B"],
-    "td":["v3","#002664","#FECB00","#C60C30"],"cf":["h3","#003082","#fff","#289728"],
-    "cd":["h3","#007FFF","#F7D918","#CE1126"],"cg":["v3","#009543","#FBDE4A","#DC241F"],
-    "ao":["h2","#CC0000","#000"],"mz":["h3","#009A44","#fff","#000"],
-    "zm":["zm"],"zw":["zw"],"na":["h3","#003580","#fff","#009A44"],
-    "mg":["v2","#FC3D32","#007E3A"],"mw":["h3","#000","#CE1126","#339E35"],
-    "so":["so"],"dj":["dj"],"er":["er"],"ga":["h3","#009E60","#FCD116","#003F87"],
-    "sl":["h3","#1EB53A","#fff","#0072C6"],"gw":["h3","#CE1126","#FCD116","#009A44"],
-    "mr":["green_text"],"gm":["h3","#3A7728","#fff","#CE1126"],
-    "co":["h3","#FCD116","#003087","#CE1126"],"ve":["h3","#CF142B","#00247D","#CF142B"],
-    "gy":["h3","#009E60","#fff","#CE1126"],"sr":["h3","#377E3F","#fff","#B40A2D"],
-    "ec":["h3","#FFD100","#003893","#FF0000"],"pe":["v3","#D91023","#fff","#D91023"],
-    "bo":["h3","#D52B1E","#F4E400","#007A33"],"py":["h3","#D52B1E","#fff","#0038A8"],
-    "uy":["uy"],"cl":["h2","#D52B1E","#fff"],"gt":["v3","#4997D0","#fff","#4997D0"],
-    "hn":["h3","#0073CF","#fff","#0073CF"],"sv":["h3","#0F47AF","#fff","#0F47AF"],
-    "cr":["h3","#002B7F","#fff","#CE1126"],"pa":["pa"],"cu":["cu"],
-    "jm":["jm"],"ht":["h2","#00209F","#D21034"],"do":["do"],"tt":["h3","#CE1126","#fff","#000"],
-    "ba":["h3","#002395","#FCD116","#002395"],"si":["h3","#003DA5","#fff","#003DA5"],
-    "mk":["star_sun","#CE2028","#F7D900"],"me":["h3","#D4AF37","#006400","#D4AF37"],
-    "al":["al"],"lt":["h3","#FDB913","#006A44","#C1272D"],
-    "cy":["h2","#fff","#4E5B31"],"ps":["h3","#000","#fff","#007A3D"],
-    "rs":["h3","#C6363C","#0C4076","#fff"],"tm":["h3","#1DB954","#fff","#1DB954"],
+    "tn":["tn"],"ly":["h3","#000","#009A44","#000"],"sd":["h3","#D21034","#fff","#000"],
+    "et":["h3","#078930","#FCDD09","#DA121A"],"ke":["h3","#006600","#fff","#BB0000"],
+    "tz":["h3","#1EB53A","#FCD116","#000"],"ug":["h3","#000","#FCDC04","#D90000"],
+    "rw":["h3","#20603D","#FAD201","#E5BE01"],"gh":["h3","#006B3F","#FCD116","#CE1126"],
+    "sn":["v3","#00853F","#FDEF42","#E31B23"],"ml":["v3","#14B53A","#FCD116","#CE1126"],
+    "gn":["v3","#CE1126","#FCD116","#009460"],"ci":["v3","#F77F00","#fff","#009A44"],
+    "cm":["v3","#007A5E","#CE1126","#FCD116"],"bf":["h2","#EF2B2D","#009A00"],
+    "ne":["h3","#E05206","#fff","#0DB02B"],"td":["v3","#002664","#FECB00","#C60C30"],
+    "cf":["h3","#003082","#fff","#289728"],"cd":["h3","#007FFF","#F7D918","#CE1126"],
+    "cg":["v3","#009543","#FBDE4A","#DC241F"],"ao":["h2","#CC0000","#000"],
+    "mz":["h3","#009A44","#fff","#000"],"zm":["zm"],"zw":["zw"],
+    "na":["h3","#003580","#fff","#009A44"],"mg":["v2","#FC3D32","#007E3A"],
+    "mw":["h3","#000","#CE1126","#339E35"],"so":["so"],"dj":["dj"],"er":["er"],
+    "ga":["h3","#009E60","#FCD116","#003F87"],"sl":["h3","#1EB53A","#fff","#0072C6"],
+    "gm":["h3","#3A7728","#fff","#CE1126"],"co":["h3","#FCD116","#003087","#CE1126"],
+    "ve":["h3","#CF142B","#00247D","#CF142B"],"gy":["h3","#009E60","#fff","#CE1126"],
+    "sr":["h3","#377E3F","#fff","#B40A2D"],"ec":["h3","#FFD100","#003893","#FF0000"],
+    "pe":["v3","#D91023","#fff","#D91023"],"bo":["h3","#D52B1E","#F4E400","#007A33"],
+    "py":["h3","#D52B1E","#fff","#0038A8"],"uy":["uy"],"cl":["h2","#D52B1E","#fff"],
+    "gt":["v3","#4997D0","#fff","#4997D0"],"hn":["h3","#0073CF","#fff","#0073CF"],
+    "sv":["h3","#0F47AF","#fff","#0F47AF"],"cr":["h3","#002B7F","#fff","#CE1126"],
+    "pa":["pa"],"cu":["cu"],"jm":["jm"],"ht":["h2","#00209F","#D21034"],
+    "do":["do"],"ba":["h3","#002395","#FCD116","#002395"],
+    "mk":["star_sun","#CE2028","#F7D900"],"al":["al"],
+    "cy":["h2","#fff","#4E5B31"],"tm":["h3","#1DB954","#fff","#1DB954"],
     "tj":["h3","#CC0000","#fff","#006600"],"kg":["h3","#E8112D","#FEDD00","#E8112D"],
-    "np":["np_flag"]
+    "lk":["h3","#8D153A","#8D153A","#8D153A"],"th":["th_flag"],
+    "pk":["pk"],"gw":["h3","#CE1126","#FCD116","#009A44"],
+    "km":["h3","#3A75C4","#fff","#006233"],"mu":["h3","#EA2839","#1A206D","#00A551"],
+    "bt":["h2","#FF8000","#CC0000"],"si":["h3","#003DA5","#fff","#003DA5"],
+    "me":["h3","#D4AF37","#006400","#D4AF37"]
   };
 
   function star(cx,cy,r,p,fill){
-    ctx.fillStyle=fill; ctx.beginPath();
+    ctx.fillStyle=fill;ctx.beginPath();
     for(let i=0;i<p*2;i++){const a=Math.PI/p*i-Math.PI/2;const ri=i%2?r*.4:r;ctx.lineTo(cx+ri*Math.cos(a),cy+ri*Math.sin(a));}
-    ctx.closePath(); ctx.fill();
+    ctx.closePath();ctx.fill();
   }
-
   const d=fd[code];
-  if(!d){
-    ctx.fillStyle='#162d4a'; ctx.fillRect(0,0,W,H);
-    ctx.fillStyle='#4a6080'; ctx.font=`bold ${H*.35}px monospace`;
-    ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(code.toUpperCase(),W/2,H/2); return;
-  }
+  if(!d){ctx.fillStyle='#162d4a';ctx.fillRect(0,0,W,H);ctx.fillStyle='#4a6080';ctx.font=`bold ${H*.35}px monospace`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(code.toUpperCase(),W/2,H/2);return;}
   const t=d[0];
   if(t==='h3'){const th=d[4]==='thin';const h1=th?H*.25:H/3;const h2=th?H*.5:H/3;ctx.fillStyle=d[1];ctx.fillRect(0,0,W,h1);ctx.fillStyle=d[2];ctx.fillRect(0,h1,W,h2);ctx.fillStyle=d[3];ctx.fillRect(0,h1+h2,W,H-h1-h2);}
   else if(t==='h2'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W,H/2);ctx.fillStyle=d[2];ctx.fillRect(0,H/2,W,H/2);}
   else if(t==='v3'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W/3,H);ctx.fillStyle=d[2];ctx.fillRect(W/3,0,W/3,H);ctx.fillStyle=d[3];ctx.fillRect(2*W/3,0,W/3,H);}
   else if(t==='v2'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W/2,H);ctx.fillStyle=d[2];ctx.fillRect(W/2,0,W/2,H);}
-  else if(t==='cross'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W,H);const cx=W*.375,th=H*.25;ctx.fillStyle=d[2];ctx.fillRect(0,(H-th)/2,W,th);ctx.fillRect(cx-th/2,0,th,H);}
+  else if(t==='cross'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W,H);const cx=W*.375,th2=H*.25;ctx.fillStyle=d[2];ctx.fillRect(0,(H-th2)/2,W,th2);ctx.fillRect(cx-th2/2,0,th2,H);}
   else if(t==='cross3'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W,H);const cx=W*.375,thick=H*.28,thin2=H*.16;ctx.fillStyle=d[3];ctx.fillRect(0,(H-thick)/2,W,thick);ctx.fillRect(cx-thick/2,0,thick,H);ctx.fillStyle=d[2];ctx.fillRect(0,(H-thin2)/2,W,thin2);ctx.fillRect(cx-thin2/2,0,thin2,H);}
   else if(t==='swiss'){ctx.fillStyle='#FF0000';ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff';const cx=W/2,cy=H/2,a=H*.2,b=H*.4;ctx.fillRect(cx-a/2,cy-b/2,a,b);ctx.fillRect(cx-b/2,cy-a/2,b,a);}
   else if(t==='union'){ctx.fillStyle='#012169';ctx.fillRect(0,0,W,H);ctx.strokeStyle='#fff';ctx.lineWidth=H*.3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W,H);ctx.stroke();ctx.beginPath();ctx.moveTo(W,0);ctx.lineTo(0,H);ctx.stroke();ctx.strokeStyle='#C8102E';ctx.lineWidth=H*.15;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W,H);ctx.stroke();ctx.beginPath();ctx.moveTo(W,0);ctx.lineTo(0,H);ctx.stroke();ctx.fillStyle='#fff';ctx.fillRect(W/2-H*.15,0,H*.3,H);ctx.fillRect(0,H/2-H*.15,W,H*.3);ctx.fillStyle='#C8102E';ctx.fillRect(W/2-H*.1,0,H*.2,H);ctx.fillRect(0,H/2-H*.1,W,H*.2);}
@@ -590,10 +527,10 @@ function drawFlag(canvas, code) {
   else if(t==='do'){ctx.fillStyle='#002D62';ctx.fillRect(0,0,W/2,H/2);ctx.fillStyle='#CF142B';ctx.fillRect(W/2,0,W/2,H/2);ctx.fillStyle='#CF142B';ctx.fillRect(0,H/2,W/2,H/2);ctx.fillStyle='#002D62';ctx.fillRect(W/2,H/2,W/2,H/2);ctx.fillStyle='#fff';ctx.fillRect(W*0.35,0,W*.3,H);ctx.fillRect(0,H*.35,W,H*.3);}
   else if(t==='uy'){for(let i=0;i<9;i++){ctx.fillStyle=i%2===0?'#fff':'#74ACDF';ctx.fillRect(0,i*H/9,W,H/9);}ctx.fillStyle='#fff';ctx.fillRect(0,0,W*.4,H*4/9);}
   else if(t==='so'){ctx.fillStyle='#4189DD';ctx.fillRect(0,0,W,H);star(W/2,H/2,H*.3,5,'#fff');}
-  else if(t==='dj'){ctx.fillStyle='#6AB2E7';ctx.fillRect(0,0,W,H/2);ctx.fillStyle='#12AD2B';ctx.fillRect(0,H/2,W,H/2);ctx.fillStyle='#fff';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W*.38,H/2);ctx.lineTo(0,H);ctx.closePath();ctx.fill();ctx.fillStyle='#D7141A';star(W*.14,H/2,H*.1,5,'#D7141A');}
+  else if(t==='dj'){ctx.fillStyle='#6AB2E7';ctx.fillRect(0,0,W,H/2);ctx.fillStyle='#12AD2B';ctx.fillRect(0,H/2,W,H/2);ctx.fillStyle='#fff';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W*.38,H/2);ctx.lineTo(0,H);ctx.closePath();ctx.fill();star(W*.14,H/2,H*.1,5,'#D7141A');}
   else if(t==='er'){ctx.fillStyle='#4189DD';ctx.fillRect(0,0,W,H/3);ctx.fillStyle='#4CAF50';ctx.fillRect(0,H/3,W,H/3);ctx.fillStyle='#CE1126';ctx.fillRect(0,2*H/3,W,H/3);ctx.fillStyle='#CE1126';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W*.5,H/2);ctx.lineTo(0,H);ctx.closePath();ctx.fill();}
   else if(t==='zm'){ctx.fillStyle='#198A00';ctx.fillRect(0,0,W,H);ctx.fillStyle='#DE2010';ctx.fillRect(W*.75,0,W*.083,H);ctx.fillStyle='#000';ctx.fillRect(W*.833,0,W*.083,H);ctx.fillStyle='#EF7D00';ctx.fillRect(W*.916,0,W*.084,H);}
-  else if(t==='zw'){for(let i=0;i<7;i++){const c=['#006400','#FFD200','#DE2010','#000','#DE2010','#FFD200','#006400'];ctx.fillStyle=c[i];ctx.fillRect(0,i*H/7,W,H/7);}ctx.fillStyle='#fff';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W*.3,H/2);ctx.lineTo(0,H);ctx.closePath();ctx.fill();}
+  else if(t==='zw'){const c2=['#006400','#FFD200','#DE2010','#000','#DE2010','#FFD200','#006400'];for(let i=0;i<7;i++){ctx.fillStyle=c2[i];ctx.fillRect(0,i*H/7,W,H/7);}ctx.fillStyle='#fff';ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W*.3,H/2);ctx.lineTo(0,H);ctx.closePath();ctx.fill();}
   else if(t==='star_red'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W,H);ctx.strokeStyle=d[2];ctx.lineWidth=H*.04;const cx2=W/2,cy2=H/2,r2=H*.28,p2=5;ctx.beginPath();for(let i=0;i<p2*2;i++){const a=Math.PI/p2*i-Math.PI/2;const ri=i%2?r2*.4:r2;ctx.lineTo(cx2+ri*Math.cos(a),cy2+ri*Math.sin(a));}ctx.closePath();ctx.stroke();}
   else if(t==='star_sun'){ctx.fillStyle=d[1];ctx.fillRect(0,0,W,H);ctx.fillStyle=d[2];ctx.beginPath();for(let i=0;i<24;i++){const a=Math.PI/12*i;const r2=i%2?H*.35:H*.2;ctx.lineTo(W/2+r2*Math.cos(a),H/2+r2*Math.sin(a));}ctx.closePath();ctx.fill();}
   else if(t==='green_text'){ctx.fillStyle='#006233';ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff';ctx.font=`bold ${H*.35}px sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('☪',W/2,H/2);}
@@ -605,9 +542,9 @@ function drawFlag(canvas, code) {
   else if(t==='pk'){ctx.fillStyle='#01411C';ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff';ctx.fillRect(0,0,W*.25,H);ctx.beginPath();ctx.arc(W*.58,H/2,H*.28,0,Math.PI*2);ctx.fill();ctx.fillStyle='#01411C';ctx.beginPath();ctx.arc(W*.64,H/2,H*.24,0,Math.PI*2);ctx.fill();}
 }
 
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 // MAP SETUP
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 let W=window.innerWidth, H=window.innerHeight;
 const svg=d3.select('#world-map');
 let projMode='flat';
@@ -616,7 +553,6 @@ let path=d3.geoPath().projection(projection);
 const g=svg.append('g');
 g.append('path').datum({type:'Sphere'}).attr('class','sphere').attr('d',path);
 g.append('path').datum(d3.geoGraticule()()).attr('class','graticule').attr('d',path);
-
 let currentT=d3.zoomIdentity;
 const zoom=d3.zoom().scaleExtent([.7,14]).on('zoom',e=>{currentT=e.transform;g.attr('transform',currentT);});
 svg.call(zoom);
@@ -637,54 +573,33 @@ function setProj(mode){
   if(mode==='globe') startGlobeRotation();
   else stopGlobeRotation();
 }
-
 let rotTimer=null;
 function startGlobeRotation(){
   if(rotTimer) return;
   let r=0;
-  rotTimer=d3.interval(()=>{
-    r+=.15;
-    projection.rotate([r,0]);
-    path=d3.geoPath().projection(projection);
-    g.select('.sphere').attr('d',path);
-    g.selectAll('.graticule').attr('d',path);
-    g.selectAll('.country').attr('d',path);
-  },16);
+  rotTimer=d3.interval(()=>{r+=.15;projection.rotate([r,0]);path=d3.geoPath().projection(projection);g.select('.sphere').attr('d',path);g.selectAll('.graticule').attr('d',path);g.selectAll('.country').attr('d',path);},16);
 }
 function stopGlobeRotation(){if(rotTimer){rotTimer.stop();rotTimer=null;}}
 
-// Load map
 fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
 .then(r=>r.json())
 .then(world=>{
   const countries=topojson.feature(world,world.objects.countries);
-  g.selectAll('.country')
-    .data(countries.features)
-    .join('path')
-    .attr('class','country')
-    .attr('d',path)
+  g.selectAll('.country').data(countries.features).join('path')
+    .attr('class','country').attr('d',path)
     .on('mouseover',function(event,d){
       const id=String(d.id).padStart(3,'0');
-      const name=NAMES[id];
-      if(!name) return;
-      const tip=document.getElementById('tip');
+      const name=NAMES[id]; if(!name) return;
       document.getElementById('tt-name').textContent=name;
-      const fc=document.getElementById('tt-flag');
-      drawFlag(fc,ALPHA2[name]||'');
-      tip.style.opacity='1';
-      tip.style.left=(event.pageX+14)+'px';
-      tip.style.top=(event.pageY-28)+'px';
-    })
-    .on('mousemove',event=>{
+      drawFlag(document.getElementById('tt-flag'),ALPHA2[name]||'');
       const tip=document.getElementById('tip');
-      tip.style.left=(event.pageX+14)+'px';
-      tip.style.top=(event.pageY-28)+'px';
+      tip.style.opacity='1';tip.style.left=(event.pageX+14)+'px';tip.style.top=(event.pageY-28)+'px';
     })
+    .on('mousemove',event=>{const tip=document.getElementById('tip');tip.style.left=(event.pageX+14)+'px';tip.style.top=(event.pageY-28)+'px';})
     .on('mouseout',()=>document.getElementById('tip').style.opacity='0')
     .on('click',function(event,d){
       const id=String(d.id).padStart(3,'0');
-      const name=NAMES[id];
-      if(!name) return;
+      const name=NAMES[id]; if(!name) return;
       stopGlobeRotation();
       g.selectAll('.country').classed('active',false).classed('dimmed',true);
       d3.select(this).classed('active',true).classed('dimmed',false);
@@ -693,48 +608,32 @@ fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
     });
 });
 
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 // SEARCH
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 const allNames=Object.values(NAMES).filter((v,i,a)=>a.indexOf(v)===i).sort();
 const sInput=document.getElementById('s-input');
 const sResults=document.getElementById('s-results');
-
 sInput.addEventListener('input',function(){
   const q=this.value.toLowerCase().trim();
   if(!q){sResults.style.display='none';return;}
   const matches=allNames.filter(n=>n.toLowerCase().includes(q)).slice(0,8);
   if(!matches.length){sResults.style.display='none';return;}
-  sResults.innerHTML=matches.map(n=>{
-    const code=ALPHA2[n]||'';
-    return `<div class="s-item" onclick="selectCountry('${n.replace(/'/g,"\\'")}')">
-      <canvas class="s-item-flag" width="40" height="28" id="sf-${code}"></canvas>
-      <span class="s-item-name">${n}</span>
-      <span class="s-item-code">${code.toUpperCase()}</span>
-    </div>`;
-  }).join('');
+  sResults.innerHTML=matches.map(n=>{const code=ALPHA2[n]||'';return `<div class="s-item" onclick="selectCountry('${n.replace(/'/g,"\\'")}')"><canvas class="s-item-flag" width="40" height="28" id="sf-${code}"></canvas><span class="s-item-name">${n}</span><span class="s-item-code">${code.toUpperCase()}</span></div>`;}).join('');
   sResults.style.display='block';
   matches.forEach(n=>{const code=ALPHA2[n]||'';const c=document.getElementById('sf-'+code);if(c)drawFlag(c,code);});
 });
-
 sInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const q=sInput.value.toLowerCase().trim();const m=allNames.find(n=>n.toLowerCase().includes(q));if(m)selectCountry(m);}});
 document.addEventListener('click',e=>{if(!document.getElementById('search-wrap').contains(e.target))sResults.style.display='none';});
-
 function selectCountry(name){
   sInput.value='';sResults.style.display='none';
-  g.selectAll('.country').each(function(d){
-    const id=String(d.id).padStart(3,'0');
-    if(NAMES[id]===name){
-      g.selectAll('.country').classed('active',false).classed('dimmed',true);
-      d3.select(this).classed('active',true).classed('dimmed',false);
-    }
-  });
+  g.selectAll('.country').each(function(d){const id=String(d.id).padStart(3,'0');if(NAMES[id]===name){g.selectAll('.country').classed('active',false).classed('dimmed',true);d3.select(this).classed('active',true).classed('dimmed',false);}});
   openPanel(name);
 }
 
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 // PANEL
-// ════════════════════════════════════════════════════
+// ══════════════════════════════════════════
 let activeCountry=null;
 document.getElementById('p-close').onclick=closePanel;
 function closePanel(){
@@ -760,73 +659,51 @@ async function openPanel(name){
 }
 
 async function fetchWeather(name){
-  const cap=CAPITALS[name];
-  if(!cap) return;
+  const cap=CAPITALS[name]; if(!cap) return;
   try{
     const url=`https://api.open-meteo.com/v1/forecast?latitude=${cap.lat}&longitude=${cap.lon}&current=temperature_2m,weathercode,windspeed_10m,relativehumidity_2m,apparent_temperature,precipitation&timezone=auto`;
     const d=await(await fetch(url)).json();
     const c=d.current;
     const[desc,icon]=WMO[c.weathercode]||['—','🌡️'];
     const wx=`<div class="sec"><div class="sec-ttl">Météo à la capitale</div>
-    <div class="wx-card">
-      <div class="wx-main">
-        <div class="wx-icon">${icon}</div>
-        <div><div class="wx-temp">${Math.round(c.temperature_2m)}°C</div>
-        <div class="wx-desc">${desc}</div></div>
-      </div>
-      <div class="wx-grid">
-        <div class="wx-stat"><div class="wx-stat-lbl">Ressenti</div><div class="wx-stat-val">${Math.round(c.apparent_temperature)}°C</div></div>
-        <div class="wx-stat"><div class="wx-stat-lbl">Humidité</div><div class="wx-stat-val">${c.relativehumidity_2m}%</div></div>
-        <div class="wx-stat"><div class="wx-stat-lbl">Vent</div><div class="wx-stat-val">${Math.round(c.windspeed_10m)} km/h</div></div>
-        <div class="wx-stat"><div class="wx-stat-lbl">Précip.</div><div class="wx-stat-val">${c.precipitation} mm</div></div>
-      </div>
-    </div></div>`;
-    const body=document.getElementById('p-body');
-    body.insertAdjacentHTML('afterbegin',wx);
+    <div class="wx-card"><div class="wx-main"><div class="wx-icon">${icon}</div>
+    <div><div class="wx-temp">${Math.round(c.temperature_2m)}°C</div><div class="wx-desc">${desc}</div></div></div>
+    <div class="wx-grid">
+      <div class="wx-stat"><div class="wx-stat-lbl">Ressenti</div><div class="wx-stat-val">${Math.round(c.apparent_temperature)}°C</div></div>
+      <div class="wx-stat"><div class="wx-stat-lbl">Humidité</div><div class="wx-stat-val">${c.relativehumidity_2m}%</div></div>
+      <div class="wx-stat"><div class="wx-stat-lbl">Vent</div><div class="wx-stat-val">${Math.round(c.windspeed_10m)} km/h</div></div>
+      <div class="wx-stat"><div class="wx-stat-lbl">Précip.</div><div class="wx-stat-val">${c.precipitation} mm</div></div>
+    </div></div></div>`;
+    document.getElementById('p-body').insertAdjacentHTML('afterbegin',wx);
   }catch(e){}
 }
 
-async function fetchAI(name,code){
+// ══════════════════════════════════════════
+// AI via serverless proxy — clé JAMAIS côté client
+// ══════════════════════════════════════════
+async function fetchAI(name, code){
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{
+    const res=await fetch('/api/ask',{
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514',max_tokens:1000,
-        system:`Tu es un expert géopolitique. Réponds UNIQUEMENT en JSON valide, sans backticks ni markdown, avec ces clés exactes:
-{"capital":"...","population":"...","superficie":"...","pib":"...","langue":"...","monnaie":"...","systeme":"...","stabilite":"stable|tensions|conflit|guerre","religion":"...","description":"...","actualite":"...","badges":["badge1","badge2"]}
-Badges valides: Démocratie, Dictature, Monarchie, Fédération, Théocratie, OTAN, UE, BRICS, G7, G20, ONU, Stable, Tensions, Conflit, Guerre, Nucléaire, Pétrole, Économie forte, En développement, Île, Enclavé, Arctique`,
-        messages:[{role:'user',content:`Pays: ${name}`}]
-      })
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({country:name, type:'info'})
     });
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data=await res.json();
-    const text=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('');
+    const {text}=await res.json();
     let info;
-    try{info=JSON.parse(text);}catch{const m=text.match(/\{[\s\S]*\}/);if(m)info=JSON.parse(m[0]);else throw new Error('Parse failed');}
+    try{info=JSON.parse(text);}catch{const m=text.match(/\{[\s\S]*\}/);if(m)info=JSON.parse(m[0]);else throw new Error('Parse JSON failed');}
     renderPanel(name,info);
   }catch(e){
-    document.getElementById('p-body').innerHTML+=`<div class="err-box">⚠️ Erreur IA: ${e.message}<br>Vérifiez votre clé API dans le code.</div>
+    document.getElementById('p-body').innerHTML+=`<div class="err-box">⚠️ Erreur IA: ${e.message}</div>
     <button class="retry-btn" onclick="fetchAI('${name.replace(/'/g,"\\'")}','${ALPHA2[name]||''}')">🔄 Réessayer</button>`;
     document.getElementById('p-capital').textContent='—';
   }
 }
 
 function renderPanel(name,info){
-  const code=ALPHA2[name]||'';
   document.getElementById('p-capital').textContent=info.capital||'—';
-  // Badges
-  const badgeMap={
-    'Démocratie':'b-blue','Dictature':'b-red','Monarchie':'b-gold','Fédération':'b-blue',
-    'Théocratie':'b-purple','OTAN':'b-blue','UE':'b-blue','BRICS':'b-orange',
-    'G7':'b-gold','G20':'b-orange','ONU':'b-blue','Stable':'b-green',
-    'Tensions':'b-orange','Conflit':'b-red','Guerre':'b-red',
-    'Nucléaire':'b-purple','Pétrole':'b-gold','Économie forte':'b-green',
-    'En développement':'b-orange','Île':'b-blue','Enclavé':'b-orange','Arctique':'b-blue'
-  };
-  const badges=(info.badges||[]).map(b=>`<span class="badge ${badgeMap[b]||'b-blue'}">${b}</span>`).join('');
-  document.getElementById('p-badges').innerHTML=badges;
-  // Body
+  const badgeMap={'Démocratie':'b-blue','Dictature':'b-red','Monarchie':'b-gold','Fédération':'b-blue','Théocratie':'b-purple','OTAN':'b-blue','UE':'b-blue','BRICS':'b-orange','G7':'b-gold','G20':'b-orange','ONU':'b-blue','Stable':'b-green','Tensions':'b-orange','Conflit':'b-red','Guerre':'b-red','Nucléaire':'b-purple','Pétrole':'b-gold','Économie forte':'b-green','En développement':'b-orange','Île':'b-blue','Enclavé':'b-orange','Arctique':'b-blue'};
+  document.getElementById('p-badges').innerHTML=(info.badges||[]).map(b=>`<span class="badge ${badgeMap[b]||'b-blue'}">${b}</span>`).join('');
   document.getElementById('p-body').innerHTML=`
   <div class="sec fade"><div class="sec-ttl">Informations</div>
   <div class="info-grid">
@@ -849,7 +726,6 @@ function renderPanel(name,info){
   document.getElementById('q-send').disabled=false;
 }
 
-// AI Q bar
 async function askQ(){
   if(!activeCountry) return;
   const inp=document.getElementById('q-input');
@@ -860,17 +736,12 @@ async function askQ(){
   ans.className='show';
   ans.innerHTML='<div class="q-thinking"><div class="q-spin"></div>Analyse en cours…</div>';
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{
+    const res=await fetch('/api/ask',{
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514',max_tokens:600,
-        system:`Expert géopolitique. Réponds en français, concis (3-5 phrases), factuel et actuel.`,
-        messages:[{role:'user',content:`Pays: ${activeCountry}\nQuestion: ${q}`}]
-      })
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({country:activeCountry, question:q, type:'qa'})
     });
-    const data=await res.json();
-    const text=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('');
+    const {text}=await res.json();
     ans.innerHTML=`<span style="font-family:'Space Mono',monospace;font-size:9px;color:var(--a1);text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:6px">Réponse IA</span>${text}`;
   }catch(e){ans.innerHTML=`<span style="color:#e8a0b8">Erreur: ${e.message}</span>`;}
   finally{inp.disabled=false;btn.disabled=false;inp.value='';inp.focus();}
@@ -878,15 +749,12 @@ async function askQ(){
 document.getElementById('q-send').onclick=askQ;
 document.getElementById('q-input').addEventListener('keydown',e=>{if(e.key==='Enter')askQ();});
 
-// Resize
 window.addEventListener('resize',()=>{
   W=window.innerWidth;H=window.innerHeight;
   if(projMode==='flat') projection.scale(W/6.5).translate([W/2,H/2]);
   else projection.scale(Math.min(W,H)*.42).translate([W/2,H/2]);
   path=d3.geoPath().projection(projection);
-  g.select('.sphere').attr('d',path);
-  g.selectAll('.graticule').attr('d',path);
-  g.selectAll('.country').attr('d',path);
+  g.select('.sphere').attr('d',path);g.selectAll('.graticule').attr('d',path);g.selectAll('.country').attr('d',path);
 });
 </script>
 </body>

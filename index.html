@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorldPulse — Live Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg:        #07080d;
+      --surface:   #0e1018;
+      --border:    #1d2030;
+      --accent:    #e8ff47;
+      --accent2:   #47c8ff;
+      --text:      #e4e6f0;
+      --muted:     #5a5f7a;
+      --card-bg:   #111420;
+      --radius:    12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated background grid */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 48px 48px;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 56px 0 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .timestamp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 16px;
+      width: fit-content;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* ── Section titles ── */
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .section-label { white-space: nowrap; }
+
+    /* ── Weather ── */
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+
+    .weather-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+      transition: border-color 0.2s, transform 0.2s;
+      cursor: default;
+    }
+
+    .weather-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .city-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .flag { font-size: 1.4rem; }
+
+    .city-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .weather-icon {
+      font-size: 2.2rem;
+      margin: 4px 0;
+    }
+
+    .temp {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.4rem;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .weather-desc {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 4px 0 12px;
+    }
+
+    .weather-meta {
+      display: flex;
+      gap: 12px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ── News ── */
+    .news-section { margin-bottom: 48px; }
+
+    .news-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .news-card {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: start;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .news-card:hover {
+      border-color: var(--accent2);
+      background: #131624;
+    }
+
+    .news-index {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--accent);
+      padding-top: 3px;
+    }
+
+    .news-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .news-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--accent2); text-decoration: none; }
+
+    /* Animate cards in */
+    .weather-card, .news-card {
+      animation: fadeUp 0.4s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .weather-grid { grid-template-columns: repeat(2, 1fr); }
+      footer { flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="eyebrow">🌍 WorldPulse — Auto-generated dashboard</div>
+      <h1>World <em>Weather</em><br>& Latest <em>News</em></h1>
+      <p class="subtitle">Updated automatically every day via GitHub Actions.</p>
+      <div class="timestamp-badge">
+        <div class="live-dot"></div>
+        Friday 10 April 2026 — 19:05 UTC
+      </div>
+    </header>
+
+    <section style="margin-bottom: 56px;">
+      <h2 class="section-title"><span class="section-label">🌡️ Weather Around the World</span></h2>
+      <div class="weather-grid">
+        
+      </div>
+    </section>
+
+    
+
+    <footer>
+      <span>WorldPulse Bot — Real data, real commits ✦ <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> + <a href="https://bbc.com" target="_blank">BBC News</a></span>
+      <span>Generated Friday 10 April 2026 — 19:05 UTC</span>
+    </footer>
+  </div>
+</body>
+</html>

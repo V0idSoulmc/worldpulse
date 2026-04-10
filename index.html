@@ -3,515 +3,145 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WorldPulse — Live Dashboard</title>
+  <title>WorldPulse — Interactive Map</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <style>
-    :root {
-      --bg:        #07080d;
-      --surface:   #0e1018;
-      --border:    #1d2030;
-      --accent:    #e8ff47;
-      --accent2:   #47c8ff;
-      --text:      #e4e6f0;
-      --muted:     #5a5f7a;
-      --card-bg:   #111420;
-      --radius:    12px;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Outfit', sans-serif;
-      font-weight: 300;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    /* Animated background grid */
-    body::before {
-      content: '';
-      position: fixed; inset: 0;
-      background-image:
-        linear-gradient(var(--border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border) 1px, transparent 1px);
-      background-size: 48px 48px;
-      opacity: 0.4;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-
-    /* ── Header ── */
-    header {
-      padding: 56px 0 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 48px;
-    }
-
-    .eyebrow {
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      line-height: 1;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-
-    h1 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-    .timestamp-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      padding: 6px 16px;
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--muted);
-      margin-top: 16px;
-      width: fit-content;
-    }
-
-    .live-dot {
-      width: 6px; height: 6px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
-    }
-
-    /* ── Section titles ── */
-    .section-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .section-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
-    .section-label { white-space: nowrap; }
-
-    /* ── Weather ── */
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 16px;
-      margin-bottom: 56px;
-    }
-
-    .weather-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 16px;
-      transition: border-color 0.2s, transform 0.2s;
-      cursor: default;
-    }
-
-    .weather-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .city-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-
-    .flag { font-size: 1.4rem; }
-
-    .city-name {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-
-    .weather-icon {
-      font-size: 2.2rem;
-      margin: 4px 0;
-    }
-
-    .temp {
-      font-family: 'DM Serif Display', serif;
-      font-size: 2.4rem;
-      color: #fff;
-      line-height: 1;
-    }
-
-    .weather-desc {
-      font-size: 12px;
-      color: var(--muted);
-      margin: 4px 0 12px;
-    }
-
-    .weather-meta {
-      display: flex;
-      gap: 12px;
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    /* ── News ── */
-    .news-section { margin-bottom: 48px; }
-
-    .news-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .news-card {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 16px;
-      align-items: start;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 0.2s, background 0.2s;
-    }
-
-    .news-card:hover {
-      border-color: var(--accent2);
-      background: #131624;
-    }
-
-    .news-index {
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--accent);
-      padding-top: 3px;
-    }
-
-    .news-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.4;
-      margin-bottom: 4px;
-    }
-
-    .news-desc {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    /* ── Footer ── */
-    footer {
-      margin-top: 64px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    footer a { color: var(--accent2); text-decoration: none; }
-
-    /* Animate cards in */
-    .weather-card, .news-card {
-      animation: fadeUp 0.4s ease both;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 640px) {
-      .weather-grid { grid-template-columns: repeat(2, 1fr); }
-      footer { flex-direction: column; gap: 8px; text-align: center; }
-    }
+    :root{--bg:#07080d;--surface:#0e1018;--border:#1d2030;--accent:#e8ff47;--accent2:#47c8ff;--text:#e4e6f0;--muted:#5a5f7a;--card:#111420;--r:12px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;overflow:hidden}
+    body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;display:flex;flex-direction:column}
+    header{flex-shrink:0;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:var(--bg);z-index:1000}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
+    .logo-text{font-family:'DM Serif Display',serif;font-size:1.2rem;color:#fff}
+    .logo-text em{font-style:italic;color:var(--accent)}
+    .header-meta{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+    .layout{flex:1;display:flex;overflow:hidden;position:relative}
+    #map{flex:1}
+    .leaflet-container{background:#0a0c14!important}
+    .city-marker{width:36px;height:36px;background:var(--card);border:2px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;transition:border-color .2s,transform .2s}
+    .city-marker:hover,.city-marker.active{border-color:var(--accent);transform:scale(1.2)}
+    #panel{width:360px;flex-shrink:0;background:var(--surface);border-left:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column;transition:width .3s ease}
+    #panel.hidden{width:0;overflow:hidden;border:none}
+    .panel-header{padding:20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+    .panel-city{font-family:'DM Serif Display',serif;font-size:1.6rem;color:#fff}
+    .panel-close{width:28px;height:28px;background:var(--card);border:1px solid var(--border);border-radius:50%;cursor:pointer;color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:14px;transition:border-color .2s}
+    .panel-close:hover{border-color:var(--accent);color:var(--text)}
+    .weather-block{padding:20px;border-bottom:1px solid var(--border)}
+    .section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+    .weather-main{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+    .weather-icon-big{font-size:3rem}
+    .weather-temp{font-family:'DM Serif Display',serif;font-size:3rem;color:#fff;line-height:1}
+    .weather-desc-text{font-size:13px;color:var(--muted);margin-top:2px}
+    .weather-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .stat-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+    .stat-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:2px}
+    .stat-value{font-size:15px;font-weight:600;color:var(--text)}
+    .news-block{padding:20px;flex:1}
+    .news-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;color:inherit;transition:opacity .2s}
+    .news-item:hover{opacity:.7}
+    .news-item:last-child{border-bottom:none}
+    .news-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);flex-shrink:0;padding-top:2px}
+    .news-title-text{font-size:13px;font-weight:600;color:var(--text);line-height:1.4}
+    .news-pub{font-size:11px;color:var(--muted);margin-top:3px}
+    .loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;gap:12px;color:var(--muted);font-size:13px}
+    .spinner{width:24px;height:24px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    #hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--border);border-radius:100px;padding:8px 20px;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);pointer-events:none;z-index:999;white-space:nowrap}
+    @media(max-width:700px){#panel{position:fixed;right:0;top:53px;bottom:0;width:100%!important;z-index:2000}#panel.hidden{width:0!important}}
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="eyebrow">🌍 WorldPulse — Auto-generated dashboard</div>
-      <h1>World <em>Weather</em><br>& Latest <em>News</em></h1>
-      <p class="subtitle">Updated automatically every day via GitHub Actions.</p>
-      <div class="timestamp-badge">
-        <div class="live-dot"></div>
-        Friday 10 April 2026 — 20:01 UTC
-      </div>
-    </header>
-
-    <section style="margin-bottom: 56px;">
-      <h2 class="section-title"><span class="section-label">🌡️ Weather Around the World</span></h2>
-      <div class="weather-grid">
-        
-      <div class="weather-card">
-        <div class="city-header">
-          <span class="flag">🇫🇷</span>
-          <span class="city-name">Paris</span>
+  <header>
+    <div class="logo">
+      <div class="logo-dot"></div>
+      <div class="logo-text">World<em>Pulse</em></div>
+    </div>
+    <div class="header-meta" id="last-update">Loading…</div>
+  </header>
+  <div class="layout">
+    <div id="map"></div>
+    <div id="hint">Click a city to see weather &amp; news</div>
+    <div id="panel" class="hidden">
+      <div class="panel-header">
+        <div>
+          <div class="panel-city" id="panel-city">—</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px" id="panel-coords"></div>
         </div>
-        <div class="weather-icon">☁️</div>
-        <div class="temp">14°C</div>
-        <div class="weather-desc">Overcast</div>
-        <div class="weather-meta">
-          <span>💨 9 km/h</span>
-          <span>💧 40%</span>
-        </div>
+        <div class="panel-close" onclick="closePanel()">✕</div>
       </div>
-      <div class="weather-card">
-        <div class="city-header">
-          <span class="flag">🇺🇸</span>
-          <span class="city-name">New York</span>
-        </div>
-        <div class="weather-icon">☀️</div>
-        <div class="temp">15°C</div>
-        <div class="weather-desc">Clear sky</div>
-        <div class="weather-meta">
-          <span>💨 17 km/h</span>
-          <span>💧 56%</span>
-        </div>
+      <div class="weather-block">
+        <div class="section-label">Current weather</div>
+        <div id="weather-content"><div class="loading"><div class="spinner"></div>Fetching weather…</div></div>
       </div>
-      <div class="weather-card">
-        <div class="city-header">
-          <span class="flag">🇯🇵</span>
-          <span class="city-name">Tokyo</span>
-        </div>
-        <div class="weather-icon">☁️</div>
-        <div class="temp">13°C</div>
-        <div class="weather-desc">Overcast</div>
-        <div class="weather-meta">
-          <span>💨 2 km/h</span>
-          <span>💧 99%</span>
-        </div>
+      <div class="news-block">
+        <div class="section-label">Latest world news</div>
+        <div id="news-content"><div class="loading"><div class="spinner"></div>Fetching news…</div></div>
       </div>
-      <div class="weather-card">
-        <div class="city-header">
-          <span class="flag">🇬🇧</span>
-          <span class="city-name">London</span>
-        </div>
-        <div class="weather-icon">☁️</div>
-        <div class="temp">10°C</div>
-        <div class="weather-desc">Overcast</div>
-        <div class="weather-meta">
-          <span>💨 14 km/h</span>
-          <span>💧 53%</span>
-        </div>
-      </div>
-      <div class="weather-card">
-        <div class="city-header">
-          <span class="flag">🇦🇺</span>
-          <span class="city-name">Sydney</span>
-        </div>
-        <div class="weather-icon">🌤️</div>
-        <div class="temp">18°C</div>
-        <div class="weather-desc">Mainly clear</div>
-        <div class="weather-meta">
-          <span>💨 6 km/h</span>
-          <span>💧 63%</span>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    
-    <section class="news-section">
-      <h2 class="section-title"><span class="section-label">World</span></h2>
-      <div class="news-grid">
-        <a class="news-card" href="https://www.bbc.com/news/articles/cge0xre3d27o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">01</div>
-          <div class="news-content">
-            <div class="news-title">Trump says Iran's handling of Strait of Hormuz is 'not the agreement we have'</div>
-            <div class="news-desc">The US president accused Iran of "doing a very poor job" with the waterway as Israel and Lebanon to begin peace talks.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/c93en5q2zl3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">02</div>
-          <div class="news-content">
-            <div class="news-title">Lebanon says ceasefire must be in place before Israel talks</div>
-            <div class="news-desc">Lebanon will only take part in talks with Israel if a ceasefire is already in place, a senior official tells the BBC.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/czrekrzzex1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">03</div>
-          <div class="news-content">
-            <div class="news-title">Palestinian shot dead during Israeli settler attack on occupied West Bank village</div>
-            <div class="news-desc">The killing came as ex-security chiefs warned "government sponsored Jewish terrorism" was out of control.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/c3ex07l1qvpo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">04</div>
-          <div class="news-content">
-            <div class="news-title">Melania Trump denies ties to Jeffrey Epstein and urges hearing for survivors</div>
-            <div class="news-desc">She called rumours that Epstein introduced her to Donald Trump "mean-spirited attempts to defame my reputation".</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cx24pdwx588o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">05</div>
-          <div class="news-content">
-            <div class="news-title">Man accused of coercing wife into sex with 120 men goes on trial in Sweden</div>
-            <div class="news-desc">The 61-year-old denies threatening physical violence and plying his wife with drugs to force her into having sex with strangers.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cr71lkzv49po?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">06</div>
-          <div class="news-content">
-            <div class="news-title">Chimpanzees in Uganda locked in vicious 'civil war', say researchers</div>
-            <div class="news-desc">The once close-knit community of Ngogo chimpanzees have been at loggerheads for the last eight years.</div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="news-section">
-      <h2 class="section-title"><span class="section-label">Technology</span></h2>
-      <div class="news-grid">
-        <a class="news-card" href="https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">01</div>
-          <div class="news-content">
-            <div class="news-title">Dancer with MND performs on stage again through digital avatar</div>
-            <div class="news-desc">Breanna Olson said brainwave tech was able to re-establish the expression and connection she felt had gone.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/czjw0zgz9zyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">02</div>
-          <div class="news-content">
-            <div class="news-title">Meta pulls Facebook ads recruiting for social media addiction lawsuits</div>
-            <div class="news-desc">The Facebook owner recently lost a landmark social media addiction trial in California</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cgld65x396go?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">03</div>
-          <div class="news-content">
-            <div class="news-title">White House staff told not to place bets on prediction markets</div>
-            <div class="news-desc">The gambling platforms have grown in popularity, with some users making wagers on conflicts.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cp3l4kwer5ko?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">04</div>
-          <div class="news-content">
-            <div class="news-title">Mayor warns of London 'disinformation blizzard'</div>
-            <div class="news-desc">Sir Sadiq Khan claims London is being targeted with disinformation portraying it as a city "in decline".</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/c98k91yy4z4o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">05</div>
-          <div class="news-content">
-            <div class="news-title">Amazon to end support for older Kindles, prompting user outcry</div>
-            <div class="news-desc">The move means owners of Kindles released before 2013 will be unable to download new e-books.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/clyd032ej70o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">06</div>
-          <div class="news-content">
-            <div class="news-title">OpenAI pauses UK data centre deal over energy costs and regulation</div>
-            <div class="news-desc">The project was part of a package of tech investment promising the UK could become an AI superpower.</div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="news-section">
-      <h2 class="section-title"><span class="section-label">Science</span></h2>
-      <div class="news-grid">
-        <a class="news-card" href="https://www.bbc.com/news/videos/cn431g7v52qo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">01</div>
-          <div class="news-content">
-            <div class="news-title">How the Artemis crew will splash down on Earth</div>
-            <div class="news-desc">The Artemis crew will return to Earth on 10 April after a 10-day mission that took them around the Moon.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/c2lwvz1pl1no?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">02</div>
-          <div class="news-content">
-            <div class="news-title">Want to help garden birds? Don't feed them in warmer months, says RSPB</div>
-            <div class="news-desc">The UK's largest bird charity has issued new guidance advising people to stop using feeders to help wildlife thrive.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/czx9kvqxeq5o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">03</div>
-          <div class="news-content">
-            <div class="news-title">Pioneering wildlife cameraman Doug Allan dies after falling ill in Nepal</div>
-            <div class="news-desc">The cameraman and photographer won eight Emmy Awards for his work on acclaimed series like Blue Planet alongside Sir David Attenborough.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cj60nkd8nrko?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">04</div>
-          <div class="news-content">
-            <div class="news-title">Has Artemis II shown we can land on the Moon again?</div>
-            <div class="news-desc">The Artemis II mission has been near flawless to date, but has the test flight shown Nasa is ready to send humans to the lunar surface?</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cx23p6j5gxgo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">05</div>
-          <div class="news-content">
-            <div class="news-title">Artemis II crew head for home after travelling further from Earth than anyone before</div>
-            <div class="news-desc">The Artemis II crew go further than any humans before in Nasa's first crewed mission to the Moon in over 50 years.</div>
-          </div>
-        </a>
-        <a class="news-card" href="https://www.bbc.com/news/articles/cyv183v02j3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">
-          <div class="news-index">06</div>
-          <div class="news-content">
-            <div class="news-title">Earthset and a solar eclipse: Nasa releases first images from Moon fly-by</div>
-            <div class="news-desc">The first two images show an 'Earthrise' and the solar eclipse the astronauts viewed.</div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <footer>
-      <span>WorldPulse Bot — Real data, real commits ✦ <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> + <a href="https://bbc.com" target="_blank">BBC News</a></span>
-      <span>Generated Friday 10 April 2026 — 20:01 UTC</span>
-    </footer>
+    </div>
   </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+  const CITIES=[
+    {name:"Paris",flag:"🇫🇷",lat:48.8566,lon:2.3522},
+    {name:"New York",flag:"🇺🇸",lat:40.7128,lon:-74.0060},
+    {name:"Tokyo",flag:"🇯🇵",lat:35.6762,lon:139.6503},
+    {name:"London",flag:"🇬🇧",lat:51.5074,lon:-0.1278},
+    {name:"Sydney",flag:"🇦🇺",lat:-33.8688,lon:151.2093},
+    {name:"Dubai",flag:"🇦🇪",lat:25.2048,lon:55.2708},
+    {name:"São Paulo",flag:"🇧🇷",lat:-23.5505,lon:-46.6333},
+    {name:"Mumbai",flag:"🇮🇳",lat:19.0760,lon:72.8777},
+    {name:"Montréal",flag:"🇨🇦",lat:45.5017,lon:-73.5673},
+    {name:"Cairo",flag:"🇪🇬",lat:30.0444,lon:31.2357},
+    {name:"Lagos",flag:"🇳🇬",lat:6.5244,lon:3.3792},
+    {name:"Beijing",flag:"🇨🇳",lat:39.9042,lon:116.4074},
+  ];
+  const WMO={0:["Clear sky","☀️"],1:["Mainly clear","🌤️"],2:["Partly cloudy","⛅"],3:["Overcast","☁️"],45:["Fog","🌫️"],48:["Icy fog","🌫️"],51:["Light drizzle","🌦️"],53:["Drizzle","🌦️"],55:["Dense drizzle","🌧️"],61:["Light rain","🌧️"],63:["Rain","🌧️"],65:["Heavy rain","🌧️"],71:["Light snow","❄️"],73:["Snow","❄️"],75:["Heavy snow","❄️"],80:["Rain showers","🌦️"],81:["Showers","🌦️"],82:["Heavy showers","⛈️"],95:["Thunderstorm","⛈️"],99:["Thunderstorm+hail","⛈️"]};
+  const map=L.map('map',{center:[20,10],zoom:2,zoomControl:true,attributionControl:false});
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(map);
+  let activeEl=null;
+  CITIES.forEach(city=>{
+    const el=document.createElement('div');
+    el.className='city-marker';el.innerHTML=city.flag;el.title=city.name;
+    const marker=L.marker([city.lat,city.lon],{icon:L.divIcon({className:'',html:el,iconSize:[36,36],iconAnchor:[18,18]})}).addTo(map);
+    marker.on('click',()=>{
+      if(activeEl)activeEl.classList.remove('active');
+      el.classList.add('active');activeEl=el;
+      openCity(city);
+    });
+  });
+  const panel=document.getElementById('panel');
+  const hint=document.getElementById('hint');
+  function closePanel(){panel.classList.add('hidden');if(activeEl){activeEl.classList.remove('active');activeEl=null;}hint.style.display='block';}
+  async function openCity(city){
+    hint.style.display='none';panel.classList.remove('hidden');
+    document.getElementById('panel-city').textContent=city.flag+' '+city.name;
+    document.getElementById('panel-coords').textContent=city.lat.toFixed(2)+'°, '+city.lon.toFixed(2)+'°';
+    document.getElementById('weather-content').innerHTML='<div class="loading"><div class="spinner"></div>Fetching weather…</div>';
+    document.getElementById('news-content').innerHTML='<div class="loading"><div class="spinner"></div>Fetching news…</div>';
+    fetchWeather(city);fetchNews();
+  }
+  async function fetchWeather(city){
+    try{
+      const url=`https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current=temperature_2m,weathercode,windspeed_10m,relativehumidity_2m,apparent_temperature&timezone=auto`;
+      const d=await(await fetch(url)).json();const c=d.current;
+      const[desc,icon]=WMO[c.weathercode]||['Unknown','🌡️'];
+      document.getElementById('weather-content').innerHTML=`<div class="weather-main"><div class="weather-icon-big">${icon}</div><div><div class="weather-temp">${Math.round(c.temperature_2m)}°C</div><div class="weather-desc-text">${desc}</div></div></div><div class="weather-stats"><div class="stat-card"><div class="stat-label">Feels like</div><div class="stat-value">${Math.round(c.apparent_temperature)}°C</div></div><div class="stat-card"><div class="stat-label">Humidity</div><div class="stat-value">${c.relativehumidity_2m}%</div></div><div class="stat-card"><div class="stat-label">Wind</div><div class="stat-value">${Math.round(c.windspeed_10m)} km/h</div></div><div class="stat-card"><div class="stat-label">Timezone</div><div class="stat-value" style="font-size:12px">${d.timezone_abbreviation}</div></div></div>`;
+    }catch(e){document.getElementById('weather-content').innerHTML='<div class="loading">Could not load weather.</div>';}
+  }
+  async function fetchNews(){
+    try{
+      const rss='https://feeds.bbci.co.uk/news/world/rss.xml';
+      const proxy=`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rss)}&count=8`;
+      const d=await(await fetch(proxy)).json();
+      if(!d.items||!d.items.length)throw new Error('no items');
+      document.getElementById('news-content').innerHTML=d.items.map((item,i)=>`<a class="news-item" href="${item.link}" target="_blank" rel="noopener"><div class="news-num">${String(i+1).padStart(2,'0')}</div><div><div class="news-title-text">${item.title}</div><div class="news-pub">${new Date(item.pubDate).toLocaleDateString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</div></div></a>`).join('');
+    }catch(e){document.getElementById('news-content').innerHTML='<div class="loading">Could not load news.</div>';}
+  }
+  fetch('data/worldpulse.json').then(r=>r.json()).then(d=>{const dt=new Date(d.generated_at);document.getElementById('last-update').textContent='Updated '+dt.toLocaleDateString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})+' UTC';}).catch(()=>{document.getElementById('last-update').textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});});
+  </script>
 </body>
 </html>

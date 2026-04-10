@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorldPulse — Interactive Map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    :root{--bg:#07080d;--surface:#0e1018;--border:#1d2030;--accent:#e8ff47;--accent2:#47c8ff;--text:#e4e6f0;--muted:#5a5f7a;--card:#111420;--r:12px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;overflow:hidden}
+    body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-weight:300;display:flex;flex-direction:column}
+    header{flex-shrink:0;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:var(--bg);z-index:1000}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
+    .logo-text{font-family:'DM Serif Display',serif;font-size:1.2rem;color:#fff}
+    .logo-text em{font-style:italic;color:var(--accent)}
+    .header-meta{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+    .layout{flex:1;display:flex;overflow:hidden;position:relative}
+    #map{flex:1}
+    .leaflet-container{background:#0a0c14!important}
+    .city-marker{width:36px;height:36px;background:var(--card);border:2px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;transition:border-color .2s,transform .2s}
+    .city-marker:hover,.city-marker.active{border-color:var(--accent);transform:scale(1.2)}
+    #panel{width:360px;flex-shrink:0;background:var(--surface);border-left:1px solid var(--border);overflow-y:auto;display:flex;flex-direction:column;transition:width .3s ease}
+    #panel.hidden{width:0;overflow:hidden;border:none}
+    .panel-header{padding:20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+    .panel-city{font-family:'DM Serif Display',serif;font-size:1.6rem;color:#fff}
+    .panel-close{width:28px;height:28px;background:var(--card);border:1px solid var(--border);border-radius:50%;cursor:pointer;color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:14px;transition:border-color .2s}
+    .panel-close:hover{border-color:var(--accent);color:var(--text)}
+    .weather-block{padding:20px;border-bottom:1px solid var(--border)}
+    .section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+    .weather-main{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+    .weather-icon-big{font-size:3rem}
+    .weather-temp{font-family:'DM Serif Display',serif;font-size:3rem;color:#fff;line-height:1}
+    .weather-desc-text{font-size:13px;color:var(--muted);margin-top:2px}
+    .weather-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .stat-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+    .stat-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:2px}
+    .stat-value{font-size:15px;font-weight:600;color:var(--text)}
+    .news-block{padding:20px;flex:1}
+    .news-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;color:inherit;transition:opacity .2s}
+    .news-item:hover{opacity:.7}
+    .news-item:last-child{border-bottom:none}
+    .news-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);flex-shrink:0;padding-top:2px}
+    .news-title-text{font-size:13px;font-weight:600;color:var(--text);line-height:1.4}
+    .news-pub{font-size:11px;color:var(--muted);margin-top:3px}
+    .loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;gap:12px;color:var(--muted);font-size:13px}
+    .spinner{width:24px;height:24px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    #hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);background:var(--card);border:1px solid var(--border);border-radius:100px;padding:8px 20px;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);pointer-events:none;z-index:999;white-space:nowrap}
+    @media(max-width:700px){#panel{position:fixed;right:0;top:53px;bottom:0;width:100%!important;z-index:2000}#panel.hidden{width:0!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-dot"></div>
+      <div class="logo-text">World<em>Pulse</em></div>
+    </div>
+    <div class="header-meta" id="last-update">Loading…</div>
+  </header>
+  <div class="layout">
+    <div id="map"></div>
+    <div id="hint">Click a city to see weather &amp; news</div>
+    <div id="panel" class="hidden">
+      <div class="panel-header">
+        <div>
+          <div class="panel-city" id="panel-city">—</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px" id="panel-coords"></div>
+        </div>
+        <div class="panel-close" onclick="closePanel()">✕</div>
+      </div>
+      <div class="weather-block">
+        <div class="section-label">Current weather</div>
+        <div id="weather-content"><div class="loading"><div class="spinner"></div>Fetching weather…</div></div>
+      </div>
+      <div class="news-block">
+        <div class="section-label">Latest world news</div>
+        <div id="news-content"><div class="loading"><div class="spinner"></div>Fetching news…</div></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+  const CITIES=[
+    {name:"Paris",flag:"🇫🇷",lat:48.8566,lon:2.3522},
+    {name:"New York",flag:"🇺🇸",lat:40.7128,lon:-74.0060},
+    {name:"Tokyo",flag:"🇯🇵",lat:35.6762,lon:139.6503},
+    {name:"London",flag:"🇬🇧",lat:51.5074,lon:-0.1278},
+    {name:"Sydney",flag:"🇦🇺",lat:-33.8688,lon:151.2093},
+    {name:"Dubai",flag:"🇦🇪",lat:25.2048,lon:55.2708},
+    {name:"São Paulo",flag:"🇧🇷",lat:-23.5505,lon:-46.6333},
+    {name:"Mumbai",flag:"🇮🇳",lat:19.0760,lon:72.8777},
+    {name:"Montréal",flag:"🇨🇦",lat:45.5017,lon:-73.5673},
+    {name:"Cairo",flag:"🇪🇬",lat:30.0444,lon:31.2357},
+    {name:"Lagos",flag:"🇳🇬",lat:6.5244,lon:3.3792},
+    {name:"Beijing",flag:"🇨🇳",lat:39.9042,lon:116.4074},
+  ];
+  const WMO={0:["Clear sky","☀️"],1:["Mainly clear","🌤️"],2:["Partly cloudy","⛅"],3:["Overcast","☁️"],45:["Fog","🌫️"],48:["Icy fog","🌫️"],51:["Light drizzle","🌦️"],53:["Drizzle","🌦️"],55:["Dense drizzle","🌧️"],61:["Light rain","🌧️"],63:["Rain","🌧️"],65:["Heavy rain","🌧️"],71:["Light snow","❄️"],73:["Snow","❄️"],75:["Heavy snow","❄️"],80:["Rain showers","🌦️"],81:["Showers","🌦️"],82:["Heavy showers","⛈️"],95:["Thunderstorm","⛈️"],99:["Thunderstorm+hail","⛈️"]};
+  const map=L.map('map',{center:[20,10],zoom:2,zoomControl:true,attributionControl:false});
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(map);
+  let activeEl=null;
+  CITIES.forEach(city=>{
+    const el=document.createElement('div');
+    el.className='city-marker';el.innerHTML=city.flag;el.title=city.name;
+    const marker=L.marker([city.lat,city.lon],{icon:L.divIcon({className:'',html:el,iconSize:[36,36],iconAnchor:[18,18]})}).addTo(map);
+    marker.on('click',()=>{
+      if(activeEl)activeEl.classList.remove('active');
+      el.classList.add('active');activeEl=el;
+      openCity(city);
+    });
+  });
+  const panel=document.getElementById('panel');
+  const hint=document.getElementById('hint');
+  function closePanel(){panel.classList.add('hidden');if(activeEl){activeEl.classList.remove('active');activeEl=null;}hint.style.display='block';}
+  async function openCity(city){
+    hint.style.display='none';panel.classList.remove('hidden');
+    document.getElementById('panel-city').textContent=city.flag+' '+city.name;
+    document.getElementById('panel-coords').textContent=city.lat.toFixed(2)+'°, '+city.lon.toFixed(2)+'°';
+    document.getElementById('weather-content').innerHTML='<div class="loading"><div class="spinner"></div>Fetching weather…</div>';
+    document.getElementById('news-content').innerHTML='<div class="loading"><div class="spinner"></div>Fetching news…</div>';
+    fetchWeather(city);fetchNews();
+  }
+  async function fetchWeather(city){
+    try{
+      const url=`https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current=temperature_2m,weathercode,windspeed_10m,relativehumidity_2m,apparent_temperature&timezone=auto`;
+      const d=await(await fetch(url)).json();const c=d.current;
+      const[desc,icon]=WMO[c.weathercode]||['Unknown','🌡️'];
+      document.getElementById('weather-content').innerHTML=`<div class="weather-main"><div class="weather-icon-big">${icon}</div><div><div class="weather-temp">${Math.round(c.temperature_2m)}°C</div><div class="weather-desc-text">${desc}</div></div></div><div class="weather-stats"><div class="stat-card"><div class="stat-label">Feels like</div><div class="stat-value">${Math.round(c.apparent_temperature)}°C</div></div><div class="stat-card"><div class="stat-label">Humidity</div><div class="stat-value">${c.relativehumidity_2m}%</div></div><div class="stat-card"><div class="stat-label">Wind</div><div class="stat-value">${Math.round(c.windspeed_10m)} km/h</div></div><div class="stat-card"><div class="stat-label">Timezone</div><div class="stat-value" style="font-size:12px">${d.timezone_abbreviation}</div></div></div>`;
+    }catch(e){document.getElementById('weather-content').innerHTML='<div class="loading">Could not load weather.</div>';}
+  }
+  async function fetchNews(){
+    try{
+      const rss='https://feeds.bbci.co.uk/news/world/rss.xml';
+      const proxy=`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rss)}&count=8`;
+      const d=await(await fetch(proxy)).json();
+      if(!d.items||!d.items.length)throw new Error('no items');
+      document.getElementById('news-content').innerHTML=d.items.map((item,i)=>`<a class="news-item" href="${item.link}" target="_blank" rel="noopener"><div class="news-num">${String(i+1).padStart(2,'0')}</div><div><div class="news-title-text">${item.title}</div><div class="news-pub">${new Date(item.pubDate).toLocaleDateString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</div></div></a>`).join('');
+    }catch(e){document.getElementById('news-content').innerHTML='<div class="loading">Could not load news.</div>';}
+  }
+  fetch('data/worldpulse.json').then(r=>r.json()).then(d=>{const dt=new Date(d.generated_at);document.getElementById('last-update').textContent='Updated '+dt.toLocaleDateString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})+' UTC';}).catch(()=>{document.getElementById('last-update').textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});});
+  </script>
+</body>
+</html>

@@ -1,89 +1,89 @@
 {
-  "generated_at": "2026-04-10T20:01:17.145129+00:00",
+  "generated_at": "2026-04-11T07:54:21.111283+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 14,
+      "temp": 13,
       "wind": 9,
-      "humidity": 40,
+      "humidity": 76,
       "desc": "Overcast",
       "icon": "☁️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 15,
-      "wind": 17,
-      "humidity": 56,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 10,
+      "wind": 8,
+      "humidity": 71,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 13,
+      "temp": 24,
       "wind": 2,
-      "humidity": 99,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "humidity": 48,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 10,
+      "temp": 12,
       "wind": 14,
-      "humidity": 53,
+      "humidity": 76,
       "desc": "Overcast",
       "icon": "☁️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
-      "temp": 18,
-      "wind": 6,
-      "humidity": 63,
-      "desc": "Mainly clear",
-      "icon": "🌤️"
+      "temp": 19,
+      "wind": 16,
+      "humidity": 37,
+      "desc": "Clear sky",
+      "icon": "☀️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "Trump says Iran's handling of Strait of Hormuz is 'not the agreement we have'",
-        "link": "https://www.bbc.com/news/articles/cge0xre3d27o?at_medium=RSS&at_campaign=rss",
-        "desc": "The US president accused Iran of \"doing a very poor job\" with the waterway as Israel and Lebanon to begin peace talks.",
-        "pub": "Fri, 10 Apr 2026 02:10:44 GMT"
+        "title": "Lyse Doucet: Historic US-Iran talks must bridge deep distrust",
+        "link": "https://www.bbc.com/news/articles/cn9qzl12537o?at_medium=RSS&at_campaign=rss",
+        "desc": "Face-to-face talks would mark the highest-level engagement between Iran and the US since the 1979 Islamic Revolution.",
+        "pub": "Fri, 10 Apr 2026 23:46:49 GMT"
       },
       {
-        "title": "Lebanon says ceasefire must be in place before Israel talks",
-        "link": "https://www.bbc.com/news/articles/c93en5q2zl3o?at_medium=RSS&at_campaign=rss",
-        "desc": "Lebanon will only take part in talks with Israel if a ceasefire is already in place, a senior official tells the BBC.",
-        "pub": "Fri, 10 Apr 2026 19:43:42 GMT"
+        "title": "Final push for votes as challenger to Hungary's Orbán scents victory",
+        "link": "https://www.bbc.com/news/articles/c0q9527y41lo?at_medium=RSS&at_campaign=rss",
+        "desc": "As Péter Magyar's opposition movement leads in the polls, tens of thousands of anti-Orbán supporters fill Heroes' Square in Budapest.",
+        "pub": "Sat, 11 Apr 2026 00:17:18 GMT"
       },
       {
-        "title": "Palestinian shot dead during Israeli settler attack on occupied West Bank village",
-        "link": "https://www.bbc.com/news/articles/czrekrzzex1o?at_medium=RSS&at_campaign=rss",
-        "desc": "The killing came as ex-security chiefs warned \"government sponsored Jewish terrorism\" was out of control.",
-        "pub": "Fri, 10 Apr 2026 17:08:27 GMT"
+        "title": "Artemis II mission was a triumph - now comes the hard part",
+        "link": "https://www.bbc.com/news/articles/cj0v119zp19o?at_medium=RSS&at_campaign=rss",
+        "desc": "The mission was almost flawless but there are considerable obstacles ahead before a Moon landing.",
+        "pub": "Sat, 11 Apr 2026 00:38:44 GMT"
       },
       {
-        "title": "Melania Trump denies ties to Jeffrey Epstein and urges hearing for survivors",
-        "link": "https://www.bbc.com/news/articles/c3ex07l1qvpo?at_medium=RSS&at_campaign=rss",
-        "desc": "She called rumours that Epstein introduced her to Donald Trump \"mean-spirited attempts to defame my reputation\".",
-        "pub": "Fri, 10 Apr 2026 08:37:05 GMT"
+        "title": "Frontrunner for California governor denies sexual assault allegations",
+        "link": "https://www.bbc.com/news/articles/c20qg3g9554o?at_medium=RSS&at_campaign=rss",
+        "desc": "The congressman is a leading Democratic candidate who is now facing calls to drop out of the race.",
+        "pub": "Sat, 11 Apr 2026 03:13:10 GMT"
+      },
+      {
+        "title": "Melania Trump's speech propels Epstein crisis back to forefront",
+        "link": "https://www.bbc.com/news/articles/cwy3w9y8gyjo?at_medium=RSS&at_campaign=rss",
+        "desc": "She has now placed herself squarely into the Epstein story and at odds with the administration, which wants to end the investigation.",
+        "pub": "Sat, 11 Apr 2026 03:25:04 GMT"
       },
       {
         "title": "Man accused of coercing wife into sex with 120 men goes on trial in Sweden",
         "link": "https://www.bbc.com/news/articles/cx24pdwx588o?at_medium=RSS&at_campaign=rss",
         "desc": "The 61-year-old denies threatening physical violence and plying his wife with drugs to force her into having sex with strangers.",
         "pub": "Fri, 10 Apr 2026 15:06:40 GMT"
-      },
-      {
-        "title": "Chimpanzees in Uganda locked in vicious 'civil war', say researchers",
-        "link": "https://www.bbc.com/news/articles/cr71lkzv49po?at_medium=RSS&at_campaign=rss",
-        "desc": "The once close-knit community of Ngogo chimpanzees have been at loggerheads for the last eight years.",
-        "pub": "Fri, 10 Apr 2026 16:52:55 GMT"
       }
     ],
     "Technology": [
@@ -126,10 +126,16 @@
     ],
     "Science": [
       {
-        "title": "How the Artemis crew will splash down on Earth",
-        "link": "https://www.bbc.com/news/videos/cn431g7v52qo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Artemis crew will return to Earth on 10 April after a 10-day mission that took them around the Moon.",
-        "pub": "Fri, 10 Apr 2026 04:27:25 GMT"
+        "title": "Back to Earth: What happens to the Artemis II astronauts now?",
+        "link": "https://www.bbc.com/news/articles/cpwjvgv2d4no?at_medium=RSS&at_campaign=rss",
+        "desc": "The astronauts will have medical checks and will be reunited with their families.",
+        "pub": "Sat, 11 Apr 2026 00:38:27 GMT"
+      },
+      {
+        "title": "Artemis II mission was a triumph. Now comes the hard part",
+        "link": "https://www.bbc.com/news/articles/cj0v119zp19o?at_medium=RSS&at_campaign=rss",
+        "desc": "The mission was almost flawless but there are considerable obstacles ahead before a Moon landing.",
+        "pub": "Sat, 11 Apr 2026 00:38:44 GMT"
       },
       {
         "title": "Want to help garden birds? Don't feed them in warmer months, says RSPB",
@@ -148,12 +154,6 @@
         "link": "https://www.bbc.com/news/articles/cj60nkd8nrko?at_medium=RSS&at_campaign=rss",
         "desc": "The Artemis II mission has been near flawless to date, but has the test flight shown Nasa is ready to send humans to the lunar surface?",
         "pub": "Tue, 07 Apr 2026 15:23:05 GMT"
-      },
-      {
-        "title": "Artemis II crew head for home after travelling further from Earth than anyone before",
-        "link": "https://www.bbc.com/news/articles/cx23p6j5gxgo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Artemis II crew go further than any humans before in Nasa's first crewed mission to the Moon in over 50 years.",
-        "pub": "Tue, 07 Apr 2026 06:33:58 GMT"
       },
       {
         "title": "Earthset and a solar eclipse: Nasa releases first images from Moon fly-by",

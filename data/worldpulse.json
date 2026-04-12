@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-04-11T07:54:21.111283+00:00",
+  "generated_at": "2026-04-12T08:05:31.498760+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 13,
-      "wind": 9,
-      "humidity": 76,
+      "temp": 9,
+      "wind": 5,
+      "humidity": 72,
       "desc": "Overcast",
       "icon": "☁️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 10,
-      "wind": 8,
-      "humidity": 71,
-      "desc": "Mainly clear",
-      "icon": "🌤️"
+      "temp": 6,
+      "wind": 7,
+      "humidity": 52,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 24,
-      "wind": 2,
-      "humidity": 48,
+      "temp": 18,
+      "wind": 7,
+      "humidity": 63,
       "desc": "Clear sky",
       "icon": "☀️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 12,
-      "wind": 14,
-      "humidity": 76,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 10,
+      "wind": 16,
+      "humidity": 63,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
-      "temp": 19,
-      "wind": 16,
-      "humidity": 37,
+      "temp": 16,
+      "wind": 14,
+      "humidity": 40,
       "desc": "Clear sky",
       "icon": "☀️"
     }
@@ -50,40 +50,40 @@
   "news": {
     "World": [
       {
-        "title": "Lyse Doucet: Historic US-Iran talks must bridge deep distrust",
-        "link": "https://www.bbc.com/news/articles/cn9qzl12537o?at_medium=RSS&at_campaign=rss",
-        "desc": "Face-to-face talks would mark the highest-level engagement between Iran and the US since the 1979 Islamic Revolution.",
-        "pub": "Fri, 10 Apr 2026 23:46:49 GMT"
+        "title": "Hungarians vote on whether to end 16 years of Orbán rule and elect rival",
+        "link": "https://www.bbc.com/news/articles/cdxdepjrv95o?at_medium=RSS&at_campaign=rss",
+        "desc": "Most polls favour Péter Magyar, who fronts a grassroots party, and early figures suggest a big turnout of voters.",
+        "pub": "Sun, 12 Apr 2026 07:44:27 GMT"
       },
       {
-        "title": "Final push for votes as challenger to Hungary's Orbán scents victory",
-        "link": "https://www.bbc.com/news/articles/c0q9527y41lo?at_medium=RSS&at_campaign=rss",
-        "desc": "As Péter Magyar's opposition movement leads in the polls, tens of thousands of anti-Orbán supporters fill Heroes' Square in Budapest.",
-        "pub": "Sat, 11 Apr 2026 00:17:18 GMT"
+        "title": "'We need real peace': Easter truce fails to lift grim mood in war-torn Ukraine",
+        "link": "https://www.bbc.com/news/articles/cj0vn30574no?at_medium=RSS&at_campaign=rss",
+        "desc": "Easter festivities are muted in Kharkiv as Ukrainians expect fighting to flare up again after a weekend truce.",
+        "pub": "Sun, 12 Apr 2026 04:20:37 GMT"
       },
       {
-        "title": "Artemis II mission was a triumph - now comes the hard part",
-        "link": "https://www.bbc.com/news/articles/cj0v119zp19o?at_medium=RSS&at_campaign=rss",
-        "desc": "The mission was almost flawless but there are considerable obstacles ahead before a Moon landing.",
-        "pub": "Sat, 11 Apr 2026 00:38:44 GMT"
+        "title": "At least 30 feared dead in crush at Haitian tourist site",
+        "link": "https://www.bbc.com/news/articles/cwyj8d49wzxo?at_medium=RSS&at_campaign=rss",
+        "desc": "The incident occurred at a \"tourist event attended by many young people\", Haiti's prime minister says.",
+        "pub": "Sun, 12 Apr 2026 07:22:28 GMT"
       },
       {
-        "title": "Frontrunner for California governor denies sexual assault allegations",
-        "link": "https://www.bbc.com/news/articles/c20qg3g9554o?at_medium=RSS&at_campaign=rss",
-        "desc": "The congressman is a leading Democratic candidate who is now facing calls to drop out of the race.",
-        "pub": "Sat, 11 Apr 2026 03:13:10 GMT"
+        "title": "Prosecutor probes abuse claims against California governor candidate Swalwell",
+        "link": "https://www.bbc.com/news/articles/c7vq0jnn0yro?at_medium=RSS&at_campaign=rss",
+        "desc": "The high-profile Democrat, a leading contender in California's governor race, firmly denies the accusations.",
+        "pub": "Sun, 12 Apr 2026 05:22:34 GMT"
       },
       {
-        "title": "Melania Trump's speech propels Epstein crisis back to forefront",
-        "link": "https://www.bbc.com/news/articles/cwy3w9y8gyjo?at_medium=RSS&at_campaign=rss",
-        "desc": "She has now placed herself squarely into the Epstein story and at odds with the administration, which wants to end the investigation.",
-        "pub": "Sat, 11 Apr 2026 03:25:04 GMT"
+        "title": "Why this disillusioned Trump voter spends hours searching Epstein files",
+        "link": "https://www.bbc.com/news/articles/cx237vmr2lyo?at_medium=RSS&at_campaign=rss",
+        "desc": "Many who support the president have expressed frustration with how Trump's former attorney general Pam Bondi handled the Epstein files.",
+        "pub": "Sun, 12 Apr 2026 00:30:44 GMT"
       },
       {
-        "title": "Man accused of coercing wife into sex with 120 men goes on trial in Sweden",
-        "link": "https://www.bbc.com/news/articles/cx24pdwx588o?at_medium=RSS&at_campaign=rss",
-        "desc": "The 61-year-old denies threatening physical violence and plying his wife with drugs to force her into having sex with strangers.",
-        "pub": "Fri, 10 Apr 2026 15:06:40 GMT"
+        "title": "Germany's far-right AfD adopts 'radical' manifesto ahead of key polls",
+        "link": "https://www.bbc.com/news/articles/cwy3wwgyd6do?at_medium=RSS&at_campaign=rss",
+        "desc": "The far-right party is riding high in the opinion polls in the eastern state of Saxony-Anhalt.",
+        "pub": "Sat, 11 Apr 2026 18:55:40 GMT"
       }
     ],
     "Technology": [

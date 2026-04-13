@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-12T08:05:31.498760+00:00",
+  "generated_at": "2026-04-13T09:04:42.216317+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 9,
-      "wind": 5,
+      "temp": 11,
+      "wind": 4,
       "humidity": 72,
       "desc": "Overcast",
       "icon": "☁️"
@@ -13,36 +13,36 @@
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 6,
-      "wind": 7,
-      "humidity": 52,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 10,
+      "wind": 6,
+      "humidity": 87,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
       "temp": 18,
-      "wind": 7,
-      "humidity": 63,
-      "desc": "Clear sky",
-      "icon": "☀️"
-    },
-    {
-      "city": "London",
-      "flag": "🇬🇧",
-      "temp": 10,
-      "wind": 16,
-      "humidity": 63,
+      "wind": 4,
+      "humidity": 76,
       "desc": "Mainly clear",
       "icon": "🌤️"
     },
     {
+      "city": "London",
+      "flag": "🇬🇧",
+      "temp": 9,
+      "wind": 4,
+      "humidity": 73,
+      "desc": "Clear sky",
+      "icon": "☀️"
+    },
+    {
       "city": "Sydney",
       "flag": "🇦🇺",
-      "temp": 16,
-      "wind": 14,
-      "humidity": 40,
+      "temp": 20,
+      "wind": 3,
+      "humidity": 45,
       "desc": "Clear sky",
       "icon": "☀️"
     }
@@ -50,54 +50,60 @@
   "news": {
     "World": [
       {
-        "title": "Hungarians vote on whether to end 16 years of Orbán rule and elect rival",
-        "link": "https://www.bbc.com/news/articles/cdxdepjrv95o?at_medium=RSS&at_campaign=rss",
-        "desc": "Most polls favour Péter Magyar, who fronts a grassroots party, and early figures suggest a big turnout of voters.",
-        "pub": "Sun, 12 Apr 2026 07:44:27 GMT"
+        "title": "Orbán era swept away by Péter Magyar's Hungary election landslide",
+        "link": "https://www.bbc.com/news/articles/cd9vg782kx7o?at_medium=RSS&at_campaign=rss",
+        "desc": "Viktor Orbán's 16-year rule is over, defeated by a 45-year-old ex-party insider who convinced a majority of Hungarians to oust him.",
+        "pub": "Mon, 13 Apr 2026 06:25:29 GMT"
       },
       {
-        "title": "'We need real peace': Easter truce fails to lift grim mood in war-torn Ukraine",
-        "link": "https://www.bbc.com/news/articles/cj0vn30574no?at_medium=RSS&at_campaign=rss",
-        "desc": "Easter festivities are muted in Kharkiv as Ukrainians expect fighting to flare up again after a weekend truce.",
-        "pub": "Sun, 12 Apr 2026 04:20:37 GMT"
+        "title": "Katya Adler: Jubilation in Budapest will be felt in Europe but leaves Moscow cold",
+        "link": "https://www.bbc.com/news/articles/cn0wzxqyx17o?at_medium=RSS&at_campaign=rss",
+        "desc": "European leaders share Hungarians' joy over the ousting of Vladimir Putin's EU ally, writes the BBC's Europe editor.",
+        "pub": "Mon, 13 Apr 2026 08:28:35 GMT"
       },
       {
-        "title": "At least 30 feared dead in crush at Haitian tourist site",
-        "link": "https://www.bbc.com/news/articles/cwyj8d49wzxo?at_medium=RSS&at_campaign=rss",
-        "desc": "The incident occurred at a \"tourist event attended by many young people\", Haiti's prime minister says.",
-        "pub": "Sun, 12 Apr 2026 07:22:28 GMT"
+        "title": "Trump's threat raises risks and leaves predicaments unchanged",
+        "link": "https://www.bbc.com/news/articles/c8dl5mly2rzo?at_medium=RSS&at_campaign=rss",
+        "desc": "The conflict is now a test of wills - Iran’s capacity to absorb strikes versus Trump’s tolerance for the war's costs.",
+        "pub": "Sun, 12 Apr 2026 22:57:22 GMT"
       },
       {
-        "title": "Prosecutor probes abuse claims against California governor candidate Swalwell",
-        "link": "https://www.bbc.com/news/articles/c7vq0jnn0yro?at_medium=RSS&at_campaign=rss",
-        "desc": "The high-profile Democrat, a leading contender in California's governor race, firmly denies the accusations.",
-        "pub": "Sun, 12 Apr 2026 05:22:34 GMT"
+        "title": "Britney Spears goes into rehab after driving under the influence arrest",
+        "link": "https://www.bbc.com/news/articles/ckgw8dy08m9o?at_medium=RSS&at_campaign=rss",
+        "desc": "The singer voluntarily checks herself into a treatment facility, three weeks before her court date.",
+        "pub": "Mon, 13 Apr 2026 08:14:14 GMT"
       },
       {
-        "title": "Why this disillusioned Trump voter spends hours searching Epstein files",
-        "link": "https://www.bbc.com/news/articles/cx237vmr2lyo?at_medium=RSS&at_campaign=rss",
-        "desc": "Many who support the president have expressed frustration with how Trump's former attorney general Pam Bondi handled the Epstein files.",
-        "pub": "Sun, 12 Apr 2026 00:30:44 GMT"
+        "title": "Carney on verge of Liberal majority government as votes cast in three by-elections",
+        "link": "https://www.bbc.com/news/articles/c62k3vvln5mo?at_medium=RSS&at_campaign=rss",
+        "desc": "One more seat could solidify the Canadian PM's hold on power after several Conservatives defected.",
+        "pub": "Mon, 13 Apr 2026 08:10:53 GMT"
       },
       {
-        "title": "Germany's far-right AfD adopts 'radical' manifesto ahead of key polls",
-        "link": "https://www.bbc.com/news/articles/cwy3wwgyd6do?at_medium=RSS&at_campaign=rss",
-        "desc": "The far-right party is riding high in the opinion polls in the eastern state of Saxony-Anhalt.",
-        "pub": "Sat, 11 Apr 2026 18:55:40 GMT"
+        "title": "Trump attacks Pope over criticism of Iran war",
+        "link": "https://www.bbc.com/news/articles/cp841y07w5xo?at_medium=RSS&at_campaign=rss",
+        "desc": "The US president accuses Leo of being \"weak on crime and terrible for foreign policy\".",
+        "pub": "Mon, 13 Apr 2026 08:32:12 GMT"
       }
     ],
     "Technology": [
-      {
-        "title": "Dancer with MND performs on stage again through digital avatar",
-        "link": "https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss",
-        "desc": "Breanna Olson said brainwave tech was able to re-establish the expression and connection she felt had gone.",
-        "pub": "Fri, 10 Apr 2026 13:13:09 GMT"
-      },
       {
         "title": "Meta pulls Facebook ads recruiting for social media addiction lawsuits",
         "link": "https://www.bbc.com/news/articles/czjw0zgz9zyo?at_medium=RSS&at_campaign=rss",
         "desc": "The Facebook owner recently lost a landmark social media addiction trial in California",
         "pub": "Fri, 10 Apr 2026 15:44:12 GMT"
+      },
+      {
+        "title": "OpenAI boss Sam Altman's home targeted with Molotov cocktail",
+        "link": "https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss",
+        "desc": "San Francisco police have arrested a 20-year-old suspect after a perimeter gate was set alight.",
+        "pub": "Fri, 10 Apr 2026 21:01:18 GMT"
+      },
+      {
+        "title": "Dancer with MND performs on stage again through digital avatar",
+        "link": "https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss",
+        "desc": "Breanna Olson said brainwave tech was able to re-establish the expression and connection she felt had gone.",
+        "pub": "Fri, 10 Apr 2026 13:13:09 GMT"
       },
       {
         "title": "White House staff told not to place bets on prediction markets",
@@ -116,15 +122,21 @@
         "link": "https://www.bbc.com/news/articles/c98k91yy4z4o?at_medium=RSS&at_campaign=rss",
         "desc": "The move means owners of Kindles released before 2013 will be unable to download new e-books.",
         "pub": "Thu, 09 Apr 2026 13:12:45 GMT"
-      },
-      {
-        "title": "OpenAI pauses UK data centre deal over energy costs and regulation",
-        "link": "https://www.bbc.com/news/articles/clyd032ej70o?at_medium=RSS&at_campaign=rss",
-        "desc": "The project was part of a package of tech investment promising the UK could become an AI superpower.",
-        "pub": "Thu, 09 Apr 2026 20:36:41 GMT"
       }
     ],
     "Science": [
+      {
+        "title": "From blast off to splashdown: My days following Nasa's historic mission to the Moon",
+        "link": "https://www.bbc.com/news/articles/clyrdkxvmmpo?at_medium=RSS&at_campaign=rss",
+        "desc": "BBC Science Editor Rebecca Morelle reflects on how it felt to watch history being made.",
+        "pub": "Sat, 11 Apr 2026 23:17:07 GMT"
+      },
+      {
+        "title": "Golden eagles' return to English skies gets government backing",
+        "link": "https://www.bbc.com/news/articles/cje4zlxqkqdo?at_medium=RSS&at_campaign=rss",
+        "desc": "The birds could be reintroduced as early as next year following a £1m injection from the government.",
+        "pub": "Sat, 11 Apr 2026 23:19:46 GMT"
+      },
       {
         "title": "Back to Earth: What happens to the Artemis II astronauts now?",
         "link": "https://www.bbc.com/news/articles/cpwjvgv2d4no?at_medium=RSS&at_campaign=rss",
@@ -148,18 +160,6 @@
         "link": "https://www.bbc.com/news/articles/czx9kvqxeq5o?at_medium=RSS&at_campaign=rss",
         "desc": "The cameraman and photographer won eight Emmy Awards for his work on acclaimed series like Blue Planet alongside Sir David Attenborough.",
         "pub": "Thu, 09 Apr 2026 14:52:09 GMT"
-      },
-      {
-        "title": "Has Artemis II shown we can land on the Moon again?",
-        "link": "https://www.bbc.com/news/articles/cj60nkd8nrko?at_medium=RSS&at_campaign=rss",
-        "desc": "The Artemis II mission has been near flawless to date, but has the test flight shown Nasa is ready to send humans to the lunar surface?",
-        "pub": "Tue, 07 Apr 2026 15:23:05 GMT"
-      },
-      {
-        "title": "Earthset and a solar eclipse: Nasa releases first images from Moon fly-by",
-        "link": "https://www.bbc.com/news/articles/cyv183v02j3o?at_medium=RSS&at_campaign=rss",
-        "desc": "The first two images show an 'Earthrise' and the solar eclipse the astronauts viewed.",
-        "pub": "Tue, 07 Apr 2026 14:53:18 GMT"
       }
     ]
   }

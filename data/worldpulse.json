@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-04-13T09:04:42.216317+00:00",
+  "generated_at": "2026-04-14T08:46:57.538816+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 11,
+      "temp": 10,
       "wind": 4,
-      "humidity": 72,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "humidity": 75,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 10,
-      "wind": 6,
-      "humidity": 87,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 17,
+      "wind": 1,
+      "humidity": 71,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
       "temp": 18,
-      "wind": 4,
-      "humidity": 76,
+      "wind": 7,
+      "humidity": 71,
       "desc": "Mainly clear",
       "icon": "🌤️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 9,
-      "wind": 4,
-      "humidity": 73,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 11,
+      "wind": 10,
+      "humidity": 67,
+      "desc": "Partly cloudy",
+      "icon": "⛅"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
-      "temp": 20,
+      "temp": 18,
       "wind": 3,
-      "humidity": 45,
+      "humidity": 69,
       "desc": "Clear sky",
       "icon": "☀️"
     }
@@ -50,43 +50,67 @@
   "news": {
     "World": [
       {
-        "title": "Orbán era swept away by Péter Magyar's Hungary election landslide",
-        "link": "https://www.bbc.com/news/articles/cd9vg782kx7o?at_medium=RSS&at_campaign=rss",
-        "desc": "Viktor Orbán's 16-year rule is over, defeated by a 45-year-old ex-party insider who convinced a majority of Hungarians to oust him.",
-        "pub": "Mon, 13 Apr 2026 06:25:29 GMT"
+        "title": "Lebanon seeks peace, but Hezbollah needs to be convinced first",
+        "link": "https://www.bbc.com/news/articles/cr51l794mlyo?at_medium=RSS&at_campaign=rss",
+        "desc": "The Lebanese government go into peace talks with limited influence over the group.",
+        "pub": "Mon, 13 Apr 2026 23:26:46 GMT"
       },
       {
-        "title": "Katya Adler: Jubilation in Budapest will be felt in Europe but leaves Moscow cold",
-        "link": "https://www.bbc.com/news/articles/cn0wzxqyx17o?at_medium=RSS&at_campaign=rss",
-        "desc": "European leaders share Hungarians' joy over the ousting of Vladimir Putin's EU ally, writes the BBC's Europe editor.",
-        "pub": "Mon, 13 Apr 2026 08:28:35 GMT"
+        "title": "BBC joins paramedics on duty in Lebanon after Israeli strikes",
+        "link": "https://www.bbc.com/news/videos/cwyk8rz1pzyo?at_medium=RSS&at_campaign=rss",
+        "desc": "BBC Middle East correspondent Hugo Bachega joins paramedics on duty in Nabatieh - a city that was once vibrant, but is now abandoned.",
+        "pub": "Mon, 13 Apr 2026 21:29:23 GMT"
       },
       {
-        "title": "Trump's threat raises risks and leaves predicaments unchanged",
-        "link": "https://www.bbc.com/news/articles/c8dl5mly2rzo?at_medium=RSS&at_campaign=rss",
-        "desc": "The conflict is now a test of wills - Iran’s capacity to absorb strikes versus Trump’s tolerance for the war's costs.",
-        "pub": "Sun, 12 Apr 2026 22:57:22 GMT"
+        "title": "Hungary's next PM would pick up if Putin calls and tell him to stop Ukraine war",
+        "link": "https://www.bbc.com/news/articles/cd6lzezp4zvo?at_medium=RSS&at_campaign=rss",
+        "desc": "Russia has offered \"pragmatic\" relations, but Péter Magyar says he will not call Vladimir Putin himself.",
+        "pub": "Mon, 13 Apr 2026 21:28:14 GMT"
       },
       {
-        "title": "Britney Spears goes into rehab after driving under the influence arrest",
-        "link": "https://www.bbc.com/news/articles/ckgw8dy08m9o?at_medium=RSS&at_campaign=rss",
-        "desc": "The singer voluntarily checks herself into a treatment facility, three weeks before her court date.",
-        "pub": "Mon, 13 Apr 2026 08:14:14 GMT"
+        "title": "Greek police using masked migrants to forcibly push other migrants back across border",
+        "link": "https://www.bbc.com/news/articles/c86vpq42dl0o?at_medium=RSS&at_campaign=rss",
+        "desc": "Mercenaries recruited since at least 2020 for illegal migrant ‘pushbacks’ in Greece, BBC told",
+        "pub": "Tue, 14 Apr 2026 05:02:21 GMT"
       },
       {
-        "title": "Carney on verge of Liberal majority government as votes cast in three by-elections",
-        "link": "https://www.bbc.com/news/articles/c62k3vvln5mo?at_medium=RSS&at_campaign=rss",
-        "desc": "One more seat could solidify the Canadian PM's hold on power after several Conservatives defected.",
-        "pub": "Mon, 13 Apr 2026 08:10:53 GMT"
+        "title": "Hospital at centre of child HIV outbreak caught reusing syringes in undercover filming",
+        "link": "https://www.bbc.com/news/articles/clyrd818gd2o?at_medium=RSS&at_campaign=rss",
+        "desc": "Footage shows staff in Pakistan injecting without gloves and reusing syringes, but the hospital boss refuses to acknowledge it is genuine.",
+        "pub": "Mon, 13 Apr 2026 23:27:45 GMT"
       },
       {
-        "title": "Trump attacks Pope over criticism of Iran war",
-        "link": "https://www.bbc.com/news/articles/cp841y07w5xo?at_medium=RSS&at_campaign=rss",
-        "desc": "The US president accuses Leo of being \"weak on crime and terrible for foreign policy\".",
-        "pub": "Mon, 13 Apr 2026 08:32:12 GMT"
+        "title": "‘I don’t know why they’re coming’: Australians on Harry and Meghan's visit",
+        "link": "https://www.bbc.com/news/videos/crk18gnepmgo?at_medium=RSS&at_campaign=rss",
+        "desc": "The BBC spoke to people in Sydney to hear their thoughts on the Duke and Duchess of Sussex’s trip to Australia.",
+        "pub": "Mon, 13 Apr 2026 23:40:20 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Man charged with attempted murder over attack on home of OpenAI's Sam Altman",
+        "link": "https://www.bbc.com/news/articles/cq597n1pg6lo?at_medium=RSS&at_campaign=rss",
+        "desc": "The Texas man, who also faces federal felony charges, allegedly had documents advocating for violence against AI executives.",
+        "pub": "Tue, 14 Apr 2026 01:05:54 GMT"
+      },
+      {
+        "title": "Quantum computing: A tech race Europe could win?",
+        "link": "https://www.bbc.com/news/articles/c20q4nv89yzo?at_medium=RSS&at_campaign=rss",
+        "desc": "With some promising computing companies in the field, could Europe be a leader in quantum tech?",
+        "pub": "Mon, 13 Apr 2026 23:35:56 GMT"
+      },
+      {
+        "title": "Roblox defends expanded age‑checks after parents raise concerns over errors",
+        "link": "https://www.bbc.com/news/articles/cj94y9r0p10o?at_medium=RSS&at_campaign=rss",
+        "desc": "With 144m daily users, the gaming company is extending its tech to introduce two age‑specific accounts.",
+        "pub": "Mon, 13 Apr 2026 12:19:13 GMT"
+      },
+      {
+        "title": "GTA-maker Rockstar Games hacked again but downplays impact",
+        "link": "https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss",
+        "desc": "The incident marks the second time the games giant has been hacked by young, English-speaking hackers.",
+        "pub": "Mon, 13 Apr 2026 15:10:38 GMT"
+      },
       {
         "title": "Meta pulls Facebook ads recruiting for social media addiction lawsuits",
         "link": "https://www.bbc.com/news/articles/czjw0zgz9zyo?at_medium=RSS&at_campaign=rss",
@@ -98,30 +122,6 @@
         "link": "https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss",
         "desc": "San Francisco police have arrested a 20-year-old suspect after a perimeter gate was set alight.",
         "pub": "Fri, 10 Apr 2026 21:01:18 GMT"
-      },
-      {
-        "title": "Dancer with MND performs on stage again through digital avatar",
-        "link": "https://www.bbc.com/news/articles/cgqkz5lzvnwo?at_medium=RSS&at_campaign=rss",
-        "desc": "Breanna Olson said brainwave tech was able to re-establish the expression and connection she felt had gone.",
-        "pub": "Fri, 10 Apr 2026 13:13:09 GMT"
-      },
-      {
-        "title": "White House staff told not to place bets on prediction markets",
-        "link": "https://www.bbc.com/news/articles/cgld65x396go?at_medium=RSS&at_campaign=rss",
-        "desc": "The gambling platforms have grown in popularity, with some users making wagers on conflicts.",
-        "pub": "Fri, 10 Apr 2026 02:32:27 GMT"
-      },
-      {
-        "title": "Mayor warns of London 'disinformation blizzard'",
-        "link": "https://www.bbc.com/news/articles/cp3l4kwer5ko?at_medium=RSS&at_campaign=rss",
-        "desc": "Sir Sadiq Khan claims London is being targeted with disinformation portraying it as a city \"in decline\".",
-        "pub": "Fri, 10 Apr 2026 15:29:31 GMT"
-      },
-      {
-        "title": "Amazon to end support for older Kindles, prompting user outcry",
-        "link": "https://www.bbc.com/news/articles/c98k91yy4z4o?at_medium=RSS&at_campaign=rss",
-        "desc": "The move means owners of Kindles released before 2013 will be unable to download new e-books.",
-        "pub": "Thu, 09 Apr 2026 13:12:45 GMT"
       }
     ],
     "Science": [

@@ -1,92 +1,98 @@
 {
-  "generated_at": "2026-04-14T08:46:57.538816+00:00",
+  "generated_at": "2026-04-15T08:48:02.853303+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 10,
-      "wind": 4,
-      "humidity": 75,
+      "temp": 14,
+      "wind": 11,
+      "humidity": 54,
       "desc": "Mainly clear",
       "icon": "🌤️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 17,
-      "wind": 1,
-      "humidity": 71,
-      "desc": "Clear sky",
-      "icon": "☀️"
-    },
-    {
-      "city": "Tokyo",
-      "flag": "🇯🇵",
-      "temp": 18,
-      "wind": 7,
-      "humidity": 71,
+      "temp": 19,
+      "wind": 6,
+      "humidity": 76,
       "desc": "Mainly clear",
       "icon": "🌤️"
     },
     {
+      "city": "Tokyo",
+      "flag": "🇯🇵",
+      "temp": 15,
+      "wind": 5,
+      "humidity": 86,
+      "desc": "Light drizzle",
+      "icon": "🌦️"
+    },
+    {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 11,
-      "wind": 10,
-      "humidity": 67,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 14,
+      "wind": 12,
+      "humidity": 84,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 18,
-      "wind": 3,
-      "humidity": 69,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "wind": 5,
+      "humidity": 77,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "Lebanon seeks peace, but Hezbollah needs to be convinced first",
-        "link": "https://www.bbc.com/news/articles/cr51l794mlyo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Lebanese government go into peace talks with limited influence over the group.",
-        "pub": "Mon, 13 Apr 2026 23:26:46 GMT"
+        "title": "'Bit of pain' worth long-term security from Iran, Bessent tells BBC",
+        "link": "https://www.bbc.com/news/articles/c4g66p2q075o?at_medium=RSS&at_campaign=rss",
+        "desc": "US Treasury Secretary said a \"small bit of economic pain\" was worth it to eliminate the threat of Iranian strikes on Western capitals.",
+        "pub": "Tue, 14 Apr 2026 19:47:53 GMT"
       },
       {
-        "title": "BBC joins paramedics on duty in Lebanon after Israeli strikes",
-        "link": "https://www.bbc.com/news/videos/cwyk8rz1pzyo?at_medium=RSS&at_campaign=rss",
-        "desc": "BBC Middle East correspondent Hugo Bachega joins paramedics on duty in Nabatieh - a city that was once vibrant, but is now abandoned.",
-        "pub": "Mon, 13 Apr 2026 21:29:23 GMT"
+        "title": "Israel and Lebanon hold first direct talks since 1993",
+        "link": "https://www.bbc.com/news/articles/cp8ddydl18vo?at_medium=RSS&at_campaign=rss",
+        "desc": "A US statement said the two sides had agreed to launch direct negotiations, at a time and place to be determined.",
+        "pub": "Tue, 14 Apr 2026 20:42:48 GMT"
       },
       {
-        "title": "Hungary's next PM would pick up if Putin calls and tell him to stop Ukraine war",
-        "link": "https://www.bbc.com/news/articles/cd6lzezp4zvo?at_medium=RSS&at_campaign=rss",
-        "desc": "Russia has offered \"pragmatic\" relations, but Péter Magyar says he will not call Vladimir Putin himself.",
-        "pub": "Mon, 13 Apr 2026 21:28:14 GMT"
+        "title": "Three years of messages at once - a chronicle of Sudan's war pours in as trapped reporter's phone turns on",
+        "link": "https://www.bbc.com/news/articles/cy01d1g0rrjo?at_medium=RSS&at_campaign=rss",
+        "desc": "As the conflict enters its fourth year, journalist Mohamed Suleiman shudders at what has been lost.",
+        "pub": "Tue, 14 Apr 2026 23:13:15 GMT"
       },
       {
-        "title": "Greek police using masked migrants to forcibly push other migrants back across border",
-        "link": "https://www.bbc.com/news/articles/c86vpq42dl0o?at_medium=RSS&at_campaign=rss",
-        "desc": "Mercenaries recruited since at least 2020 for illegal migrant ‘pushbacks’ in Greece, BBC told",
-        "pub": "Tue, 14 Apr 2026 05:02:21 GMT"
+        "title": "Magyar meets Hungarian president as Trump says next PM 'a good man'",
+        "link": "https://www.bbc.com/news/articles/cx2ddd0xyl5o?at_medium=RSS&at_campaign=rss",
+        "desc": "The man who ended Viktor Orbán's 16 years of continuous rule, Péter Magyar, is calling for a speedy transfer of power.",
+        "pub": "Wed, 15 Apr 2026 08:05:57 GMT"
       },
       {
-        "title": "Hospital at centre of child HIV outbreak caught reusing syringes in undercover filming",
-        "link": "https://www.bbc.com/news/articles/clyrd818gd2o?at_medium=RSS&at_campaign=rss",
-        "desc": "Footage shows staff in Pakistan injecting without gloves and reusing syringes, but the hospital boss refuses to acknowledge it is genuine.",
-        "pub": "Mon, 13 Apr 2026 23:27:45 GMT"
+        "title": "250 missing after migrant boat sinks in Indian Ocean",
+        "link": "https://www.bbc.com/news/articles/cz6778j78vlo?at_medium=RSS&at_campaign=rss",
+        "desc": "The trawler \"reportedly sank due to heavy winds, rough seas and overcrowding\", the United Nations said.",
+        "pub": "Wed, 15 Apr 2026 07:52:40 GMT"
       },
       {
-        "title": "‘I don’t know why they’re coming’: Australians on Harry and Meghan's visit",
-        "link": "https://www.bbc.com/news/videos/crk18gnepmgo?at_medium=RSS&at_campaign=rss",
-        "desc": "The BBC spoke to people in Sydney to hear their thoughts on the Duke and Duchess of Sussex’s trip to Australia.",
-        "pub": "Mon, 13 Apr 2026 23:40:20 GMT"
+        "title": "South Africa names apartheid-era politician as new ambassador to the US",
+        "link": "https://www.bbc.com/news/articles/cwyjjjz8n8ko?at_medium=RSS&at_campaign=rss",
+        "desc": "Roelf Meyer played a key role as a negotiator during talks to end white-minority rule in South Africa.",
+        "pub": "Wed, 15 Apr 2026 08:21:46 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Palantir defends its record as MPs demand more scrutiny of data use",
+        "link": "https://www.bbc.com/news/articles/c393w38lv3mo?at_medium=RSS&at_campaign=rss",
+        "desc": "NHS guidance that all hospitals should be using Palantir software from this month has sparked a backlash.",
+        "pub": "Tue, 14 Apr 2026 18:57:51 GMT"
+      },
       {
         "title": "Man charged with attempted murder over attack on home of OpenAI's Sam Altman",
         "link": "https://www.bbc.com/news/articles/cq597n1pg6lo?at_medium=RSS&at_campaign=rss",
@@ -100,6 +106,12 @@
         "pub": "Mon, 13 Apr 2026 23:35:56 GMT"
       },
       {
+        "title": "Rolls-Royce launches new two-seater electric car",
+        "link": "https://www.bbc.com/news/articles/c1eqqlnzq7yo?at_medium=RSS&at_campaign=rss",
+        "desc": "The company says it will create only 100 of its Project Nightingale in its Goodwood headquarters.",
+        "pub": "Tue, 14 Apr 2026 12:06:48 GMT"
+      },
+      {
         "title": "Roblox defends expanded age‑checks after parents raise concerns over errors",
         "link": "https://www.bbc.com/news/articles/cj94y9r0p10o?at_medium=RSS&at_campaign=rss",
         "desc": "With 144m daily users, the gaming company is extending its tech to introduce two age‑specific accounts.",
@@ -110,21 +122,15 @@
         "link": "https://www.bbc.com/news/articles/cx2dg5g1le7o?at_medium=RSS&at_campaign=rss",
         "desc": "The incident marks the second time the games giant has been hacked by young, English-speaking hackers.",
         "pub": "Mon, 13 Apr 2026 15:10:38 GMT"
-      },
-      {
-        "title": "Meta pulls Facebook ads recruiting for social media addiction lawsuits",
-        "link": "https://www.bbc.com/news/articles/czjw0zgz9zyo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Facebook owner recently lost a landmark social media addiction trial in California",
-        "pub": "Fri, 10 Apr 2026 15:44:12 GMT"
-      },
-      {
-        "title": "OpenAI boss Sam Altman's home targeted with Molotov cocktail",
-        "link": "https://www.bbc.com/news/articles/czx91rdxpyeo?at_medium=RSS&at_campaign=rss",
-        "desc": "San Francisco police have arrested a 20-year-old suspect after a perimeter gate was set alight.",
-        "pub": "Fri, 10 Apr 2026 21:01:18 GMT"
       }
     ],
     "Science": [
+      {
+        "title": "New footage shows moment Orion capsule hatch is opened at sea",
+        "link": "https://www.bbc.com/news/videos/clyxxnz97wxo?at_medium=RSS&at_campaign=rss",
+        "desc": "Newly released video shows the moment the hatch of Artemis II's Orion capsule is unlocked to a joyful reunion with the four astronauts.",
+        "pub": "Tue, 14 Apr 2026 16:12:27 GMT"
+      },
       {
         "title": "From blast off to splashdown: My days following Nasa's historic mission to the Moon",
         "link": "https://www.bbc.com/news/articles/clyrdkxvmmpo?at_medium=RSS&at_campaign=rss",
@@ -136,12 +142,6 @@
         "link": "https://www.bbc.com/news/articles/cje4zlxqkqdo?at_medium=RSS&at_campaign=rss",
         "desc": "The birds could be reintroduced as early as next year following a £1m injection from the government.",
         "pub": "Sat, 11 Apr 2026 23:19:46 GMT"
-      },
-      {
-        "title": "Back to Earth: What happens to the Artemis II astronauts now?",
-        "link": "https://www.bbc.com/news/articles/cpwjvgv2d4no?at_medium=RSS&at_campaign=rss",
-        "desc": "The astronauts will have medical checks and will be reunited with their families.",
-        "pub": "Sat, 11 Apr 2026 00:38:27 GMT"
       },
       {
         "title": "Artemis II mission was a triumph. Now comes the hard part",
@@ -156,10 +156,10 @@
         "pub": "Fri, 10 Apr 2026 00:59:31 GMT"
       },
       {
-        "title": "Pioneering wildlife cameraman Doug Allan dies after falling ill in Nepal",
-        "link": "https://www.bbc.com/news/articles/czx9kvqxeq5o?at_medium=RSS&at_campaign=rss",
-        "desc": "The cameraman and photographer won eight Emmy Awards for his work on acclaimed series like Blue Planet alongside Sir David Attenborough.",
-        "pub": "Thu, 09 Apr 2026 14:52:09 GMT"
+        "title": "Has Artemis II shown we can land on the Moon again?",
+        "link": "https://www.bbc.com/news/articles/cj60nkd8nrko?at_medium=RSS&at_campaign=rss",
+        "desc": "The Artemis II mission has been near flawless to date, but has the test flight shown Nasa is ready to send humans to the lunar surface?",
+        "pub": "Tue, 07 Apr 2026 15:23:05 GMT"
       }
     ]
   }

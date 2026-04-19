@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-04-18T08:01:48.579270+00:00",
+  "generated_at": "2026-04-19T08:09:29.355524+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 16,
-      "wind": 4,
-      "humidity": 63,
-      "desc": "Overcast",
-      "icon": "☁️"
-    },
-    {
-      "city": "New York",
-      "flag": "🇺🇸",
-      "temp": 14,
+      "temp": 11,
       "wind": 7,
-      "humidity": 94,
-      "desc": "Overcast",
-      "icon": "☁️"
-    },
-    {
-      "city": "Tokyo",
-      "flag": "🇯🇵",
-      "temp": 20,
-      "wind": 5,
-      "humidity": 61,
+      "humidity": 78,
       "desc": "Clear sky",
       "icon": "☀️"
     },
     {
+      "city": "New York",
+      "flag": "🇺🇸",
+      "temp": 9,
+      "wind": 12,
+      "humidity": 98,
+      "desc": "Fog",
+      "icon": "🌫️"
+    },
+    {
+      "city": "Tokyo",
+      "flag": "🇯🇵",
+      "temp": 21,
+      "wind": 7,
+      "humidity": 55,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
+    },
+    {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 11,
-      "wind": 11,
-      "humidity": 73,
+      "temp": 10,
+      "wind": 12,
+      "humidity": 58,
       "desc": "Clear sky",
       "icon": "☀️"
     },
@@ -41,49 +41,49 @@
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 16,
-      "wind": 4,
-      "humidity": 52,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "wind": 6,
+      "humidity": 54,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "Oil prices plunge as Iran says Strait 'open'",
-        "link": "https://www.bbc.com/news/articles/ckg045z73z1o?at_medium=RSS&at_campaign=rss",
-        "desc": "Brent crude sinks by a tenth after Iran says the key waterway is open for commercial ships for the rest of the ceasefire.",
-        "pub": "Sat, 18 Apr 2026 06:06:38 GMT"
+        "title": "Australia's most-decorated soldier vows to 'fight' war crime charges",
+        "link": "https://www.bbc.com/news/articles/cy91r7ww3weo?at_medium=RSS&at_campaign=rss",
+        "desc": "Ben Roberts-Smith has given his first statement since he was charged with five counts of the war crime of murder last week.",
+        "pub": "Sun, 19 Apr 2026 05:12:40 GMT"
       },
       {
-        "title": "Ceasefire with Israel brings respite to Lebanon, but obstacles to peace remain",
-        "link": "https://www.bbc.com/news/articles/crm10w4ynj1o?at_medium=RSS&at_campaign=rss",
-        "desc": "The halt to weeks of fighting is being celebrated in Lebanon, but it will be difficult to ensure it lasts.",
-        "pub": "Fri, 17 Apr 2026 14:31:51 GMT"
+        "title": "At least six killed in Kyiv as gunman opens fire and takes hostages",
+        "link": "https://www.bbc.com/news/articles/cm25r1vkx4lo?at_medium=RSS&at_campaign=rss",
+        "desc": "The attacker, who took hostages inside a supermarket, was killed after a shoot-out with police, officials say.",
+        "pub": "Sat, 18 Apr 2026 18:09:57 GMT"
       },
       {
-        "title": "Kanye West concert in Poland cancelled over antisemitic comments",
-        "link": "https://www.bbc.com/news/articles/czx95rl4ek5o?at_medium=RSS&at_campaign=rss",
-        "desc": "The UK government blocked the rapper from entering the country over his history of making pro-Nazi and racist statements.",
-        "pub": "Fri, 17 Apr 2026 18:19:10 GMT"
+        "title": "Pope says 'tyrants' speech was not aimed at Trump",
+        "link": "https://www.bbc.com/news/articles/ce84j261kj1o?at_medium=RSS&at_campaign=rss",
+        "desc": "The pontiff says his remarks have been misinterpreted after a spat with the US president.",
+        "pub": "Sun, 19 Apr 2026 07:47:35 GMT"
       },
       {
-        "title": "Thousands celebrate open-air Mass with Pope Leo in Cameroon - in pictures",
-        "link": "https://www.bbc.com/news/articles/cdj7kwn1d78o?at_medium=RSS&at_campaign=rss",
-        "desc": "Pope Leo XIV is on his third day in Cameroon before he heads to Angola on Saturday.",
-        "pub": "Fri, 17 Apr 2026 18:25:12 GMT"
+        "title": "Mexico's Sheinbaum denies 'diplomatic crisis' with Spain after conquest row",
+        "link": "https://www.bbc.com/news/articles/cp86r29l45go?at_medium=RSS&at_campaign=rss",
+        "desc": "The Mexican president says there were never tension over Spainish colonisation, which had become a thorny issue.",
+        "pub": "Sat, 18 Apr 2026 21:27:56 GMT"
       },
       {
-        "title": "Suspected crime boss Daniel Kinahan arrested in Dubai",
-        "link": "https://www.bbc.com/news/articles/c4g4yl5dd4do?at_medium=RSS&at_campaign=rss",
-        "desc": "Kinahan, in his 40s, was arrested in Dubai on foot of an arrest warrant issued by the Irish courts.",
-        "pub": "Fri, 17 Apr 2026 17:48:13 GMT"
+        "title": "Harry and Meghan's trip felt like a royal tour - except many Aussies weren't interested",
+        "link": "https://www.bbc.com/news/articles/cwyx014e2wqo?at_medium=RSS&at_campaign=rss",
+        "desc": "The Sussexes' four-day tour of Australia appears to have fallen flat with some.",
+        "pub": "Sat, 18 Apr 2026 23:09:30 GMT"
       },
       {
-        "title": "Mugabe's son pleads guilty to pointing a gun in South Africa",
-        "link": "https://www.bbc.com/news/articles/cqxlp5pvr3wo?at_medium=RSS&at_campaign=rss",
-        "desc": "Bellarmine Mugabe was arrested in February following the shooting of a 23-year-old man at his home in Johannesburg.",
-        "pub": "Fri, 17 Apr 2026 16:17:54 GMT"
+        "title": "Bodies of 50 infants dumped at Trinidad graveyard",
+        "link": "https://www.bbc.com/news/articles/ce8jl1271pjo?at_medium=RSS&at_campaign=rss",
+        "desc": "Police say a preliminary investigation shows it may be a case of an \"unlawful disposal of unclaimed corpses\".",
+        "pub": "Sun, 19 Apr 2026 07:49:45 GMT"
       }
     ],
     "Technology": [

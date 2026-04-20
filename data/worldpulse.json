@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-04-19T08:09:29.355524+00:00",
+  "generated_at": "2026-04-20T09:10:57.619805+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
       "temp": 11,
-      "wind": 7,
-      "humidity": 78,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "wind": 13,
+      "humidity": 61,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 9,
-      "wind": 12,
-      "humidity": 98,
-      "desc": "Fog",
-      "icon": "🌫️"
+      "temp": 2,
+      "wind": 8,
+      "humidity": 79,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 21,
-      "wind": 7,
-      "humidity": 55,
+      "temp": 18,
+      "wind": 6,
+      "humidity": 63,
       "desc": "Mainly clear",
       "icon": "🌤️"
     },
@@ -32,8 +32,8 @@
       "city": "London",
       "flag": "🇬🇧",
       "temp": 10,
-      "wind": 12,
-      "humidity": 58,
+      "wind": 10,
+      "humidity": 51,
       "desc": "Clear sky",
       "icon": "☀️"
     },
@@ -42,7 +42,7 @@
       "flag": "🇦🇺",
       "temp": 16,
       "wind": 6,
-      "humidity": 54,
+      "humidity": 77,
       "desc": "Mainly clear",
       "icon": "🌤️"
     }
@@ -50,40 +50,40 @@
   "news": {
     "World": [
       {
-        "title": "Australia's most-decorated soldier vows to 'fight' war crime charges",
-        "link": "https://www.bbc.com/news/articles/cy91r7ww3weo?at_medium=RSS&at_campaign=rss",
-        "desc": "Ben Roberts-Smith has given his first statement since he was charged with five counts of the war crime of murder last week.",
-        "pub": "Sun, 19 Apr 2026 05:12:40 GMT"
+        "title": "Man kills seven of his children, and an eighth child, in Louisiana mass shooting",
+        "link": "https://www.bbc.com/news/articles/c0q9v1p2dd2o?at_medium=RSS&at_campaign=rss",
+        "desc": "The children, aged from one to 14 years old, were killed in a shooting that police are describing as a \"domestic disturbance\".",
+        "pub": "Mon, 20 Apr 2026 08:26:46 GMT"
       },
       {
-        "title": "At least six killed in Kyiv as gunman opens fire and takes hostages",
-        "link": "https://www.bbc.com/news/articles/cm25r1vkx4lo?at_medium=RSS&at_campaign=rss",
-        "desc": "The attacker, who took hostages inside a supermarket, was killed after a shoot-out with police, officials say.",
-        "pub": "Sat, 18 Apr 2026 18:09:57 GMT"
+        "title": "Oil prices rise after Trump says Iranian ship seized",
+        "link": "https://www.bbc.com/news/articles/c5yjzy35825o?at_medium=RSS&at_campaign=rss",
+        "desc": "Energy markets have seen wild swings since the US and Israel attacked Iran on 28 February.",
+        "pub": "Mon, 20 Apr 2026 08:41:12 GMT"
       },
       {
-        "title": "Pope says 'tyrants' speech was not aimed at Trump",
-        "link": "https://www.bbc.com/news/articles/ce84j261kj1o?at_medium=RSS&at_campaign=rss",
-        "desc": "The pontiff says his remarks have been misinterpreted after a spat with the US president.",
-        "pub": "Sun, 19 Apr 2026 07:47:35 GMT"
+        "title": "Tehran will never cede control of Strait of Hormuz, senior Iranian politician tells BBC",
+        "link": "https://www.bbc.com/news/articles/cvg4jnn131qo?at_medium=RSS&at_campaign=rss",
+        "desc": "Lyse Doucet speaks to Ebrahim Azizi, who says Iran \"will decide the right of passage\" through the crucial shipping route.",
+        "pub": "Sun, 19 Apr 2026 21:09:06 GMT"
       },
       {
-        "title": "Mexico's Sheinbaum denies 'diplomatic crisis' with Spain after conquest row",
-        "link": "https://www.bbc.com/news/articles/cp86r29l45go?at_medium=RSS&at_campaign=rss",
-        "desc": "The Mexican president says there were never tension over Spainish colonisation, which had become a thorny issue.",
-        "pub": "Sat, 18 Apr 2026 21:27:56 GMT"
+        "title": "Ukraine police chief resigns after officers allegedly fled deadly shooting",
+        "link": "https://www.bbc.com/news/articles/c8ejn778j4do?at_medium=RSS&at_campaign=rss",
+        "desc": "Authorities say the officers have been suspended and an investigation into their actions is under way.",
+        "pub": "Sun, 19 Apr 2026 17:48:41 GMT"
       },
       {
-        "title": "Harry and Meghan's trip felt like a royal tour - except many Aussies weren't interested",
-        "link": "https://www.bbc.com/news/articles/cwyx014e2wqo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Sussexes' four-day tour of Australia appears to have fallen flat with some.",
-        "pub": "Sat, 18 Apr 2026 23:09:30 GMT"
+        "title": "Rat poison found in HiPP baby food jar in Austria, police say",
+        "link": "https://www.bbc.com/news/articles/cvg07lq5ql4o?at_medium=RSS&at_campaign=rss",
+        "desc": "The brand warned on Saturday that consuming the purées may be potentially \"life-threatening\".",
+        "pub": "Sun, 19 Apr 2026 12:52:26 GMT"
       },
       {
-        "title": "Bodies of 50 infants dumped at Trinidad graveyard",
-        "link": "https://www.bbc.com/news/articles/ce8jl1271pjo?at_medium=RSS&at_campaign=rss",
-        "desc": "Police say a preliminary investigation shows it may be a case of an \"unlawful disposal of unclaimed corpses\".",
-        "pub": "Sun, 19 Apr 2026 07:49:45 GMT"
+        "title": "Rumen Radev's party wins Bulgarian election",
+        "link": "https://www.bbc.com/news/articles/cm2kgm1zpgro?at_medium=RSS&at_campaign=rss",
+        "desc": "With 87% of the vote now counted, Progressive Bulgaria has secured a majority in parliament.",
+        "pub": "Mon, 20 Apr 2026 07:47:42 GMT"
       }
     ],
     "Technology": [
@@ -126,6 +126,12 @@
     ],
     "Science": [
       {
+        "title": "Fears for 1,000 toads after reservoir drained by water company",
+        "link": "https://www.bbc.com/news/articles/c8ejjd86p73o?at_medium=RSS&at_campaign=rss",
+        "desc": "Volunteers who helped more than 1,500 toads cross a busy road to a breeding ground fear they have died.",
+        "pub": "Mon, 20 Apr 2026 05:17:38 GMT"
+      },
+      {
         "title": "Artemis II crew: 'We left as friends - we came back as best friends'",
         "link": "https://www.bbc.com/news/articles/ce8jpz9rx2yo?at_medium=RSS&at_campaign=rss",
         "desc": "The four crew members gave their first press conference since they splashed down nearly a week ago, and emphasised hope and unity.",
@@ -154,12 +160,6 @@
         "link": "https://www.bbc.com/news/articles/cje4zlxqkqdo?at_medium=RSS&at_campaign=rss",
         "desc": "The birds could be reintroduced as early as next year following a £1m injection from the government.",
         "pub": "Sat, 11 Apr 2026 23:19:46 GMT"
-      },
-      {
-        "title": "Want to help garden birds? Don't feed them in warmer months, says RSPB",
-        "link": "https://www.bbc.com/news/articles/c2lwvz1pl1no?at_medium=RSS&at_campaign=rss",
-        "desc": "The UK's largest bird charity has issued new guidance advising people to stop using feeders to help wildlife thrive.",
-        "pub": "Fri, 10 Apr 2026 00:59:31 GMT"
       }
     ]
   }

@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-04-22T08:51:04.684181+00:00",
+  "generated_at": "2026-04-23T08:57:16.080836+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 12,
-      "wind": 17,
-      "humidity": 48,
+      "temp": 14,
+      "wind": 12,
+      "humidity": 45,
       "desc": "Clear sky",
       "icon": "☀️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 8,
-      "wind": 13,
-      "humidity": 74,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 6,
+      "wind": 6,
+      "humidity": 92,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 18,
-      "wind": 9,
-      "humidity": 65,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 13,
+      "wind": 4,
+      "humidity": 92,
+      "desc": "Drizzle",
+      "icon": "🌦️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
       "temp": 12,
-      "wind": 18,
-      "humidity": 54,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "wind": 16,
+      "humidity": 67,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 17,
       "wind": 4,
-      "humidity": 68,
+      "humidity": 64,
       "desc": "Partly cloudy",
       "icon": "⛅"
     }
@@ -50,43 +50,55 @@
   "news": {
     "World": [
       {
-        "title": "Trump buys time for Iran deal after frantic day of diplomacy",
-        "link": "https://www.bbc.com/news/articles/cvg4yr90jr2o?at_medium=RSS&at_campaign=rss",
-        "desc": "The US president's decision marked the second time in as many weeks he has backed off a threat to escalate the war, buying more time",
-        "pub": "Wed, 22 Apr 2026 00:32:10 GMT"
+        "title": "Two trains collide head-on in Denmark, leaving four critically hurt",
+        "link": "https://www.bbc.com/news/articles/cgqkw3qk0dlo?at_medium=RSS&at_campaign=rss",
+        "desc": "The accident happened early on Thursday at a level crossing north of Copenhagen.",
+        "pub": "Thu, 23 Apr 2026 08:02:18 GMT"
       },
       {
-        "title": "Phone tracking shows how Colombian mercenaries backed Sudan's RSF - report",
-        "link": "https://www.bbc.com/news/articles/cn4vk13wgwwo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Conflict Insights Group (CIG) says its research also shows the extent of UAE involvement.",
-        "pub": "Wed, 22 Apr 2026 04:01:50 GMT"
+        "title": "Lebanon accuses Israel of targeting journalist killed in air strike",
+        "link": "https://www.bbc.com/news/articles/c5yvn036evlo?at_medium=RSS&at_campaign=rss",
+        "desc": "Lebanon's prime minister accused Israel of war crimes after IDF attacks on Red Cross vehicles also stopped rescuers from reaching the site.",
+        "pub": "Thu, 23 Apr 2026 04:25:30 GMT"
       },
       {
-        "title": "Virginia approves redistricting measure, boosting Democrats' hopes for midterms",
-        "link": "https://www.bbc.com/news/articles/c895j8zgqe4o?at_medium=RSS&at_campaign=rss",
-        "desc": "The new maps approved by the state's voters could allow Democrats to flip as many as four House seats.",
-        "pub": "Wed, 22 Apr 2026 02:24:41 GMT"
+        "title": "US Navy chief leaving post 'effective immediately', Pentagon says",
+        "link": "https://www.bbc.com/news/articles/ce9ml02g5k7o?at_medium=RSS&at_campaign=rss",
+        "desc": "Reports say Phelan, whose role was largely administrative, left amid tension over US shipbuilding.",
+        "pub": "Thu, 23 Apr 2026 08:37:14 GMT"
       },
       {
-        "title": "Iran sees mass redundancies from war with US and Israel",
-        "link": "https://www.bbc.com/news/articles/ce84e31376zo?at_medium=RSS&at_campaign=rss",
-        "desc": "The impact is being felt by manufacturers, retailers and the digital sector, amid warnings it could get worse if the war resumes.",
-        "pub": "Tue, 21 Apr 2026 16:05:51 GMT"
+        "title": "Girl, 14, found in singer D4vd's car died of 'multiple injuries'",
+        "link": "https://www.bbc.com/news/articles/cr41yx7pxglo?at_medium=RSS&at_campaign=rss",
+        "desc": "The medical examiner said the 14-year-old's cause of death was determined months ago but was blocked from release.",
+        "pub": "Thu, 23 Apr 2026 00:39:56 GMT"
       },
       {
-        "title": "Israeli soldiers punished over vandalism of Jesus statue in Lebanon",
-        "link": "https://www.bbc.com/news/articles/cew790ppn8jo?at_medium=RSS&at_campaign=rss",
-        "desc": "Two soldiers will be removed from combat duty and receive 30 days of military detention, Israel's military says.",
-        "pub": "Tue, 21 Apr 2026 16:13:27 GMT"
+        "title": "Zambia's government takes possession of ex-president's body in repatriation row",
+        "link": "https://www.bbc.com/news/articles/cdj7vgwwzgdo?at_medium=RSS&at_campaign=rss",
+        "desc": "Zambia authorities and Edgar Lungu's family are in a dispute over where former leader's remains should be buried.",
+        "pub": "Wed, 22 Apr 2026 23:33:37 GMT"
       },
       {
-        "title": "Domestic workers legally recognised in Indonesia after '22-year struggle'",
-        "link": "https://www.bbc.com/news/articles/c1mkvjkg10no?at_medium=RSS&at_campaign=rss",
-        "desc": "The country is home to some 4.2 million domestic workers - of which almost 90% are women.",
-        "pub": "Wed, 22 Apr 2026 02:55:40 GMT"
+        "title": "Pope Leo criticises Equatorial Guinea prisons as he winds up Africa tour",
+        "link": "https://www.bbc.com/news/articles/c80m4822m1no?at_medium=RSS&at_campaign=rss",
+        "desc": "The Pope gives a frank and passionate speech, the likes of which have characterised his tour of Africa.",
+        "pub": "Thu, 23 Apr 2026 07:47:55 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Xbox cuts prices for Game Pass but ends day-one Call of Duty access",
+        "link": "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
+        "desc": "New Call of Duty games will be added to the subscription service \"about a year\" after release, Microsoft said.",
+        "pub": "Wed, 22 Apr 2026 12:03:10 GMT"
+      },
+      {
+        "title": "Anthropic investigating claim of unauthorised access to Mythos AI tool",
+        "link": "https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss",
+        "desc": "The AI company has said the model is too dangerous to release publicly because of its hacking capabilities.",
+        "pub": "Wed, 22 Apr 2026 10:13:35 GMT"
+      },
       {
         "title": "UK gaming icon Peter Molyneux on AI, his final creation and a changing industry",
         "link": "https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss",
@@ -100,12 +112,6 @@
         "pub": "Tue, 21 Apr 2026 22:47:56 GMT"
       },
       {
-        "title": "AI hacking tools like Mythos can be 'net positive' says top cyber official",
-        "link": "https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss",
-        "desc": "The head of the National Cyber Security Centre says frontier AI tools can be a force for good - if kept out of the wrong hands.",
-        "pub": "Tue, 21 Apr 2026 21:43:48 GMT"
-      },
-      {
         "title": "Ofcom investigating Telegram over child sexual abuse material concerns",
         "link": "https://www.bbc.com/news/articles/c4gxj049wljo?at_medium=RSS&at_campaign=rss",
         "desc": "The popular messaging service told the BBC in a statement it \"categorically denies Ofcom's accusations\".",
@@ -116,26 +122,20 @@
         "link": "https://www.bbc.com/news/articles/cn4vkye71ypo?at_medium=RSS&at_campaign=rss",
         "desc": "How Ternus responds to challenges facing Apple will go a long way to deciding the tech giant's future, writes Zoe Kleinman.",
         "pub": "Tue, 21 Apr 2026 13:35:21 GMT"
-      },
-      {
-        "title": "New era as Apple names new boss to replace Tim Cook after 15 years",
-        "link": "https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss",
-        "desc": "Ternus will take over running the technology giant in September as Cook steps up to become executive chairman.",
-        "pub": "Tue, 21 Apr 2026 05:57:56 GMT"
       }
     ],
     "Science": [
+      {
+        "title": "Ban 'forever chemicals' in uniforms and frying pans, MPs urge",
+        "link": "https://www.bbc.com/news/articles/ckg98q1yx9vo?at_medium=RSS&at_campaign=rss",
+        "desc": "School uniforms and non-stick pans are some of the everyday products that should stop using chemicals called PFAS, MPs say.",
+        "pub": "Wed, 22 Apr 2026 23:11:24 GMT"
+      },
       {
         "title": "Electricity bills targeted in planned shakeup to energy pricing",
         "link": "https://www.bbc.com/news/articles/c79jg43vd8no?at_medium=RSS&at_campaign=rss",
         "desc": "The war in the Middle East has brought renewed attention to Britain's vulnerability to energy price shocks.",
         "pub": "Tue, 21 Apr 2026 11:53:27 GMT"
-      },
-      {
-        "title": "Fears for 1,000 breeding toads after reservoir drained by water company",
-        "link": "https://www.bbc.com/news/articles/c8ejjd86p73o?at_medium=RSS&at_campaign=rss",
-        "desc": "Volunteers who helped more than 1,500 toads cross a busy road to a breeding ground fear they have died.",
-        "pub": "Mon, 20 Apr 2026 05:17:38 GMT"
       },
       {
         "title": "Artemis II crew: 'We left as friends - we came back as best friends'",
@@ -144,22 +144,22 @@
         "pub": "Thu, 16 Apr 2026 21:49:38 GMT"
       },
       {
-        "title": "Why cheap power could matter more than clean power in the push for net zero",
-        "link": "https://www.bbc.com/news/articles/c86ey5n9vx9o?at_medium=RSS&at_campaign=rss",
-        "desc": "The question of how important making our electricity clean is to going green is coming under increasing scrutiny",
-        "pub": "Wed, 15 Apr 2026 23:20:22 GMT"
-      },
-      {
         "title": "Butterfly numbers are dropping but here are five species you may see more of",
         "link": "https://www.bbc.com/news/articles/c75kk7p41npo?at_medium=RSS&at_campaign=rss",
         "desc": "A warming climate has helped some to flourish, researchers say, but the outlook is troubling.",
         "pub": "Tue, 14 Apr 2026 23:14:24 GMT"
       },
       {
-        "title": "New footage shows moment Orion capsule hatch is opened at sea",
-        "link": "https://www.bbc.com/news/videos/clyxxnz97wxo?at_medium=RSS&at_campaign=rss",
-        "desc": "Newly released video shows the moment the hatch of Artemis II's Orion capsule is unlocked to a joyful reunion with the four astronauts.",
-        "pub": "Tue, 14 Apr 2026 16:12:27 GMT"
+        "title": "Golden eagles' return to English skies gets government backing",
+        "link": "https://www.bbc.com/news/articles/cje4zlxqkqdo?at_medium=RSS&at_campaign=rss",
+        "desc": "The birds could be reintroduced as early as next year following a £1m injection from the government.",
+        "pub": "Sat, 11 Apr 2026 23:19:46 GMT"
+      },
+      {
+        "title": "From blast off to splashdown: My days following Nasa's historic mission to the Moon",
+        "link": "https://www.bbc.com/news/articles/clyrdkxvmmpo?at_medium=RSS&at_campaign=rss",
+        "desc": "BBC Science Editor Rebecca Morelle reflects on how it felt to watch history being made.",
+        "pub": "Sat, 11 Apr 2026 23:17:07 GMT"
       }
     ]
   }

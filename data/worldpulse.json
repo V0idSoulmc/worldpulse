@@ -1,92 +1,116 @@
 {
-  "generated_at": "2026-04-23T08:57:16.080836+00:00",
+  "generated_at": "2026-04-24T09:03:55.132645+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 14,
-      "wind": 12,
-      "humidity": 45,
+      "temp": 15,
+      "wind": 8,
+      "humidity": 43,
       "desc": "Clear sky",
       "icon": "☀️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 6,
-      "wind": 6,
-      "humidity": 92,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 14,
+      "wind": 4,
+      "humidity": 40,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 13,
+      "temp": 16,
       "wind": 4,
-      "humidity": 92,
-      "desc": "Drizzle",
-      "icon": "🌦️"
-    },
-    {
-      "city": "London",
-      "flag": "🇬🇧",
-      "temp": 12,
-      "wind": 16,
-      "humidity": 67,
+      "humidity": 59,
       "desc": "Mainly clear",
       "icon": "🌤️"
     },
     {
+      "city": "London",
+      "flag": "🇬🇧",
+      "temp": 10,
+      "wind": 10,
+      "humidity": 63,
+      "desc": "Clear sky",
+      "icon": "☀️"
+    },
+    {
       "city": "Sydney",
       "flag": "🇦🇺",
-      "temp": 17,
-      "wind": 4,
-      "humidity": 64,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 18,
+      "wind": 3,
+      "humidity": 74,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "Two trains collide head-on in Denmark, leaving four critically hurt",
-        "link": "https://www.bbc.com/news/articles/cgqkw3qk0dlo?at_medium=RSS&at_campaign=rss",
-        "desc": "The accident happened early on Thursday at a level crossing north of Copenhagen.",
-        "pub": "Thu, 23 Apr 2026 08:02:18 GMT"
+        "title": "Trump tells BBC that King's visit could 'absolutely' help repair relations with UK",
+        "link": "https://www.bbc.com/news/articles/cx2wdegnzzjo?at_medium=RSS&at_campaign=rss",
+        "desc": "In a phone interview with the BBC's North America editor, the president discussed next week's visit and his relationship with the UK PM.",
+        "pub": "Fri, 24 Apr 2026 03:03:55 GMT"
       },
       {
-        "title": "Lebanon accuses Israel of targeting journalist killed in air strike",
-        "link": "https://www.bbc.com/news/articles/c5yvn036evlo?at_medium=RSS&at_campaign=rss",
-        "desc": "Lebanon's prime minister accused Israel of war crimes after IDF attacks on Red Cross vehicles also stopped rescuers from reaching the site.",
-        "pub": "Thu, 23 Apr 2026 04:25:30 GMT"
+        "title": "Epstein housed abuse victims in London flats, BBC reveals",
+        "link": "https://www.bbc.com/news/articles/cn08j2g9ze9o?at_medium=RSS&at_campaign=rss",
+        "desc": "The revelations intensify concerns about repeated police decisions not to investigate 2015 trafficking claims.",
+        "pub": "Fri, 24 Apr 2026 05:00:03 GMT"
       },
       {
-        "title": "US Navy chief leaving post 'effective immediately', Pentagon says",
-        "link": "https://www.bbc.com/news/articles/ce9ml02g5k7o?at_medium=RSS&at_campaign=rss",
-        "desc": "Reports say Phelan, whose role was largely administrative, left amid tension over US shipbuilding.",
-        "pub": "Thu, 23 Apr 2026 08:37:14 GMT"
+        "title": "Kenyan leader sparks uproar after  mocking Nigerians' spoken English",
+        "link": "https://www.bbc.com/news/articles/c0ledd82ed0o?at_medium=RSS&at_campaign=rss",
+        "desc": "William Ruto says Kenyans speak \"some of the best English in the world\" while it is hard to understand Nigerians.",
+        "pub": "Fri, 24 Apr 2026 09:01:32 GMT"
       },
       {
-        "title": "Girl, 14, found in singer D4vd's car died of 'multiple injuries'",
-        "link": "https://www.bbc.com/news/articles/cr41yx7pxglo?at_medium=RSS&at_campaign=rss",
-        "desc": "The medical examiner said the 14-year-old's cause of death was determined months ago but was blocked from release.",
-        "pub": "Thu, 23 Apr 2026 00:39:56 GMT"
+        "title": "Woman trapped in poo for three hours after outback toilet collapses",
+        "link": "https://www.bbc.com/news/articles/clyedj166k5o?at_medium=RSS&at_campaign=rss",
+        "desc": "The woman got stuck waist-deep in a pit latrine in the Australian outback after it gave way.",
+        "pub": "Fri, 24 Apr 2026 08:39:02 GMT"
       },
       {
-        "title": "Zambia's government takes possession of ex-president's body in repatriation row",
-        "link": "https://www.bbc.com/news/articles/cdj7vgwwzgdo?at_medium=RSS&at_campaign=rss",
-        "desc": "Zambia authorities and Edgar Lungu's family are in a dispute over where former leader's remains should be buried.",
-        "pub": "Wed, 22 Apr 2026 23:33:37 GMT"
+        "title": "South Korea police arrest man for posting AI photo of runaway wolf",
+        "link": "https://www.bbc.com/news/articles/c4gx1n0dl9no?at_medium=RSS&at_campaign=rss",
+        "desc": "The widely circulated image had prompted authorities to move their search operation.",
+        "pub": "Fri, 24 Apr 2026 08:23:36 GMT"
       },
       {
-        "title": "Pope Leo criticises Equatorial Guinea prisons as he winds up Africa tour",
-        "link": "https://www.bbc.com/news/articles/c80m4822m1no?at_medium=RSS&at_campaign=rss",
-        "desc": "The Pope gives a frank and passionate speech, the likes of which have characterised his tour of Africa.",
-        "pub": "Thu, 23 Apr 2026 07:47:55 GMT"
+        "title": "Ringo Starr: 'I made all my mistakes on stage'",
+        "link": "https://www.bbc.com/news/articles/cp8645d9lvyo?at_medium=RSS&at_campaign=rss",
+        "desc": "Beatles star reveals all about his new country album, being a Sir and coming up with the phrase A Hard Day's Night.",
+        "pub": "Thu, 23 Apr 2026 23:05:11 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Meta to cut one in 10 jobs after spending billions on AI",
+        "link": "https://www.bbc.com/news/articles/crm1y89vek8o?at_medium=RSS&at_campaign=rss",
+        "desc": "The cuts, which employees had been expecting for weeks, will be Meta's largest layoff since 2023.",
+        "pub": "Fri, 24 Apr 2026 07:31:35 GMT"
+      },
+      {
+        "title": "White House memo claims mass AI theft by Chinese firms",
+        "link": "https://www.bbc.com/news/articles/cpqxgxx9nrqo?at_medium=RSS&at_campaign=rss",
+        "desc": "A memo from Michael Kratsios says firms, mainly in China, are wrongfully distilling US AI models.",
+        "pub": "Fri, 24 Apr 2026 00:58:58 GMT"
+      },
+      {
+        "title": "From scientist to silk farmer: India's silk industry renewal",
+        "link": "https://www.bbc.com/news/articles/c0e7le127v5o?at_medium=RSS&at_campaign=rss",
+        "desc": "Silk production is an increasingly high-tech business in India.",
+        "pub": "Thu, 23 Apr 2026 23:50:01 GMT"
+      },
+      {
+        "title": "UK Biobank health data listed for sale in China, government confirms",
+        "link": "https://www.bbc.com/news/articles/cpvxgl3n138o?at_medium=RSS&at_campaign=rss",
+        "desc": "The government said medical data of 500,000 people was affected but no personally identifiable information had been made available.",
+        "pub": "Thu, 23 Apr 2026 11:45:41 GMT"
+      },
       {
         "title": "Xbox cuts prices for Game Pass but ends day-one Call of Duty access",
         "link": "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
@@ -98,33 +122,21 @@
         "link": "https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss",
         "desc": "The AI company has said the model is too dangerous to release publicly because of its hacking capabilities.",
         "pub": "Wed, 22 Apr 2026 10:13:35 GMT"
-      },
-      {
-        "title": "UK gaming icon Peter Molyneux on AI, his final creation and a changing industry",
-        "link": "https://www.bbc.com/news/articles/c4glw5nyrggo?at_medium=RSS&at_campaign=rss",
-        "desc": "The creator of iconic series such as Fable says Masters of Albion will be the last game he makes.",
-        "pub": "Tue, 21 Apr 2026 23:00:24 GMT"
-      },
-      {
-        "title": "Meta to track workers' clicks and keystrokes to train AI",
-        "link": "https://www.bbc.com/news/articles/cvglyklz49jo?at_medium=RSS&at_campaign=rss",
-        "desc": "The firm will take data from the way employees work for its artificial intelligence models.",
-        "pub": "Tue, 21 Apr 2026 22:47:56 GMT"
-      },
-      {
-        "title": "Ofcom investigating Telegram over child sexual abuse material concerns",
-        "link": "https://www.bbc.com/news/articles/c4gxj049wljo?at_medium=RSS&at_campaign=rss",
-        "desc": "The popular messaging service told the BBC in a statement it \"categorically denies Ofcom's accusations\".",
-        "pub": "Tue, 21 Apr 2026 13:59:23 GMT"
-      },
-      {
-        "title": "How will Apple change under 'product guy' John Ternus?",
-        "link": "https://www.bbc.com/news/articles/cn4vkye71ypo?at_medium=RSS&at_campaign=rss",
-        "desc": "How Ternus responds to challenges facing Apple will go a long way to deciding the tech giant's future, writes Zoe Kleinman.",
-        "pub": "Tue, 21 Apr 2026 13:35:21 GMT"
       }
     ],
     "Science": [
+      {
+        "title": "First ever talks to ditch fossil fuels as UN deadlock deepens",
+        "link": "https://www.bbc.com/news/articles/cx2rq92yv4vo?at_medium=RSS&at_campaign=rss",
+        "desc": "Some 60 countries are meeting in Colombia as frustration grows with lack of progress in tackling climate change",
+        "pub": "Fri, 24 Apr 2026 05:42:44 GMT"
+      },
+      {
+        "title": "Meet the 19-metre octopus that prowled the ancient seas",
+        "link": "https://www.bbc.com/news/articles/cyv1rgm16r2o?at_medium=RSS&at_campaign=rss",
+        "desc": "Giant octopuses may have ruled the oceans 100 million years ago, according to fossil evidence.",
+        "pub": "Thu, 23 Apr 2026 18:04:39 GMT"
+      },
       {
         "title": "Ban 'forever chemicals' in uniforms and frying pans, MPs urge",
         "link": "https://www.bbc.com/news/articles/ckg98q1yx9vo?at_medium=RSS&at_campaign=rss",
@@ -148,18 +160,6 @@
         "link": "https://www.bbc.com/news/articles/c75kk7p41npo?at_medium=RSS&at_campaign=rss",
         "desc": "A warming climate has helped some to flourish, researchers say, but the outlook is troubling.",
         "pub": "Tue, 14 Apr 2026 23:14:24 GMT"
-      },
-      {
-        "title": "Golden eagles' return to English skies gets government backing",
-        "link": "https://www.bbc.com/news/articles/cje4zlxqkqdo?at_medium=RSS&at_campaign=rss",
-        "desc": "The birds could be reintroduced as early as next year following a £1m injection from the government.",
-        "pub": "Sat, 11 Apr 2026 23:19:46 GMT"
-      },
-      {
-        "title": "From blast off to splashdown: My days following Nasa's historic mission to the Moon",
-        "link": "https://www.bbc.com/news/articles/clyrdkxvmmpo?at_medium=RSS&at_campaign=rss",
-        "desc": "BBC Science Editor Rebecca Morelle reflects on how it felt to watch history being made.",
-        "pub": "Sat, 11 Apr 2026 23:17:07 GMT"
       }
     ]
   }

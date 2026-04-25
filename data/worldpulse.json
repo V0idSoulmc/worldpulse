@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-04-24T09:03:55.132645+00:00",
+  "generated_at": "2026-04-25T08:07:46.650622+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 15,
-      "wind": 8,
-      "humidity": 43,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 12,
+      "wind": 7,
+      "humidity": 58,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 14,
-      "wind": 4,
-      "humidity": 40,
+      "temp": 8,
+      "wind": 9,
+      "humidity": 85,
       "desc": "Overcast",
       "icon": "☁️"
     },
@@ -23,70 +23,94 @@
       "city": "Tokyo",
       "flag": "🇯🇵",
       "temp": 16,
-      "wind": 4,
-      "humidity": 59,
-      "desc": "Mainly clear",
-      "icon": "🌤️"
+      "wind": 6,
+      "humidity": 54,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 10,
-      "wind": 10,
-      "humidity": 63,
-      "desc": "Clear sky",
-      "icon": "☀️"
-    },
-    {
-      "city": "Sydney",
-      "flag": "🇦🇺",
-      "temp": 18,
+      "temp": 9,
       "wind": 3,
       "humidity": 74,
       "desc": "Mainly clear",
       "icon": "🌤️"
+    },
+    {
+      "city": "Sydney",
+      "flag": "🇦🇺",
+      "temp": 20,
+      "wind": 15,
+      "humidity": 75,
+      "desc": "Clear sky",
+      "icon": "☀️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "Trump tells BBC that King's visit could 'absolutely' help repair relations with UK",
-        "link": "https://www.bbc.com/news/articles/cx2wdegnzzjo?at_medium=RSS&at_campaign=rss",
-        "desc": "In a phone interview with the BBC's North America editor, the president discussed next week's visit and his relationship with the UK PM.",
-        "pub": "Fri, 24 Apr 2026 03:03:55 GMT"
+        "title": "Nato says 'no provision' to expel members after report US could seek to suspend Spain",
+        "link": "https://www.bbc.com/news/articles/cz78x703lrvo?at_medium=RSS&at_campaign=rss",
+        "desc": "An internal Pentagon email reportedly outlines options to punish allies over a perceived lack of support for Iran war.",
+        "pub": "Fri, 24 Apr 2026 16:04:29 GMT"
       },
       {
-        "title": "Epstein housed abuse victims in London flats, BBC reveals",
-        "link": "https://www.bbc.com/news/articles/cn08j2g9ze9o?at_medium=RSS&at_campaign=rss",
-        "desc": "The revelations intensify concerns about repeated police decisions not to investigate 2015 trafficking claims.",
-        "pub": "Fri, 24 Apr 2026 05:00:03 GMT"
+        "title": "Katya Adler: Europe's Nato allies push back at reported US threat to Spain",
+        "link": "https://www.bbc.com/news/articles/cj40r2gw24wo?at_medium=RSS&at_campaign=rss",
+        "desc": "On Friday morning, souring relations between Europe and the United States  reared its Medusa-like head again, writes the BBC's Europe editor.",
+        "pub": "Sat, 25 Apr 2026 00:10:51 GMT"
       },
       {
-        "title": "Kenyan leader sparks uproar after  mocking Nigerians' spoken English",
-        "link": "https://www.bbc.com/news/articles/c0ledd82ed0o?at_medium=RSS&at_campaign=rss",
-        "desc": "William Ruto says Kenyans speak \"some of the best English in the world\" while it is hard to understand Nigerians.",
-        "pub": "Fri, 24 Apr 2026 09:01:32 GMT"
+        "title": "No 10 says Falklands sovereignty rests with UK after report of US 'review'",
+        "link": "https://www.bbc.com/news/articles/cde51y0zgjyo?at_medium=RSS&at_campaign=rss",
+        "desc": "An internal Pentagon document reportedly raised the prospect of a change in position in retaliation for the UK not joining the Iran war.",
+        "pub": "Fri, 24 Apr 2026 22:55:05 GMT"
       },
       {
-        "title": "Woman trapped in poo for three hours after outback toilet collapses",
-        "link": "https://www.bbc.com/news/articles/clyedj166k5o?at_medium=RSS&at_campaign=rss",
-        "desc": "The woman got stuck waist-deep in a pit latrine in the Australian outback after it gave way.",
-        "pub": "Fri, 24 Apr 2026 08:39:02 GMT"
+        "title": "Thousands at risk after multi-million dollar Everest flood warning system left to rust",
+        "link": "https://www.bbc.com/news/articles/czjwr93vrrzo?at_medium=RSS&at_campaign=rss",
+        "desc": "The flood warning system at Imja glacial lake has not been maintained since 2016, fearful locals tell BBC.",
+        "pub": "Fri, 24 Apr 2026 23:28:09 GMT"
       },
       {
-        "title": "South Korea police arrest man for posting AI photo of runaway wolf",
-        "link": "https://www.bbc.com/news/articles/c4gx1n0dl9no?at_medium=RSS&at_campaign=rss",
-        "desc": "The widely circulated image had prompted authorities to move their search operation.",
-        "pub": "Fri, 24 Apr 2026 08:23:36 GMT"
+        "title": "Epstein survivor: Meeting the King would be a 'grand step'",
+        "link": "https://www.bbc.com/news/videos/cwy37w2y64ro?at_medium=RSS&at_campaign=rss",
+        "desc": "A Buckingham Palace source confirmed the Royals will not meet with survivors of sex offender Jeffrey Epstein during their state visit to the US.",
+        "pub": "Fri, 24 Apr 2026 23:00:21 GMT"
       },
       {
-        "title": "Ringo Starr: 'I made all my mistakes on stage'",
-        "link": "https://www.bbc.com/news/articles/cp8645d9lvyo?at_medium=RSS&at_campaign=rss",
-        "desc": "Beatles star reveals all about his new country album, being a Sir and coming up with the phrase A Hard Day's Night.",
-        "pub": "Thu, 23 Apr 2026 23:05:11 GMT"
+        "title": "China car giant BYD says it can thrive without US",
+        "link": "https://www.bbc.com/news/articles/cy01ele412yo?at_medium=RSS&at_campaign=rss",
+        "desc": "With the price of fuel rising China's BYD says it is positioning itself to benefit from the global shift away from fossil fuels.",
+        "pub": "Fri, 24 Apr 2026 21:25:16 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "The viral manifesto of 'anti-woke' tech boss with NHS and defence contracts",
+        "link": "https://www.bbc.com/news/articles/c4gjkj7975po?at_medium=RSS&at_campaign=rss",
+        "desc": "The boss of the controversial tech company with UK government contracts published a 22-point plan on the future of the West.",
+        "pub": "Sat, 25 Apr 2026 01:18:33 GMT"
+      },
+      {
+        "title": "OpenAI boss 'deeply sorry' for not telling police of mass shooting suspect's account",
+        "link": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
+        "desc": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
+        "pub": "Fri, 24 Apr 2026 22:45:28 GMT"
+      },
+      {
+        "title": "UK cyber chiefs say it's time to ditch passwords for passkeys - what are they?",
+        "link": "https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss",
+        "desc": "Passwords have long been the default way we secure accounts online but the NCSC has said passkeys are a better option.",
+        "pub": "Fri, 24 Apr 2026 14:40:23 GMT"
+      },
+      {
+        "title": "Biobank data incident caused by 'a few bad apples', boss says",
+        "link": "https://www.bbc.com/news/articles/clyedyn6pz7o?at_medium=RSS&at_campaign=rss",
+        "desc": "Professor Sir Rory Collins said he was \"angry\" and \"upset\" about the incident, as both the bank's boss and a participant.",
+        "pub": "Fri, 24 Apr 2026 10:00:42 GMT"
+      },
       {
         "title": "Meta to cut one in 10 jobs after spending billions on AI",
         "link": "https://www.bbc.com/news/articles/crm1y89vek8o?at_medium=RSS&at_campaign=rss",
@@ -98,30 +122,6 @@
         "link": "https://www.bbc.com/news/articles/cpqxgxx9nrqo?at_medium=RSS&at_campaign=rss",
         "desc": "A memo from Michael Kratsios says firms, mainly in China, are wrongfully distilling US AI models.",
         "pub": "Fri, 24 Apr 2026 00:58:58 GMT"
-      },
-      {
-        "title": "From scientist to silk farmer: India's silk industry renewal",
-        "link": "https://www.bbc.com/news/articles/c0e7le127v5o?at_medium=RSS&at_campaign=rss",
-        "desc": "Silk production is an increasingly high-tech business in India.",
-        "pub": "Thu, 23 Apr 2026 23:50:01 GMT"
-      },
-      {
-        "title": "UK Biobank health data listed for sale in China, government confirms",
-        "link": "https://www.bbc.com/news/articles/cpvxgl3n138o?at_medium=RSS&at_campaign=rss",
-        "desc": "The government said medical data of 500,000 people was affected but no personally identifiable information had been made available.",
-        "pub": "Thu, 23 Apr 2026 11:45:41 GMT"
-      },
-      {
-        "title": "Xbox cuts prices for Game Pass but ends day-one Call of Duty access",
-        "link": "https://www.bbc.com/news/articles/cgrlvvrn409o?at_medium=RSS&at_campaign=rss",
-        "desc": "New Call of Duty games will be added to the subscription service \"about a year\" after release, Microsoft said.",
-        "pub": "Wed, 22 Apr 2026 12:03:10 GMT"
-      },
-      {
-        "title": "Anthropic investigating claim of unauthorised access to Mythos AI tool",
-        "link": "https://www.bbc.com/news/articles/cy41zejp9pko?at_medium=RSS&at_campaign=rss",
-        "desc": "The AI company has said the model is too dangerous to release publicly because of its hacking capabilities.",
-        "pub": "Wed, 22 Apr 2026 10:13:35 GMT"
       }
     ],
     "Science": [

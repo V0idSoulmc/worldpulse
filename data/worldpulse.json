@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-04-26T08:18:31.595230+00:00",
+  "generated_at": "2026-04-27T09:25:00.730680+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 13,
-      "wind": 6,
-      "humidity": 47,
-      "desc": "Clear sky",
-      "icon": "☀️"
-    },
-    {
-      "city": "New York",
-      "flag": "🇺🇸",
-      "temp": 6,
-      "wind": 14,
-      "humidity": 95,
+      "temp": 15,
+      "wind": 8,
+      "humidity": 48,
       "desc": "Overcast",
       "icon": "☁️"
     },
     {
+      "city": "New York",
+      "flag": "🇺🇸",
+      "temp": 5,
+      "wind": 7,
+      "humidity": 88,
+      "desc": "Clear sky",
+      "icon": "☀️"
+    },
+    {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 19,
-      "wind": 6,
-      "humidity": 58,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 15,
+      "wind": 4,
+      "humidity": 88,
+      "desc": "Light drizzle",
+      "icon": "🌦️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 12,
-      "wind": 12,
-      "humidity": 64,
+      "temp": 14,
+      "wind": 3,
+      "humidity": 59,
       "desc": "Clear sky",
       "icon": "☀️"
     },
@@ -41,49 +41,49 @@
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 19,
-      "wind": 14,
-      "humidity": 59,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "wind": 8,
+      "humidity": 79,
+      "desc": "Overcast",
+      "icon": "☁️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "What it was like in the room as shots rang out at correspondents' dinner",
-        "link": "https://www.bbc.com/news/articles/c62j23wzeqeo?at_medium=RSS&at_campaign=rss",
-        "desc": "The BBC's Gary O'Donoghue describes the moment he and others dived for cover as shots rang out at the venue.",
-        "pub": "Sun, 26 Apr 2026 04:22:59 GMT"
+        "title": "Suspected gunman at Washington press dinner identified as 31-year-old Californian",
+        "link": "https://www.bbc.com/news/articles/cr717nglye0o?at_medium=RSS&at_campaign=rss",
+        "desc": "The man arrested at the event attended by President Trump has been named in US media as Cole Tomas Allen from California.",
+        "pub": "Mon, 27 Apr 2026 02:31:26 GMT"
       },
       {
-        "title": "Trump cancels US envoys' trip to Pakistan for talks on Iran war",
-        "link": "https://www.bbc.com/news/articles/c4g6nyvl29po?at_medium=RSS&at_campaign=rss",
-        "desc": "Iran had earlier said there were no plans for a direct meeting with a US delegation led by Steve Witkoff and Jared Kushner.",
-        "pub": "Sat, 25 Apr 2026 21:34:12 GMT"
+        "title": "Oil prices rise as US-Iran peace talks stall",
+        "link": "https://www.bbc.com/news/articles/c15d57pv925o?at_medium=RSS&at_campaign=rss",
+        "desc": "President Trump said the US had cancelled plans to send a team to Pakistan for negotiations.",
+        "pub": "Mon, 27 Apr 2026 08:38:37 GMT"
       },
       {
-        "title": "Netanyahu orders army to 'vigorously attack' Hezbollah in Lebanon",
-        "link": "https://www.bbc.com/news/articles/c5yv1nvd4gjo?at_medium=RSS&at_campaign=rss",
-        "desc": "The Israeli PM's directive comes as six people were killed by strikes in Lebanon despite a ceasefire being extended by three weeks.",
-        "pub": "Sun, 26 Apr 2026 00:34:21 GMT"
+        "title": "Ukraine's drone commander has Russian oil, troops and morale in his sights",
+        "link": "https://www.bbc.com/news/articles/c1d9wvd2e4ro?at_medium=RSS&at_campaign=rss",
+        "desc": "In a rare interview, Commander Robert Brovdi shared how his unit accounts for a third of all targets destroyed on the battlefield.",
+        "pub": "Mon, 27 Apr 2026 05:03:39 GMT"
       },
       {
-        "title": "Explosions and gunfire as armed groups launch co-ordinated attacks across Mali",
-        "link": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
-        "desc": "Witnesses report clashes in the centre and north, in what has been described as the largest jihadist attack in years.",
-        "pub": "Sat, 25 Apr 2026 21:13:49 GMT"
+        "title": "Pirates seize another vessel off Somali coast as threat level increased",
+        "link": "https://www.bbc.com/news/articles/cn7871n27nlo?at_medium=RSS&at_campaign=rss",
+        "desc": "The UK's maritime monitor reports at least four suspected piracy incidents in the past week off the coast of Somalia.",
+        "pub": "Mon, 27 Apr 2026 06:53:54 GMT"
       },
       {
-        "title": "Mexico says US agents killed in crash weren't permitted to operate there",
-        "link": "https://www.bbc.com/news/articles/cx2491we011o?at_medium=RSS&at_campaign=rss",
-        "desc": "The two Americans who reportedly worked for the CIA died in a car crash after a Mexican-led operation to destroy a drug lab.",
-        "pub": "Sat, 25 Apr 2026 17:40:51 GMT"
+        "title": "Kim Jong Un opens memorial for N Korean soldiers killed in Ukraine war",
+        "link": "https://www.bbc.com/news/articles/cql7l707244o?at_medium=RSS&at_campaign=rss",
+        "desc": "Kim Jong Un and Russian Defence Minister Andrey Belousov unveiled the memorial in Pyongyang.",
+        "pub": "Mon, 27 Apr 2026 06:52:59 GMT"
       },
       {
-        "title": "Palestinians in West Bank and some in Gaza vote in local elections",
-        "link": "https://www.bbc.com/news/articles/cn4vej3x0wxo?at_medium=RSS&at_campaign=rss",
-        "desc": "Local elections have been held in the occupied West Bank and in one Gazan city, though Hamas and other groups are not taking part.",
-        "pub": "Sat, 25 Apr 2026 17:01:55 GMT"
+        "title": "Trump says King will be 'very safe' during US visit after security talks",
+        "link": "https://www.bbc.com/news/articles/c4gjger58jzo?at_medium=RSS&at_campaign=rss",
+        "desc": "The state visit will go ahead despite concerns raised after a gunman targeted an event attended by the president.",
+        "pub": "Mon, 27 Apr 2026 09:19:11 GMT"
       }
     ],
     "Technology": [
@@ -126,6 +126,12 @@
     ],
     "Science": [
       {
+        "title": "UK's biggest ever environmental pollution claim reaches High Court",
+        "link": "https://www.bbc.com/news/articles/cqxl5rjw58po?at_medium=RSS&at_campaign=rss",
+        "desc": "One of the UK's largest chicken producers and a water company accused of polluting three rivers including the River Wye",
+        "pub": "Sun, 26 Apr 2026 23:01:47 GMT"
+      },
+      {
         "title": "'We're living in a shed because of river pollution'",
         "link": "https://www.bbc.com/news/articles/c6244zv02ero?at_medium=RSS&at_campaign=rss",
         "desc": "Jane and Tony Coyle spent seven years waiting for planning permission due to River Lugg pollution.",
@@ -154,12 +160,6 @@
         "link": "https://www.bbc.com/news/articles/c79jg43vd8no?at_medium=RSS&at_campaign=rss",
         "desc": "The war in the Middle East has brought renewed attention to Britain's vulnerability to energy price shocks.",
         "pub": "Tue, 21 Apr 2026 11:53:27 GMT"
-      },
-      {
-        "title": "Artemis II crew: 'We left as friends - we came back as best friends'",
-        "link": "https://www.bbc.com/news/articles/ce8jpz9rx2yo?at_medium=RSS&at_campaign=rss",
-        "desc": "The four crew members gave their first press conference since they splashed down nearly a week ago, and emphasised hope and unity.",
-        "pub": "Thu, 16 Apr 2026 21:49:38 GMT"
       }
     ]
   }

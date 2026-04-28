@@ -1,92 +1,110 @@
 {
-  "generated_at": "2026-04-27T09:25:00.730680+00:00",
+  "generated_at": "2026-04-28T09:28:11.230996+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 15,
-      "wind": 8,
-      "humidity": 48,
+      "temp": 14,
+      "wind": 12,
+      "humidity": 52,
       "desc": "Overcast",
       "icon": "☁️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 5,
-      "wind": 7,
-      "humidity": 88,
+      "temp": 7,
+      "wind": 4,
+      "humidity": 74,
       "desc": "Clear sky",
       "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 15,
-      "wind": 4,
-      "humidity": 88,
-      "desc": "Light drizzle",
-      "icon": "🌦️"
+      "temp": 21,
+      "wind": 9,
+      "humidity": 61,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 14,
-      "wind": 3,
-      "humidity": 59,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 10,
+      "wind": 20,
+      "humidity": 68,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 19,
-      "wind": 8,
-      "humidity": 79,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "wind": 10,
+      "humidity": 74,
+      "desc": "Clear sky",
+      "icon": "☀️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "Suspected gunman at Washington press dinner identified as 31-year-old Californian",
-        "link": "https://www.bbc.com/news/articles/cr717nglye0o?at_medium=RSS&at_campaign=rss",
-        "desc": "The man arrested at the event attended by President Trump has been named in US media as Cole Tomas Allen from California.",
-        "pub": "Mon, 27 Apr 2026 02:31:26 GMT"
+        "title": "Suspect charged with attempted assassination of Trump at Washington dinner",
+        "link": "https://www.bbc.com/news/articles/cew7wez72vxo?at_medium=RSS&at_campaign=rss",
+        "desc": "Investigators say the 31-year-old California man wanted to kill as many high-level officials as possible.",
+        "pub": "Tue, 28 Apr 2026 00:41:48 GMT"
       },
       {
-        "title": "Oil prices rise as US-Iran peace talks stall",
-        "link": "https://www.bbc.com/news/articles/c15d57pv925o?at_medium=RSS&at_campaign=rss",
-        "desc": "President Trump said the US had cancelled plans to send a team to Pakistan for negotiations.",
-        "pub": "Mon, 27 Apr 2026 08:38:37 GMT"
+        "title": "US political violence generates a familiar cycle - this time it's in overdrive",
+        "link": "https://www.bbc.com/news/articles/cje4eeyq27lo?at_medium=RSS&at_campaign=rss",
+        "desc": "In modern America, it seems violence of this kind has become an ever-present storm that can strike anywhere and at any moment.",
+        "pub": "Tue, 28 Apr 2026 00:19:49 GMT"
       },
       {
-        "title": "Ukraine's drone commander has Russian oil, troops and morale in his sights",
-        "link": "https://www.bbc.com/news/articles/c1d9wvd2e4ro?at_medium=RSS&at_campaign=rss",
-        "desc": "In a rare interview, Commander Robert Brovdi shared how his unit accounts for a third of all targets destroyed on the battlefield.",
-        "pub": "Mon, 27 Apr 2026 05:03:39 GMT"
+        "title": "Jimmy Kimmel rejects White House criticism over Melania widow joke",
+        "link": "https://www.bbc.com/news/articles/c04x40d4424o?at_medium=RSS&at_campaign=rss",
+        "desc": "In a parody aired days before the White House Correspondents' Dinner, Kimmel called Melania an \"expectant widow\".",
+        "pub": "Tue, 28 Apr 2026 06:09:43 GMT"
       },
       {
-        "title": "Pirates seize another vessel off Somali coast as threat level increased",
-        "link": "https://www.bbc.com/news/articles/cn7871n27nlo?at_medium=RSS&at_campaign=rss",
-        "desc": "The UK's maritime monitor reports at least four suspected piracy incidents in the past week off the coast of Somalia.",
-        "pub": "Mon, 27 Apr 2026 06:53:54 GMT"
+        "title": "Russian superyacht sails through Strait of Hormuz despite blockade",
+        "link": "https://www.bbc.com/news/articles/cm2pn8zdxdjo?at_medium=RSS&at_campaign=rss",
+        "desc": "The 141m-long vessel, linked to a close ally of Russian President Vladimir Putin, cleared the waterway despite an ongoing blockade.",
+        "pub": "Tue, 28 Apr 2026 07:17:06 GMT"
       },
       {
-        "title": "Kim Jong Un opens memorial for N Korean soldiers killed in Ukraine war",
-        "link": "https://www.bbc.com/news/articles/cql7l707244o?at_medium=RSS&at_campaign=rss",
-        "desc": "Kim Jong Un and Russian Defence Minister Andrey Belousov unveiled the memorial in Pyongyang.",
-        "pub": "Mon, 27 Apr 2026 06:52:59 GMT"
+        "title": "Austrian goes on trial accused of plotting attack on Taylor Swift concert",
+        "link": "https://www.bbc.com/news/articles/c05d5qgprjzo?at_medium=RSS&at_campaign=rss",
+        "desc": "Prosecutors say the man, 21-year-old Beran A, received training from members of jihadist group Islamic State on how to handle explosives.",
+        "pub": "Tue, 28 Apr 2026 07:32:35 GMT"
       },
       {
-        "title": "Trump says King will be 'very safe' during US visit after security talks",
-        "link": "https://www.bbc.com/news/articles/c4gjger58jzo?at_medium=RSS&at_campaign=rss",
-        "desc": "The state visit will go ahead despite concerns raised after a gunman targeted an event attended by the president.",
-        "pub": "Mon, 27 Apr 2026 09:19:11 GMT"
+        "title": "Pakistan accused of attacking Afghan university",
+        "link": "https://www.bbc.com/news/articles/cvg0gxrgklro?at_medium=RSS&at_campaign=rss",
+        "desc": "Air attacks on the province of Kunar have killed at least seven people and injured 75, sources tell the BBC.",
+        "pub": "Mon, 27 Apr 2026 16:54:13 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Valve's £85 Steam Controller divides gamers ahead of May launch",
+        "link": "https://www.bbc.com/news/articles/cp8486w7de8o?at_medium=RSS&at_campaign=rss",
+        "desc": "The pad will be compatible with PCs, Valve's handheld console, the Steam Deck as well as its upcoming gaming PC.",
+        "pub": "Tue, 28 Apr 2026 09:16:12 GMT"
+      },
+      {
+        "title": "Why Spotify has no button to filter out AI music",
+        "link": "https://www.bbc.com/news/articles/cd7jpg4w181o?at_medium=RSS&at_campaign=rss",
+        "desc": "Music streamer Deezer allows users to filter out AI music, so why does Spotify not offer the same?",
+        "pub": "Mon, 27 Apr 2026 23:03:10 GMT"
+      },
+      {
+        "title": "China blocks Meta's $2bn acquisition of AI start-up Manus",
+        "link": "https://www.bbc.com/news/articles/cj0v0gr2yz7o?at_medium=RSS&at_campaign=rss",
+        "desc": "It comes after months of scrutiny by Chinese regulators over deal struck with Facebook owner.",
+        "pub": "Mon, 27 Apr 2026 12:21:42 GMT"
+      },
       {
         "title": "I brought my husband back for his funeral as a hologram",
         "link": "https://www.bbc.com/news/articles/cm29qj3e294o?at_medium=RSS&at_campaign=rss",
@@ -104,24 +122,6 @@
         "link": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
         "desc": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
         "pub": "Fri, 24 Apr 2026 22:45:28 GMT"
-      },
-      {
-        "title": "UK cyber chiefs say it's time to ditch passwords for passkeys - what are they?",
-        "link": "https://www.bbc.com/news/articles/cq8wnzly5j5o?at_medium=RSS&at_campaign=rss",
-        "desc": "Passwords have long been the default way we secure accounts online but the NCSC has said passkeys are a better option.",
-        "pub": "Fri, 24 Apr 2026 14:40:23 GMT"
-      },
-      {
-        "title": "Biobank data incident caused by 'a few bad apples', boss says",
-        "link": "https://www.bbc.com/news/articles/clyedyn6pz7o?at_medium=RSS&at_campaign=rss",
-        "desc": "Professor Sir Rory Collins said he was \"angry\" and \"upset\" about the incident, as both the bank's boss and a participant.",
-        "pub": "Fri, 24 Apr 2026 10:00:42 GMT"
-      },
-      {
-        "title": "Meta to cut one in 10 jobs after spending billions on AI",
-        "link": "https://www.bbc.com/news/articles/crm1y89vek8o?at_medium=RSS&at_campaign=rss",
-        "desc": "The cuts, which employees had been expecting for weeks, will be Meta's largest layoff since 2023.",
-        "pub": "Fri, 24 Apr 2026 07:31:35 GMT"
       }
     ],
     "Science": [

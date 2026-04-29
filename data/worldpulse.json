@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-04-28T09:28:11.230996+00:00",
+  "generated_at": "2026-04-29T09:15:25.715788+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 14,
-      "wind": 12,
-      "humidity": 52,
+      "temp": 17,
+      "wind": 14,
+      "humidity": 44,
       "desc": "Overcast",
       "icon": "☁️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 7,
-      "wind": 4,
-      "humidity": 74,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 9,
+      "wind": 6,
+      "humidity": 69,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 21,
-      "wind": 9,
-      "humidity": 61,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 14,
+      "wind": 6,
+      "humidity": 89,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 10,
-      "wind": 20,
-      "humidity": 68,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 15,
+      "wind": 25,
+      "humidity": 38,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 19,
-      "wind": 10,
-      "humidity": 74,
+      "wind": 5,
+      "humidity": 80,
       "desc": "Clear sky",
       "icon": "☀️"
     }
@@ -50,43 +50,61 @@
   "news": {
     "World": [
       {
-        "title": "Suspect charged with attempted assassination of Trump at Washington dinner",
-        "link": "https://www.bbc.com/news/articles/cew7wez72vxo?at_medium=RSS&at_campaign=rss",
-        "desc": "Investigators say the 31-year-old California man wanted to kill as many high-level officials as possible.",
-        "pub": "Tue, 28 Apr 2026 00:41:48 GMT"
+        "title": "Five takeaways from the King's historic address to Congress",
+        "link": "https://www.bbc.com/news/articles/c8jvl3x19v9o?at_medium=RSS&at_campaign=rss",
+        "desc": "There were some lines in the speech that may have buoyed Democrats – and raised eyebrows in the White House.",
+        "pub": "Wed, 29 Apr 2026 08:48:08 GMT"
       },
       {
-        "title": "US political violence generates a familiar cycle - this time it's in overdrive",
-        "link": "https://www.bbc.com/news/articles/cje4eeyq27lo?at_medium=RSS&at_campaign=rss",
-        "desc": "In modern America, it seems violence of this kind has become an ever-present storm that can strike anywhere and at any moment.",
-        "pub": "Tue, 28 Apr 2026 00:19:49 GMT"
+        "title": "Comey charged with threatening Trump's life in Instagram post",
+        "link": "https://www.bbc.com/news/articles/cvgz4rvlem5o?at_medium=RSS&at_campaign=rss",
+        "desc": "The new case stems from a 2025 seashell photo posted by the former FBI director that the justice department says calls for violence against Trump.",
+        "pub": "Wed, 29 Apr 2026 00:24:05 GMT"
       },
       {
-        "title": "Jimmy Kimmel rejects White House criticism over Melania widow joke",
-        "link": "https://www.bbc.com/news/articles/c04x40d4424o?at_medium=RSS&at_campaign=rss",
-        "desc": "In a parody aired days before the White House Correspondents' Dinner, Kimmel called Melania an \"expectant widow\".",
-        "pub": "Tue, 28 Apr 2026 06:09:43 GMT"
+        "title": "Faisal Islam: Why the UAE's exit from Opec is a big deal",
+        "link": "https://www.bbc.com/news/articles/cj4pxyklw1jo?at_medium=RSS&at_campaign=rss",
+        "desc": "It will have little effect on the current oil blockades, but it could change everything afterwards.",
+        "pub": "Tue, 28 Apr 2026 15:55:46 GMT"
       },
       {
-        "title": "Russian superyacht sails through Strait of Hormuz despite blockade",
-        "link": "https://www.bbc.com/news/articles/cm2pn8zdxdjo?at_medium=RSS&at_campaign=rss",
-        "desc": "The 141m-long vessel, linked to a close ally of Russian President Vladimir Putin, cleared the waterway despite an ongoing blockade.",
-        "pub": "Tue, 28 Apr 2026 07:17:06 GMT"
+        "title": "Kim Jong Un praises troops who 'self-blasted' to avoid capture by Ukraine",
+        "link": "https://www.bbc.com/news/articles/cddp7pzqdvjo?at_medium=RSS&at_campaign=rss",
+        "desc": "It confirms suspicions that North Korean soldiers are being told to detonate their grenades to kill themselves.",
+        "pub": "Wed, 29 Apr 2026 01:47:51 GMT"
       },
       {
-        "title": "Austrian goes on trial accused of plotting attack on Taylor Swift concert",
-        "link": "https://www.bbc.com/news/articles/c05d5qgprjzo?at_medium=RSS&at_campaign=rss",
-        "desc": "Prosecutors say the man, 21-year-old Beran A, received training from members of jihadist group Islamic State on how to handle explosives.",
-        "pub": "Tue, 28 Apr 2026 07:32:35 GMT"
+        "title": "Former US officials criticise Pentagon silence on deadly Iran school attack",
+        "link": "https://www.bbc.com/news/articles/cwy2482pn0lo?at_medium=RSS&at_campaign=rss",
+        "desc": "In the two months since the deadly strike, the Pentagon has said only that the incident is under investigation.",
+        "pub": "Wed, 29 Apr 2026 02:01:50 GMT"
       },
       {
-        "title": "Pakistan accused of attacking Afghan university",
-        "link": "https://www.bbc.com/news/articles/cvg0gxrgklro?at_medium=RSS&at_campaign=rss",
-        "desc": "Air attacks on the province of Kunar have killed at least seven people and injured 75, sources tell the BBC.",
-        "pub": "Mon, 27 Apr 2026 16:54:13 GMT"
+        "title": "Trump's face to feature on commemorative US passports",
+        "link": "https://www.bbc.com/news/articles/cr5pn1ngerpo?at_medium=RSS&at_campaign=rss",
+        "desc": "The passports will be released as part of the 250th anniversary of the US Declaration of Independence.",
+        "pub": "Tue, 28 Apr 2026 23:41:00 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Musk says basis of charitable giving at stake in OpenAI lawsuit",
+        "link": "https://www.bbc.com/news/articles/cz027nyz529o?at_medium=RSS&at_campaign=rss",
+        "desc": "The case over OpenAI's history and public commitments could have major implications for the future of AI.",
+        "pub": "Tue, 28 Apr 2026 19:43:02 GMT"
+      },
+      {
+        "title": "Why Sam Altman and his former hero Elon Musk are taking their toxic feud to court",
+        "link": "https://www.bbc.com/news/articles/cn8dedv8w8xo?at_medium=RSS&at_campaign=rss",
+        "desc": "The battle between the AI big hitters has largely played out on social media. Now it is coming to the courtroom.",
+        "pub": "Tue, 28 Apr 2026 15:38:09 GMT"
+      },
+      {
+        "title": "Social media restrictions for under-16s even if no ban, minister says",
+        "link": "https://www.bbc.com/news/articles/c5y7d2zx63jo?at_medium=RSS&at_campaign=rss",
+        "desc": "The government is consulting on changes as a new social media law goes through its final Parliamentary stages.",
+        "pub": "Tue, 28 Apr 2026 10:46:55 GMT"
+      },
       {
         "title": "Valve's £85 Steam Controller divides gamers ahead of May launch",
         "link": "https://www.bbc.com/news/articles/cp8486w7de8o?at_medium=RSS&at_campaign=rss",
@@ -104,27 +122,15 @@
         "link": "https://www.bbc.com/news/articles/cj0v0gr2yz7o?at_medium=RSS&at_campaign=rss",
         "desc": "It comes after months of scrutiny by Chinese regulators over deal struck with Facebook owner.",
         "pub": "Mon, 27 Apr 2026 12:21:42 GMT"
-      },
-      {
-        "title": "I brought my husband back for his funeral as a hologram",
-        "link": "https://www.bbc.com/news/articles/cm29qj3e294o?at_medium=RSS&at_campaign=rss",
-        "desc": "After nearly 60 years of marriage, Pam wanted to honour her husband Bill with a hologram at his funeral.",
-        "pub": "Sat, 25 Apr 2026 23:03:52 GMT"
-      },
-      {
-        "title": "The viral manifesto of 'anti-woke' tech boss with NHS and defence contracts",
-        "link": "https://www.bbc.com/news/articles/c4gjkj7975po?at_medium=RSS&at_campaign=rss",
-        "desc": "The boss of the controversial tech company with UK government contracts published a 22-point plan on the future of the West.",
-        "pub": "Sat, 25 Apr 2026 01:18:33 GMT"
-      },
-      {
-        "title": "OpenAI boss 'deeply sorry' for not telling police of mass shooting suspect's account",
-        "link": "https://www.bbc.com/news/articles/cq6je7e80r7o?at_medium=RSS&at_campaign=rss",
-        "desc": "Sam Altman on Thursday wrote a brief letter of apology to the people of Tumbler Ridge, Canada in the wake of a January mass shooting.",
-        "pub": "Fri, 24 Apr 2026 22:45:28 GMT"
       }
     ],
     "Science": [
+      {
+        "title": "£20m mystery gift buys London Zoo new hospital where you can watch vets work",
+        "link": "https://www.bbc.com/news/articles/cpqpj7wy4x4o?at_medium=RSS&at_campaign=rss",
+        "desc": "Visitors will be able to watch live veterinary procedures inside a state-of-the-art new animal hospital.",
+        "pub": "Tue, 28 Apr 2026 23:20:26 GMT"
+      },
       {
         "title": "UK's biggest ever environmental pollution claim reaches High Court",
         "link": "https://www.bbc.com/news/articles/cqxl5rjw58po?at_medium=RSS&at_campaign=rss",
@@ -154,12 +160,6 @@
         "link": "https://www.bbc.com/news/articles/ckg98q1yx9vo?at_medium=RSS&at_campaign=rss",
         "desc": "School uniforms and non-stick pans are some of the everyday products that should stop using chemicals called PFAS, MPs say.",
         "pub": "Wed, 22 Apr 2026 23:11:24 GMT"
-      },
-      {
-        "title": "Electricity bills targeted in planned shakeup to energy pricing",
-        "link": "https://www.bbc.com/news/articles/c79jg43vd8no?at_medium=RSS&at_campaign=rss",
-        "desc": "The war in the Middle East has brought renewed attention to Britain's vulnerability to energy price shocks.",
-        "pub": "Tue, 21 Apr 2026 11:53:27 GMT"
       }
     ]
   }

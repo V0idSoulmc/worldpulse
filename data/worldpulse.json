@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-04-29T09:15:25.715788+00:00",
+  "generated_at": "2026-04-30T09:20:36.324883+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
       "temp": 17,
-      "wind": 14,
-      "humidity": 44,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "wind": 15,
+      "humidity": 36,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
       "temp": 9,
-      "wind": 6,
-      "humidity": 69,
-      "desc": "Mainly clear",
-      "icon": "🌤️"
+      "wind": 5,
+      "humidity": 97,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
       "temp": 14,
-      "wind": 6,
-      "humidity": 89,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "wind": 2,
+      "humidity": 69,
+      "desc": "Partly cloudy",
+      "icon": "⛅"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
       "temp": 15,
-      "wind": 25,
-      "humidity": 38,
+      "wind": 18,
+      "humidity": 39,
       "desc": "Clear sky",
       "icon": "☀️"
     },
@@ -41,8 +41,8 @@
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 19,
-      "wind": 5,
-      "humidity": 80,
+      "wind": 7,
+      "humidity": 76,
       "desc": "Clear sky",
       "icon": "☀️"
     }
@@ -50,48 +50,66 @@
   "news": {
     "World": [
       {
-        "title": "Five takeaways from the King's historic address to Congress",
-        "link": "https://www.bbc.com/news/articles/c8jvl3x19v9o?at_medium=RSS&at_campaign=rss",
-        "desc": "There were some lines in the speech that may have buoyed Democrats – and raised eyebrows in the White House.",
-        "pub": "Wed, 29 Apr 2026 08:48:08 GMT"
+        "title": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options",
+        "link": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
+        "desc": "Axios reported that US Central Command has prepared a plan for a wave of \"short and powerful\" strikes on Iran.",
+        "pub": "Thu, 30 Apr 2026 08:44:09 GMT"
       },
       {
-        "title": "Comey charged with threatening Trump's life in Instagram post",
-        "link": "https://www.bbc.com/news/articles/cvgz4rvlem5o?at_medium=RSS&at_campaign=rss",
-        "desc": "The new case stems from a 2025 seashell photo posted by the former FBI director that the justice department says calls for violence against Trump.",
-        "pub": "Wed, 29 Apr 2026 00:24:05 GMT"
+        "title": "Comey surrenders over charge of threatening Trump's life in Instagram post",
+        "link": "https://www.bbc.com/news/articles/c70vzj1nrddo?at_medium=RSS&at_campaign=rss",
+        "desc": "Prosecutors say a 2025 seashell photo posted by the former FBI director was a call for violence against Trump.",
+        "pub": "Wed, 29 Apr 2026 20:24:48 GMT"
       },
       {
-        "title": "Faisal Islam: Why the UAE's exit from Opec is a big deal",
-        "link": "https://www.bbc.com/news/articles/cj4pxyklw1jo?at_medium=RSS&at_campaign=rss",
-        "desc": "It will have little effect on the current oil blockades, but it could change everything afterwards.",
-        "pub": "Tue, 28 Apr 2026 15:55:46 GMT"
+        "title": "Jewish agency warned of 'high' threat level ahead of Bondi shooting, report finds",
+        "link": "https://www.bbc.com/news/articles/cdjpw0n889yo?at_medium=RSS&at_campaign=rss",
+        "desc": "Gun reforms should be prioritised and policing around Jewish events increased, royal commission says.",
+        "pub": "Thu, 30 Apr 2026 06:16:36 GMT"
       },
       {
-        "title": "Kim Jong Un praises troops who 'self-blasted' to avoid capture by Ukraine",
-        "link": "https://www.bbc.com/news/articles/cddp7pzqdvjo?at_medium=RSS&at_campaign=rss",
-        "desc": "It confirms suspicions that North Korean soldiers are being told to detonate their grenades to kill themselves.",
-        "pub": "Wed, 29 Apr 2026 01:47:51 GMT"
+        "title": "Christchurch mass killer loses bid to overturn conviction",
+        "link": "https://www.bbc.com/news/articles/cg5p6zq19npo?at_medium=RSS&at_campaign=rss",
+        "desc": "White supremacist Brenton Tarrant's appeal is \"utterly devoid of merit\", a New Zealand court has ruled.",
+        "pub": "Thu, 30 Apr 2026 04:10:54 GMT"
       },
       {
-        "title": "Former US officials criticise Pentagon silence on deadly Iran school attack",
-        "link": "https://www.bbc.com/news/articles/cwy2482pn0lo?at_medium=RSS&at_campaign=rss",
-        "desc": "In the two months since the deadly strike, the Pentagon has said only that the incident is under investigation.",
-        "pub": "Wed, 29 Apr 2026 02:01:50 GMT"
+        "title": "Three takeaways from Hegseth's clash with lawmakers over Iran war",
+        "link": "https://www.bbc.com/news/articles/c78qd6ll8xlo?at_medium=RSS&at_campaign=rss",
+        "desc": "The hours-long hearing was the first time the US defence secretary had faced questions under oath since the conflict began.",
+        "pub": "Wed, 29 Apr 2026 22:22:18 GMT"
       },
       {
-        "title": "Trump's face to feature on commemorative US passports",
-        "link": "https://www.bbc.com/news/articles/cr5pn1ngerpo?at_medium=RSS&at_campaign=rss",
-        "desc": "The passports will be released as part of the 250th anniversary of the US Declaration of Independence.",
-        "pub": "Tue, 28 Apr 2026 23:41:00 GMT"
+        "title": "US singer D4vd bought tools online to dispose of girl's body, prosecutors allege",
+        "link": "https://www.bbc.com/news/articles/cvgzll79529o?at_medium=RSS&at_campaign=rss",
+        "desc": "The Tiktok star's attorneys have maintained his innocence and vowed to \"vigorously defend\" him.",
+        "pub": "Thu, 30 Apr 2026 01:43:40 GMT"
       }
     ],
     "Technology": [
       {
-        "title": "Musk says basis of charitable giving at stake in OpenAI lawsuit",
+        "title": "Meta in row after workers who say they saw smart glasses users having sex lose jobs",
+        "link": "https://www.bbc.com/news/articles/c5y7yvgy0w6o?at_medium=RSS&at_campaign=rss",
+        "desc": "Meta and its subcontractor disagree over why over 1000 Kenya-based workers were made redundant.",
+        "pub": "Thu, 30 Apr 2026 08:59:35 GMT"
+      },
+      {
+        "title": "Musk accuses OpenAI lawyer of trying to 'trick' him in combative testimony",
+        "link": "https://www.bbc.com/news/articles/czj29yygyzgo?at_medium=RSS&at_campaign=rss",
+        "desc": "Elon Musk was cross-examined on the third day of the trial over his lawsuit against Sam Altman and OpenAI.",
+        "pub": "Wed, 29 Apr 2026 23:18:08 GMT"
+      },
+      {
+        "title": "Why friendly AI chatbots might be less trustworthy",
+        "link": "https://www.bbc.com/news/articles/cd9pdjgvxj8o?at_medium=RSS&at_campaign=rss",
+        "desc": "Researchers found adjusting AI systems to be more warm and friendly to users would result in an \"accuracy trade-off\".",
+        "pub": "Wed, 29 Apr 2026 15:00:06 GMT"
+      },
+      {
+        "title": "Musk accuses Altman of stealing a charity as courtroom battle begins",
         "link": "https://www.bbc.com/news/articles/cz027nyz529o?at_medium=RSS&at_campaign=rss",
         "desc": "The case over OpenAI's history and public commitments could have major implications for the future of AI.",
-        "pub": "Tue, 28 Apr 2026 19:43:02 GMT"
+        "pub": "Wed, 29 Apr 2026 10:12:46 GMT"
       },
       {
         "title": "Why Sam Altman and his former hero Elon Musk are taking their toxic feud to court",
@@ -104,27 +122,15 @@
         "link": "https://www.bbc.com/news/articles/c5y7d2zx63jo?at_medium=RSS&at_campaign=rss",
         "desc": "The government is consulting on changes as a new social media law goes through its final Parliamentary stages.",
         "pub": "Tue, 28 Apr 2026 10:46:55 GMT"
-      },
-      {
-        "title": "Valve's £85 Steam Controller divides gamers ahead of May launch",
-        "link": "https://www.bbc.com/news/articles/cp8486w7de8o?at_medium=RSS&at_campaign=rss",
-        "desc": "The pad will be compatible with PCs, Valve's handheld console, the Steam Deck as well as its upcoming gaming PC.",
-        "pub": "Tue, 28 Apr 2026 09:16:12 GMT"
-      },
-      {
-        "title": "Why Spotify has no button to filter out AI music",
-        "link": "https://www.bbc.com/news/articles/cd7jpg4w181o?at_medium=RSS&at_campaign=rss",
-        "desc": "Music streamer Deezer allows users to filter out AI music, so why does Spotify not offer the same?",
-        "pub": "Mon, 27 Apr 2026 23:03:10 GMT"
-      },
-      {
-        "title": "China blocks Meta's $2bn acquisition of AI start-up Manus",
-        "link": "https://www.bbc.com/news/articles/cj0v0gr2yz7o?at_medium=RSS&at_campaign=rss",
-        "desc": "It comes after months of scrutiny by Chinese regulators over deal struck with Facebook owner.",
-        "pub": "Mon, 27 Apr 2026 12:21:42 GMT"
       }
     ],
     "Science": [
+      {
+        "title": "Global forest loss slows but El Niño fires could threaten progress",
+        "link": "https://www.bbc.com/news/articles/c78q5pygn66o?at_medium=RSS&at_campaign=rss",
+        "desc": "The loss of tropical rainforests eased last year, according to new analysis, but scientists warn they are still disappearing rapidly.",
+        "pub": "Wed, 29 Apr 2026 13:26:08 GMT"
+      },
       {
         "title": "£20m mystery gift buys London Zoo new hospital where you can watch vets work",
         "link": "https://www.bbc.com/news/articles/cpqpj7wy4x4o?at_medium=RSS&at_campaign=rss",
@@ -154,12 +160,6 @@
         "link": "https://www.bbc.com/news/articles/cyv1rgm16r2o?at_medium=RSS&at_campaign=rss",
         "desc": "Giant octopuses may have ruled the oceans 100 million years ago, according to fossil evidence.",
         "pub": "Thu, 23 Apr 2026 18:04:39 GMT"
-      },
-      {
-        "title": "Ban 'forever chemicals' in uniforms and frying pans, MPs urge",
-        "link": "https://www.bbc.com/news/articles/ckg98q1yx9vo?at_medium=RSS&at_campaign=rss",
-        "desc": "School uniforms and non-stick pans are some of the everyday products that should stop using chemicals called PFAS, MPs say.",
-        "pub": "Wed, 22 Apr 2026 23:11:24 GMT"
       }
     ]
   }

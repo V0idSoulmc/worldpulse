@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-04-30T09:20:36.324883+00:00",
+  "generated_at": "2026-05-01T09:04:46.404358+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
       "temp": 17,
-      "wind": 15,
-      "humidity": 36,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "wind": 3,
+      "humidity": 41,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 9,
-      "wind": 5,
-      "humidity": 97,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 6,
+      "wind": 10,
+      "humidity": 70,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 14,
-      "wind": 2,
-      "humidity": 69,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 19,
+      "wind": 13,
+      "humidity": 77,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 15,
-      "wind": 18,
-      "humidity": 39,
+      "temp": 16,
+      "wind": 7,
+      "humidity": 41,
       "desc": "Clear sky",
       "icon": "☀️"
     },
@@ -41,8 +41,8 @@
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 19,
-      "wind": 7,
-      "humidity": 76,
+      "wind": 6,
+      "humidity": 82,
       "desc": "Clear sky",
       "icon": "☀️"
     }
@@ -50,43 +50,67 @@
   "news": {
     "World": [
       {
-        "title": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options",
-        "link": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
-        "desc": "Axios reported that US Central Command has prepared a plan for a wave of \"short and powerful\" strikes on Iran.",
-        "pub": "Thu, 30 Apr 2026 08:44:09 GMT"
+        "title": "Violence in Australian town after arrest of man over girl's murder",
+        "link": "https://www.bbc.com/news/articles/cddp4j7p8pzo?at_medium=RSS&at_campaign=rss",
+        "desc": "Unrest took place outside hospital where man suspected of murdering a five-year-old girl was being treated.",
+        "pub": "Fri, 01 May 2026 04:08:19 GMT"
       },
       {
-        "title": "Comey surrenders over charge of threatening Trump's life in Instagram post",
-        "link": "https://www.bbc.com/news/articles/c70vzj1nrddo?at_medium=RSS&at_campaign=rss",
-        "desc": "Prosecutors say a 2025 seashell photo posted by the former FBI director was a call for violence against Trump.",
-        "pub": "Wed, 29 Apr 2026 20:24:48 GMT"
+        "title": "Myanmar ex-leader Aung San Suu Kyi moved to house arrest, military says",
+        "link": "https://www.bbc.com/news/articles/cz72j8eex4eo?at_medium=RSS&at_campaign=rss",
+        "desc": "The Nobel Peace Prize laureate has been in detention since she was ousted in a military coup in 2021.",
+        "pub": "Fri, 01 May 2026 04:11:53 GMT"
       },
       {
-        "title": "Jewish agency warned of 'high' threat level ahead of Bondi shooting, report finds",
-        "link": "https://www.bbc.com/news/articles/cdjpw0n889yo?at_medium=RSS&at_campaign=rss",
-        "desc": "Gun reforms should be prioritised and policing around Jewish events increased, royal commission says.",
-        "pub": "Thu, 30 Apr 2026 06:16:36 GMT"
+        "title": "Oscar goes missing after Academy Award winner is blocked from taking it on flight",
+        "link": "https://www.bbc.com/news/articles/cz72j59znw3o?at_medium=RSS&at_campaign=rss",
+        "desc": "The airline said it regrets the situation and was doing an urgent \"comprehensive internal search\" for the award.",
+        "pub": "Fri, 01 May 2026 03:02:21 GMT"
       },
       {
-        "title": "Christchurch mass killer loses bid to overturn conviction",
-        "link": "https://www.bbc.com/news/articles/cg5p6zq19npo?at_medium=RSS&at_campaign=rss",
-        "desc": "White supremacist Brenton Tarrant's appeal is \"utterly devoid of merit\", a New Zealand court has ruled.",
-        "pub": "Thu, 30 Apr 2026 04:10:54 GMT"
+        "title": "Brazil's Congress approves plan to drastically cut Bolsonaro's jail term",
+        "link": "https://www.bbc.com/news/articles/cqlpvl3wx4qo?at_medium=RSS&at_campaign=rss",
+        "desc": "Last year ex-president Jair Bolsonaro was sentenced to 27 years in jail for plotting a coup after losing an election.",
+        "pub": "Fri, 01 May 2026 05:58:20 GMT"
       },
       {
-        "title": "Three takeaways from Hegseth's clash with lawmakers over Iran war",
-        "link": "https://www.bbc.com/news/articles/c78qd6ll8xlo?at_medium=RSS&at_campaign=rss",
-        "desc": "The hours-long hearing was the first time the US defence secretary had faced questions under oath since the conflict began.",
-        "pub": "Wed, 29 Apr 2026 22:22:18 GMT"
+        "title": "Venice Biennale jury resigns days before start of top art exhibition",
+        "link": "https://www.bbc.com/news/articles/c78qdg4g80eo?at_medium=RSS&at_campaign=rss",
+        "desc": "It follows growing tensions over the return of Russia for the first time since the full-scale invasion of Ukraine.",
+        "pub": "Thu, 30 Apr 2026 23:44:00 GMT"
       },
       {
-        "title": "US singer D4vd bought tools online to dispose of girl's body, prosecutors allege",
-        "link": "https://www.bbc.com/news/articles/cvgzll79529o?at_medium=RSS&at_campaign=rss",
-        "desc": "The Tiktok star's attorneys have maintained his innocence and vowed to \"vigorously defend\" him.",
-        "pub": "Thu, 30 Apr 2026 01:43:40 GMT"
+        "title": "Britney Spears charged in California with driving under influence",
+        "link": "https://www.bbc.com/news/articles/clyp6r9dzedo?at_medium=RSS&at_campaign=rss",
+        "desc": "The pop star is facing one misdemeanour count of driving under the influence of any alcohol and drug.",
+        "pub": "Thu, 30 Apr 2026 21:46:18 GMT"
       }
     ],
     "Technology": [
+      {
+        "title": "Will AI lead to more accurate opinion polls?",
+        "link": "https://www.bbc.com/news/articles/cwyw6rylzepo?at_medium=RSS&at_campaign=rss",
+        "desc": "It's cheaper and faster to collect people's opinions using AI, but will it make polls more accurate?",
+        "pub": "Thu, 30 Apr 2026 23:11:37 GMT"
+      },
+      {
+        "title": "Apple hails 'extraordinary' iPhone demand as boss Tim Cook heads out",
+        "link": "https://www.bbc.com/news/articles/ce8pdk3l4d2o?at_medium=RSS&at_campaign=rss",
+        "desc": "Cook is preparing to bow out after 15 years at the helm and hand over to John Ternus.",
+        "pub": "Thu, 30 Apr 2026 23:04:43 GMT"
+      },
+      {
+        "title": "Twitch streamer hit by car live on camera - 'It felt like slow motion'",
+        "link": "https://www.bbc.com/news/articles/cn8pjz2qwego?at_medium=RSS&at_campaign=rss",
+        "desc": "Isaiah Thomas, known as hmblzayy, was walking a 3,000-mile challenge when he was hit",
+        "pub": "Thu, 30 Apr 2026 17:24:25 GMT"
+      },
+      {
+        "title": "OpenAI tells ChatGPT models to stop talking about goblins",
+        "link": "https://www.bbc.com/news/articles/c5y9wen5z8ro?at_medium=RSS&at_campaign=rss",
+        "desc": "The AI firm said that unlike previous model bugs, the issue \"crept in subtly\".",
+        "pub": "Thu, 30 Apr 2026 13:28:04 GMT"
+      },
       {
         "title": "Meta in row after workers who say they saw smart glasses users having sex lose jobs",
         "link": "https://www.bbc.com/news/articles/c5y7yvgy0w6o?at_medium=RSS&at_campaign=rss",
@@ -98,30 +122,6 @@
         "link": "https://www.bbc.com/news/articles/czj29yygyzgo?at_medium=RSS&at_campaign=rss",
         "desc": "Elon Musk was cross-examined on the third day of the trial over his lawsuit against Sam Altman and OpenAI.",
         "pub": "Wed, 29 Apr 2026 23:18:08 GMT"
-      },
-      {
-        "title": "Why friendly AI chatbots might be less trustworthy",
-        "link": "https://www.bbc.com/news/articles/cd9pdjgvxj8o?at_medium=RSS&at_campaign=rss",
-        "desc": "Researchers found adjusting AI systems to be more warm and friendly to users would result in an \"accuracy trade-off\".",
-        "pub": "Wed, 29 Apr 2026 15:00:06 GMT"
-      },
-      {
-        "title": "Musk accuses Altman of stealing a charity as courtroom battle begins",
-        "link": "https://www.bbc.com/news/articles/cz027nyz529o?at_medium=RSS&at_campaign=rss",
-        "desc": "The case over OpenAI's history and public commitments could have major implications for the future of AI.",
-        "pub": "Wed, 29 Apr 2026 10:12:46 GMT"
-      },
-      {
-        "title": "Why Sam Altman and his former hero Elon Musk are taking their toxic feud to court",
-        "link": "https://www.bbc.com/news/articles/cn8dedv8w8xo?at_medium=RSS&at_campaign=rss",
-        "desc": "The battle between the AI big hitters has largely played out on social media. Now it is coming to the courtroom.",
-        "pub": "Tue, 28 Apr 2026 15:38:09 GMT"
-      },
-      {
-        "title": "Social media restrictions for under-16s even if no ban, minister says",
-        "link": "https://www.bbc.com/news/articles/c5y7d2zx63jo?at_medium=RSS&at_campaign=rss",
-        "desc": "The government is consulting on changes as a new social media law goes through its final Parliamentary stages.",
-        "pub": "Tue, 28 Apr 2026 10:46:55 GMT"
       }
     ],
     "Science": [

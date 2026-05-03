@@ -1,89 +1,89 @@
 {
-  "generated_at": "2026-05-02T08:23:57.595214+00:00",
+  "generated_at": "2026-05-03T08:51:12.038727+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
-      "temp": 18,
-      "wind": 4,
-      "humidity": 75,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 16,
+      "wind": 10,
+      "humidity": 74,
+      "desc": "Light rain",
+      "icon": "🌧️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 10,
-      "wind": 9,
-      "humidity": 84,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "temp": 6,
+      "wind": 11,
+      "humidity": 54,
+      "desc": "Clear sky",
+      "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 24,
-      "wind": 4,
-      "humidity": 41,
+      "temp": 20,
+      "wind": 12,
+      "humidity": 68,
       "desc": "Partly cloudy",
       "icon": "⛅"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 14,
-      "wind": 6,
-      "humidity": 69,
-      "desc": "Clear sky",
-      "icon": "☀️"
+      "temp": 15,
+      "wind": 8,
+      "humidity": 68,
+      "desc": "Partly cloudy",
+      "icon": "⛅"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
       "temp": 21,
-      "wind": 18,
-      "humidity": 71,
-      "desc": "Overcast",
-      "icon": "☁️"
+      "wind": 20,
+      "humidity": 82,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     }
   ],
   "news": {
     "World": [
       {
-        "title": "US to cut troop levels in Germany by 5,000 amid Trump spat with Merz",
-        "link": "https://www.bbc.com/news/articles/c0729d374mxo?at_medium=RSS&at_campaign=rss",
-        "desc": "The decision to reduce the US deployment to Germany comes amid a row between the two allies over Iran.",
-        "pub": "Sat, 02 May 2026 08:14:09 GMT"
+        "title": "Germany says US troop withdrawal 'foreseeable' as Trump warns of more 'cuts'",
+        "link": "https://www.bbc.com/news/articles/cd9pn541jjlo?at_medium=RSS&at_campaign=rss",
+        "desc": "In the US, two senior Republicans voice concern over President Trump's decision to pull out 5,000 troops.",
+        "pub": "Sun, 03 May 2026 04:09:34 GMT"
       },
       {
-        "title": "Trump tells Congress ceasefire means he does not need their approval for Iran war",
-        "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss",
-        "desc": "The president writes that hostilities \"have terminated\" because of the ceasefire, arguing he does not need congressional authorisation.",
-        "pub": "Sat, 02 May 2026 00:41:43 GMT"
+        "title": "The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?",
+        "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss",
+        "desc": "President Zelensky has been visiting the Gulf to demonstrate his country's military nous.",
+        "pub": "Sat, 02 May 2026 23:19:27 GMT"
       },
       {
-        "title": "'If we sleep they bite': Rats and weasels infest camps for displaced Gazans",
-        "link": "https://www.bbc.com/news/articles/c202m54xp0mo?at_medium=RSS&at_campaign=rss",
-        "desc": "In the Gaza Strip, the daily battles are now with rats, weasels, and other pests spreading diseases.",
-        "pub": "Sat, 02 May 2026 05:02:14 GMT"
+        "title": "The clandestine network smuggling Starlink tech into Iran to beat internet blackout",
+        "link": "https://www.bbc.com/news/articles/cvgzk91leweo?at_medium=RSS&at_campaign=rss",
+        "desc": "Sahand tells the BBC World Service he sends satellite internet terminals into Iran to help show \"the real picture\".",
+        "pub": "Sat, 02 May 2026 23:17:17 GMT"
       },
       {
-        "title": "Spirit Airlines shutting down after rescue talks collapse",
-        "link": "https://www.bbc.com/news/articles/cqxlnrqjvzyo?at_medium=RSS&at_campaign=rss",
-        "desc": "The airline had been in talks with the Trump administration about a $500m bailout.",
-        "pub": "Sat, 02 May 2026 07:55:47 GMT"
+        "title": "Man charged with murder and sexual assault of 5-year-old Australian girl",
+        "link": "https://www.bbc.com/news/articles/cy92qennznjo?at_medium=RSS&at_campaign=rss",
+        "desc": "The girl's death sparked an outbreak of violence in the central Australian town from where she disappeared.",
+        "pub": "Sun, 03 May 2026 05:52:09 GMT"
       },
       {
-        "title": "Trump claims other presidents flouted war powers law. It's a mixed record",
-        "link": "https://www.bbc.com/news/articles/c794zlx5lx8o?at_medium=RSS&at_campaign=rss",
-        "desc": "Both Bushes and Reagan won authorisation for wars, but Obama and Clinton ducked the requirement.",
-        "pub": "Sat, 02 May 2026 02:43:48 GMT"
+        "title": "Huge crowd attends free Shakira Copacabana beach concert",
+        "link": "https://www.bbc.com/news/videos/c8r8j50zxnno?at_medium=RSS&at_campaign=rss",
+        "desc": "Shakira's appearance followed shows by Lady Gaga and Madonna, who have also performed on Copacabana beach in previous years.",
+        "pub": "Sun, 03 May 2026 07:56:47 GMT"
       },
       {
-        "title": "Australia wants to become the first country to eliminate a cancer - can it?",
-        "link": "https://www.bbc.com/news/articles/cd6w15vgp7lo?at_medium=RSS&at_campaign=rss",
-        "desc": "For the first time, Australia has recorded no new cervical cancer diganoses in women under 25.",
-        "pub": "Fri, 01 May 2026 19:30:36 GMT"
+        "title": "Concern for jailed Iranian Nobel laureate as family say health deteriorating",
+        "link": "https://www.bbc.com/news/articles/c362pd8epw9o?at_medium=RSS&at_campaign=rss",
+        "desc": "On Friday her family said the 54-year-old had been taken from prison to a local hospital after a sharp deterioration in her health.",
+        "pub": "Sat, 02 May 2026 17:55:06 GMT"
       }
     ],
     "Technology": [

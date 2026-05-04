@@ -1,60 +1,54 @@
 {
-  "generated_at": "2026-05-03T08:51:12.038727+00:00",
+  "generated_at": "2026-05-04T09:26:36.938429+00:00",
   "weather": [
     {
       "city": "Paris",
       "flag": "🇫🇷",
       "temp": 16,
-      "wind": 10,
-      "humidity": 74,
+      "wind": 5,
+      "humidity": 81,
       "desc": "Light rain",
       "icon": "🌧️"
     },
     {
       "city": "New York",
       "flag": "🇺🇸",
-      "temp": 6,
-      "wind": 11,
-      "humidity": 54,
+      "temp": 8,
+      "wind": 14,
+      "humidity": 64,
       "desc": "Clear sky",
       "icon": "☀️"
     },
     {
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "temp": 20,
-      "wind": 12,
-      "humidity": 68,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 22,
+      "wind": 3,
+      "humidity": 51,
+      "desc": "Mainly clear",
+      "icon": "🌤️"
     },
     {
       "city": "London",
       "flag": "🇬🇧",
-      "temp": 15,
-      "wind": 8,
-      "humidity": 68,
-      "desc": "Partly cloudy",
-      "icon": "⛅"
+      "temp": 14,
+      "wind": 9,
+      "humidity": 77,
+      "desc": "Overcast",
+      "icon": "☁️"
     },
     {
       "city": "Sydney",
       "flag": "🇦🇺",
-      "temp": 21,
-      "wind": 20,
+      "temp": 19,
+      "wind": 12,
       "humidity": 82,
-      "desc": "Mainly clear",
-      "icon": "🌤️"
+      "desc": "Partly cloudy",
+      "icon": "⛅"
     }
   ],
   "news": {
     "World": [
-      {
-        "title": "Germany says US troop withdrawal 'foreseeable' as Trump warns of more 'cuts'",
-        "link": "https://www.bbc.com/news/articles/cd9pn541jjlo?at_medium=RSS&at_campaign=rss",
-        "desc": "In the US, two senior Republicans voice concern over President Trump's decision to pull out 5,000 troops.",
-        "pub": "Sun, 03 May 2026 04:09:34 GMT"
-      },
       {
         "title": "The Iran war has strengthened Ukraine in surprising ways. Could a ceasefire with Russia be closer?",
         "link": "https://www.bbc.com/news/articles/cgjp7vpee03o?at_medium=RSS&at_campaign=rss",
@@ -62,28 +56,34 @@
         "pub": "Sat, 02 May 2026 23:19:27 GMT"
       },
       {
+        "title": "Three dead in suspected virus outbreak on Atlantic cruise ship",
+        "link": "https://www.bbc.com/news/articles/cy0294829ndo?at_medium=RSS&at_campaign=rss",
+        "desc": "The World Health Organization said one case of hantavirus infection had been confirmed, with five more suspected cases under investigation.",
+        "pub": "Mon, 04 May 2026 04:46:42 GMT"
+      },
+      {
+        "title": "Russian strikes kill 10 as Zelensky says Ukraine hits oil tankers and terminal",
+        "link": "https://www.bbc.com/news/articles/clyp41v1n1go?at_medium=RSS&at_campaign=rss",
+        "desc": "Fatalities have been reported around Ukraine as Kyiv says Russian \"shadow fleet\" tankers were hit by drones.",
+        "pub": "Sun, 03 May 2026 13:43:20 GMT"
+      },
+      {
+        "title": "Nigeria plans to repatriate nationals willing to leave South Africa after attacks",
+        "link": "https://www.bbc.com/news/articles/c78q6e98878o?at_medium=RSS&at_campaign=rss",
+        "desc": "There has been a wave of anti-migrant protests in South Africa, some of which have turned violent.",
+        "pub": "Mon, 04 May 2026 09:06:11 GMT"
+      },
+      {
+        "title": "Police officer lowered into crocodile-infested river to recover human remains",
+        "link": "https://www.bbc.com/news/articles/cz92gk18xn4o?at_medium=RSS&at_campaign=rss",
+        "desc": "Police suspect the human remains belong to a businessman swept away by floodwater last week.",
+        "pub": "Sun, 03 May 2026 15:47:59 GMT"
+      },
+      {
         "title": "The clandestine network smuggling Starlink tech into Iran to beat internet blackout",
         "link": "https://www.bbc.com/news/articles/cvgzk91leweo?at_medium=RSS&at_campaign=rss",
         "desc": "Sahand tells the BBC World Service he sends satellite internet terminals into Iran to help show \"the real picture\".",
         "pub": "Sat, 02 May 2026 23:17:17 GMT"
-      },
-      {
-        "title": "Man charged with murder and sexual assault of 5-year-old Australian girl",
-        "link": "https://www.bbc.com/news/articles/cy92qennznjo?at_medium=RSS&at_campaign=rss",
-        "desc": "The girl's death sparked an outbreak of violence in the central Australian town from where she disappeared.",
-        "pub": "Sun, 03 May 2026 05:52:09 GMT"
-      },
-      {
-        "title": "Huge crowd attends free Shakira Copacabana beach concert",
-        "link": "https://www.bbc.com/news/videos/c8r8j50zxnno?at_medium=RSS&at_campaign=rss",
-        "desc": "Shakira's appearance followed shows by Lady Gaga and Madonna, who have also performed on Copacabana beach in previous years.",
-        "pub": "Sun, 03 May 2026 07:56:47 GMT"
-      },
-      {
-        "title": "Concern for jailed Iranian Nobel laureate as family say health deteriorating",
-        "link": "https://www.bbc.com/news/articles/c362pd8epw9o?at_medium=RSS&at_campaign=rss",
-        "desc": "On Friday her family said the 54-year-old had been taken from prison to a local hospital after a sharp deterioration in her health.",
-        "pub": "Sat, 02 May 2026 17:55:06 GMT"
       }
     ],
     "Technology": [
